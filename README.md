@@ -413,7 +413,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - [grill-me](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Get relentlessly interviewed by your agent until every branch of the decision tree is resolved. Use *every* time before making a change. Most popular skill in the pack. **[production]**
 - [caveman](https://github.com/mattpocock/skills/blob/main/skills/productivity/caveman/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Ultra-compressed communication mode. Cuts token usage ~75% by dropping filler while keeping full technical accuracy. Critical for long sessions. **[production]**
 - [hermes-plugins](https://github.com/42-evey/hermes-plugins) by [42-evey](https://github.com/42-evey) — Goal management, inter-agent bridge, model selection, cost control. Four plugins covering common operational needs. **[beta]**
-- [onequery-cli](https://github.com/wordbricks/skills/tree/main/skills/onequery-cli) by [Wordbricks](https://github.com/wordbricks) — Bounded, auditable queries against approved data sources through centralized credentials, read-only validation, limits, and audit logs. **[beta]**
+- [onequery-cli](https://github.com/wordbricks/skills/tree/main/skills/onequery-cli) by [Wordbricks](https://github.com/wordbricks) — CLI skill for safe, auditable agent queries against approved data sources. **[beta]**
 - [agent-analytics-hermes-plugin](https://github.com/Agent-Analytics/agent-analytics-hermes-plugin) by [Agent-Analytics](https://github.com/Agent-Analytics) — Native Signals dashboard tab for Hermes. Read-only multi-project analytics. **[beta]**
 
 ### 🎨 Creative & Media Generation
