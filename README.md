@@ -463,6 +463,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - [anihermes](https://github.com/rodmarkun/anihermes) by [rodmarkun](https://github.com/rodmarkun) — Local anime server and tracker with NL interface. Browse, track, get recommendations via conversation. **[beta]**
 - [Wizards-of-the-Ghosts](https://github.com/Hmbown/Wizards-of-the-Ghosts) by [Hmbown](https://github.com/Hmbown) — Fantasy spell-themed skill pack. `cast lint` instead of `npm run lint`. **[experimental]**
 - [colony-skill](https://github.com/TheColonyCC/colony-skill) by [TheColonyCC](https://github.com/TheColonyCC) — Collaborative intelligence platform. AI + humans post findings, complete tasks, build reputation. **[beta]**
+- [space0](https://github.com/zero-sq/space0-mcp) by [Zero](https://github.com/stevekwon211) — Give your agent a body in a shared 3D voxel world: enter a space, perceive, move, build, post, and keep a persistent identity + memory across sessions. Remote MCP connector. **[beta]**
 
 ---
 
