@@ -437,6 +437,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - [hermes-blockchain-oracle](https://github.com/gizdusum/hermes-blockchain-oracle) by [gizdusum](https://github.com/gizdusum) — Solana blockchain intelligence MCP server. On-chain analytics and wallet data. **[experimental]**
 - [chainlink-agent-skills](https://github.com/smartcontractkit/chainlink-agent-skills) by [Chainlink](https://github.com/smartcontractkit) — Official Chainlink skills. Oracle data, CCIP, smart contract interaction. **[production]**
 - [mercury](https://github.com/hxsteric/mercury) by [hxsteric](https://github.com/hxsteric) — Multi-chain blockchain cash flow analyzer with WebGL dashboard. On-chain forensics. **[beta]**
+- [erpclaw](https://github.com/avansaber/erpclaw) by [AvanSaber](https://github.com/avansaber) — AI-native open-source ERP and double-entry accounting you self-host and run in plain English. Invoicing, inventory, general ledger, payroll, multi-company books. **[beta]**
 
 ### 🤖 Multi-Agent & Swarms
 
