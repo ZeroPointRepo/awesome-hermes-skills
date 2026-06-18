@@ -407,6 +407,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 - [microsoft-workspace-skill](https://github.com/Andrew-Girgis/microsoft-workspace-skill) by [Andrew-Girgis](https://github.com/Andrew-Girgis) — Full Outlook/Hotmail/Microsoft 365 integration via Graph API. Email, calendar, contacts, free/busy. OAuth2 auto-refresh. Preview-before-send pattern. **[beta]**
 - [clawsocial-hermes-plugin](https://github.com/mrpeter2025/clawsocial-hermes-plugin) by [mrpeter2025](https://github.com/mrpeter2025) — Social discovery network. Semantic interest matching, real-time WebSocket messaging, shareable profile cards. Bilingual EN+CN. **[beta]**
+- [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet) by [Xquik-dev](https://github.com/Xquik-dev) - Native Hermes Agent plugin for X/Twitter search, account reads, and guarded posting or reply workflows through Xquik. **[beta]**
 
 ### 📊 Productivity & Tasks
 
