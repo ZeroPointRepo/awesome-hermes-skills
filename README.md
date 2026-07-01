@@ -5,11 +5,11 @@
 # Awesome Hermes Skills
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Skills Count](https://img.shields.io/badge/skills-170-blue?style=flat-square)](#table-of-contents)
+[![Skills Count](https://img.shields.io/badge/skills-258-blue?style=flat-square)](#table-of-contents)
 [![Last Update](https://img.shields.io/github/last-commit/ZeroPointRepo/awesome-hermes-skills?label=Last%20update&style=flat-square)](https://github.com/ZeroPointRepo/awesome-hermes-skills/pulls?q=is%3Apr+is%3Amerged+sort%3Aupdated-desc)
 [![Hermes](https://img.shields.io/badge/Hermes-v0.17.0-purple?style=flat-square)](https://github.com/NousResearch/hermes-agent/releases)
 
-> A curated, install-ready directory of skills for [Hermes Agent](https://github.com/NousResearch/hermes-agent) — the self-improving AI agent from [Nous Research](https://nousresearch.com). Covers **85 built-in skills** that ship with Hermes plus **85 community skills, plugins, and tools** vetted for quality.
+> A curated, install-ready directory of skills for [Hermes Agent](https://github.com/NousResearch/hermes-agent) — the self-improving AI agent from [Nous Research](https://nousresearch.com). Covers the **72 built-in skills** and **101-skill optional catalog** that ship with Hermes, plus **85 community skills, plugins, and tools** vetted for quality.
 
 Hermes is the only agent with a real learning loop. It writes its own skills from your workflows, searches its own past conversations, and runs anywhere — a $5 VPS, a GPU cluster, serverless, or your laptop. But the agent is only as powerful as the skills you give it. **This list is the shortcut.** Pick three, install in a minute, and your agent is twice as useful by tonight.
 
@@ -33,7 +33,7 @@ Hermes is the only agent with a real learning loop. It writes its own skills fro
 
 New to Hermes? Don't try to install everything at once. Here's the three-step path from zero to "wait, my agent can do that?":
 
-1. **Get Hermes running** — Follow the [official quickstart](https://hermes-agent.nousresearch.com/docs/). 10 minutes from clone to first conversation. Hermes ships with [85 built-in skills](#-built-in-skills-ships-with-hermes) the day you install it — so even before you add anything from this list, you can already do a lot.
+1. **Get Hermes running** — Follow the [official quickstart](https://hermes-agent.nousresearch.com/docs/). 10 minutes from clone to first conversation. Hermes ships with [72 built-in skills](#-built-in-skills-ships-with-hermes) — plus a [101-skill optional catalog](#-optional-skills-bundled-with-hermes) — the day you install it, so even before you add anything from this list, you can already do a lot.
 
 2. **Install your first skill — `youtube-full`**
    ```bash
@@ -60,6 +60,7 @@ Browse the categories below. Every entry is tagged so you know what you're getti
 - [🚀 Where Do I Start?](#-where-do-i-start)
 - [⭐ Editor's Picks](#-editors-picks)
 - [📦 Built-in Skills (Ships with Hermes)](#-built-in-skills-ships-with-hermes)
+- [🧩 Optional Skills (Bundled with Hermes)](#-optional-skills-bundled-with-hermes)
 - [🌟 Community Skills](#-community-skills)
   - [📺 Media & Transcripts](#-media--transcripts)
   - [🧠 Memory & Knowledge](#-memory--knowledge)
@@ -126,9 +127,9 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 ## 📦 Built-in Skills (Ships with Hermes)
 
-> Hermes is unique — it ships with **85 built-in skills** out of the box, organized into 22 categories. You don't install these. Run `hermes` and they're already there.
+> Hermes ships with **72 built-in skills** out of the box, across 17 categories — loaded and ready the moment you run `hermes`. You don't install these.
 >
-> This section exists so you know what you already have before you start adding more. Most "I need a skill for X" questions are answered here first.
+> This is what you already have before you add anything. Most "I need a skill for X" questions are answered here first — and the [optional catalog](#-optional-skills-bundled-with-hermes) below covers 101 more you can switch on.
 
 <details open>
 <summary><h3 style="display:inline">🍎 Apple (4)</h3></summary>
@@ -148,25 +149,31 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - **opencode** — Delegate coding to OpenCode CLI (features, PR review).
 </details>
 
+<details>
+<summary><h3 style="display:inline">🖱️ Computer Use (1)</h3></summary>
+
+- **computer-use** — Drive the desktop in the background — click, type, scroll, drag — without stealing focus. macOS/Windows/Linux.
+</details>
+
 <details open>
 <summary><h3 style="display:inline">🎨 Creative (16)</h3></summary>
 
 - **architecture-diagram** — Dark-themed SVG architecture/cloud/infra diagrams as HTML.
 - **ascii-art** — ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.
-- **ascii-video** — Convert video/audio to colored ASCII MP4/GIF.
-- **baoyu-comic** — Knowledge comics (知识漫画): educational, biography, tutorial.
-- **baoyu-infographic** — Infographics: 21 layouts × 21 styles (信息图, 可视化).
+- **ascii-video** — ASCII video: convert video/audio to colored ASCII MP4/GIF.
+- **baoyu-infographic** — Infographics: 21 layouts x 21 styles (信息图, 可视化).
 - **claude-design** — Design one-off HTML artifacts (landing, deck, prototype).
-- **creative-ideation** — Generate project ideas via creative constraints.
+- **comfyui** — Generate images, video & audio with ComfyUI — install, manage nodes/models, run workflows via comfy-cli + REST/WS.
 - **design-md** — Author/validate/export Google's DESIGN.md token spec files.
 - **excalidraw** — Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).
 - **humanizer** — Humanize text: strip AI-isms and add real voice.
-- **manim-video** — Manim CE animations: 3Blue1Brown-style math/algo videos.
+- **manim-video** — Manim CE animations: 3Blue1Brown math/algo videos.
 - **p5js** — p5.js sketches: gen art, shaders, interactive, 3D.
-- **pixel-art** — Pixel art with era palettes (NES, Game Boy, PICO-8).
 - **popular-web-designs** — 54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.
+- **pretext** — DOM-free text layout (@chenglou/pretext): ASCII art, kinetic typography, text-as-geometry games as single-file HTML.
+- **sketch** — Throwaway HTML mockups: 2-3 design variants to compare.
 - **songwriting-and-ai-music** — Songwriting craft and Suno AI music prompts.
-- **touchdesigner-mcp** — Control TouchDesigner via twozero MCP — operators, parameters, Python, real-time visuals.
+- **touchdesigner-mcp** — Control TouchDesigner via twozero MCP — operators, parameters, Python, real-time visuals (36 tools).
 </details>
 
 <details>
@@ -176,21 +183,9 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 </details>
 
 <details>
-<summary><h3 style="display:inline">⚙️ DevOps (1)</h3></summary>
-
-- **webhook-subscriptions** — Webhook subscriptions for event-driven agent runs.
-</details>
-
-<details>
 <summary><h3 style="display:inline">🐶 Dogfood (1)</h3></summary>
 
 - **dogfood** — Exploratory QA of web apps: find bugs, evidence, reports.
-</details>
-
-<details>
-<summary><h3 style="display:inline">🌐 Domain Intel (1)</h3></summary>
-
-- **domain-intel** — Passive domain reconnaissance via Python stdlib: subdomain discovery, SSL inspection, WHOIS, DNS, availability checks. No API keys required.
 </details>
 
 <details>
@@ -200,42 +195,22 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 </details>
 
 <details>
-<summary><h3 style="display:inline">🎮 Gaming (2)</h3></summary>
-
-- **minecraft-modpack-server** — Host modded Minecraft servers (CurseForge, Modrinth).
-- **pokemon-player** — Play Pokemon via headless emulator + RAM reads.
-</details>
-
-<details>
 <summary><h3 style="display:inline">🐙 GitHub (6)</h3></summary>
 
-- **codebase-inspection** — Inspect codebases with pygount: LOC, languages, ratios.
+- **codebase-inspection** — Inspect codebases w/ pygount: LOC, languages, ratios.
 - **github-auth** — GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login.
 - **github-code-review** — Review PRs: diffs, inline comments via gh or REST.
-- **github-issues** — Create, triage, label, assign GitHub issues.
+- **github-issues** — Create, triage, label, assign GitHub issues via gh or REST.
 - **github-pr-workflow** — GitHub PR lifecycle: branch, commit, open, CI, merge.
 - **github-repo-management** — Clone/create/fork repos; manage remotes, releases.
 </details>
 
 <details>
-<summary><h3 style="display:inline">☁️ Inference.sh (1)</h3></summary>
-
-- **inference-sh** — Run 150+ AI applications in the cloud (image gen, video, LLMs, search, 3D) with one API key, accessed through the `infsh` CLI.
-</details>
-
-<details>
-<summary><h3 style="display:inline">🔌 MCP (1)</h3></summary>
-
-- **native-mcp** — MCP client: connect servers, register tools (stdio/HTTP).
-</details>
-
-<details>
-<summary><h3 style="display:inline">📺 Media (5)</h3></summary>
+<summary><h3 style="display:inline">📺 Media (4)</h3></summary>
 
 - **gif-search** — Search/download GIFs from Tenor via curl + jq.
 - **heartmula** — HeartMuLa: Suno-like song generation from lyrics + tags.
 - **songsee** — Audio spectrograms/features (mel, chroma, MFCC) via CLI.
-- **spotify** — Spotify: play, search, queue, manage playlists and devices.
 - **youtube-content** — YouTube transcripts to summaries, threads, blogs.
 
 > ⚠️ **Heads up on built-in `youtube-content`:** it scrapes YouTube directly. That means **it won't work on a VPS or any cloud host** — YouTube blocks cloud IPs across all major providers. Even on a personal device it gets rate-limited and stops returning transcripts after a while; YouTube actively prevents automated transcript fetching.
@@ -248,56 +223,45 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 </details>
 
 <details>
-<summary><h3 style="display:inline">🤖 MLOps (13)</h3></summary>
+<summary><h3 style="display:inline">🤖 MLOps (7)</h3></summary>
 
-- **lm-evaluation-harness** — lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).
-- **weights-and-biases** — W&B: log ML experiments, sweeps, model registry, dashboards.
-- **huggingface-hub** — HuggingFace `hf` CLI: search/download/upload models, datasets.
+- **audiocraft-audio-generation** — AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.
+- **evaluating-llms-harness** — lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).
+- **huggingface-hub** — HuggingFace hf CLI: search/download/upload models, datasets.
 - **llama-cpp** — llama.cpp local GGUF inference + HF Hub model discovery.
-- **obliteratus** — OBLITERATUS: abliterate LLM refusals (diff-in-means).
-- **outlines** — Outlines: structured JSON/regex/Pydantic LLM generation.
-- **vllm** — vLLM: high-throughput LLM serving, OpenAI API, quantization.
-- **audiocraft** — AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.
-- **segment-anything** — SAM: zero-shot image segmentation via points, boxes, masks.
-- **dspy** — DSPy: declarative LM programs, auto-optimize prompts, RAG.
-- **axolotl** — Axolotl: YAML LLM fine-tuning (LoRA, DPO, GRPO).
-- **trl-fine-tuning** — TRL: SFT, DPO, PPO, GRPO, reward modeling for LLM RLHF.
-- **unsloth** — Unsloth: 2-5× faster LoRA/QLoRA fine-tuning, less VRAM.
+- **segment-anything-model** — SAM: zero-shot image segmentation via points, boxes, masks.
+- **serving-llms-vllm** — vLLM: high-throughput LLM serving, OpenAI API, quantization.
+- **weights-and-biases** — W&B: log ML experiments, sweeps, model registry, dashboards.
 </details>
 
 <details>
 <summary><h3 style="display:inline">📝 Note-Taking (1)</h3></summary>
 
-- **obsidian** — Read, search, and create notes in the Obsidian vault.
+- **obsidian** — Read, search, create, and edit notes in the Obsidian vault.
 </details>
 
 <details>
-<summary><h3 style="display:inline">📊 Productivity (8)</h3></summary>
+<summary><h3 style="display:inline">📊 Productivity (9)</h3></summary>
 
 - **airtable** — Airtable REST API via curl. Records CRUD, filters, upserts.
 - **google-workspace** — Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.
-- **linear** — Linear: manage issues, projects, teams via GraphQL + curl.
 - **maps** — Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.
 - **nano-pdf** — Edit PDF text/typos/titles via nano-pdf CLI (NL prompts).
-- **notion** — Notion API via curl: pages, databases, blocks, search.
+- **notion** — Notion API + ntn CLI: pages, databases, markdown, Workers.
 - **ocr-and-documents** — Extract text from PDFs/scans (pymupdf, marker-pdf).
+- **petdex** — Install and select animated petdex mascots for Hermes.
 - **powerpoint** — Create, read, edit .pptx decks, slides, notes, templates.
-</details>
-
-<details>
-<summary><h3 style="display:inline">🔓 Red-Teaming (1)</h3></summary>
-
-- **godmode** — Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.
+- **teams-meeting-pipeline** — Run the Teams meeting-summary pipeline — summarize meetings, inspect status, replay jobs, manage Graph subs.
 </details>
 
 <details>
 <summary><h3 style="display:inline">🔬 Research (5)</h3></summary>
 
 - **arxiv** — Search arXiv papers by keyword, author, category, or ID.
-- **blogwatcher** — Monitor blogs and RSS/Atom feeds via blogwatcher-cli.
+- **blogwatcher** — Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.
 - **llm-wiki** — Karpathy's LLM Wiki: build/query interlinked markdown KB.
 - **polymarket** — Query Polymarket: markets, prices, orderbooks, history.
-- **research-paper-writing** — Write ML papers for NeurIPS/ICML/ICLR: design → submit.
+- **research-paper-writing** — Write ML papers for NeurIPS/ICML/ICLR: design→submit.
 </details>
 
 <details>
@@ -313,24 +277,227 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 </details>
 
 <details>
-<summary><h3 style="display:inline">💻 Software Development (10)</h3></summary>
+<summary><h3 style="display:inline">💻 Software Development (9)</h3></summary>
 
-- **debugging-hermes-tui-commands** — Debug Hermes TUI slash commands: Python, gateway, Ink UI.
-- **hermes-agent-skill-authoring** — Author in-repo SKILL.md: frontmatter, validator, structure.
-- **node-inspect-debugger** — Debug Node.js via `--inspect` + Chrome DevTools Protocol CLI.
-- **plan** — Plan mode: write markdown plan to `.hermes/plans/`, no exec.
+- **hermes-agent-skill-authoring** — Author in-repo SKILL.md: frontmatter, validator, structure, and writing-quality principles.
+- **node-inspect-debugger** — Debug Node.js via --inspect + Chrome DevTools Protocol CLI.
+- **plan** — Plan mode: write an actionable markdown plan to .hermes/plans/, no execution.
 - **python-debugpy** — Debug Python: pdb REPL + debugpy remote (DAP).
 - **requesting-code-review** — Pre-commit review: security scan, quality gates, auto-fix.
-- **subagent-driven-development** — Execute plans via `delegate_task` subagents (2-stage review).
+- **simplify-code** — Parallel 3-agent cleanup of recent code changes.
+- **spike** — Throwaway experiments to validate an idea before build.
 - **systematic-debugging** — 4-phase root cause debugging: understand bugs before fixing.
 - **test-driven-development** — TDD: enforce RED-GREEN-REFACTOR, tests before code.
-- **writing-plans** — Write implementation plans: bite-sized tasks, paths, code.
 </details>
 
 <details>
 <summary><h3 style="display:inline">💬 Yuanbao (1)</h3></summary>
 
 - **yuanbao** — Yuanbao (元宝) groups: @mention users, query info/members.
+</details>
+
+---
+
+## 🧩 Optional Skills (Bundled with Hermes)
+
+> Beyond the always-on built-ins, Hermes bundles a **101-skill optional catalog** — shipped in the repo but off by default, so your context stays lean until you need them. Browse [`optional-skills/`](https://github.com/NousResearch/hermes-agent/tree/main/optional-skills) and enable the ones your workflow calls for.
+>
+> This is where the deep, domain-specific power lives: **30 MLOps skills** (training, serving, vector DBs, interpretability), a full **finance-modeling suite** (DCF, LBO, merger, 3-statement), plus OSINT, blockchain, payments, and more.
+
+<details>
+<summary><h3 style="display:inline">🤖 Autonomous AI Agents (5)</h3></summary>
+
+- **antigravity-cli** — Operate the Antigravity CLI (agy): plugins, auth, sandbox.
+- **blackbox** — Delegate coding to Blackbox AI CLI — multi-model agent with a built-in judge that picks the best result.
+- **grok** — Delegate coding to xAI Grok Build CLI (features, PRs).
+- **honcho** — Honcho memory for Hermes — cross-session user modeling, multi-profile isolation, dialectic recall.
+- **openhands** — Delegate coding to OpenHands CLI (model-agnostic, LiteLLM).
+</details>
+
+<details>
+<summary><h3 style="display:inline">⛓️ Blockchain (3)</h3></summary>
+
+- **evm** — Read-only EVM client: wallets, tokens, gas across 8 chains.
+- **hyperliquid** — Hyperliquid market data, account history, trade review.
+- **solana** — Query Solana with USD pricing — balances, token portfolios, txns, NFTs, whale detection. No API key.
+</details>
+
+<details>
+<summary><h3 style="display:inline">💬 Communication (1)</h3></summary>
+
+- **one-three-one-rule** — Structured 1-3-1 decisions — one problem, three options with trade-offs, one recommendation.
+</details>
+
+<details>
+<summary><h3 style="display:inline">🎨 Creative (9)</h3></summary>
+
+- **baoyu-article-illustrator** — Article illustrations: type × style × palette consistency.
+- **baoyu-comic** — Knowledge comics (知识漫画): educational, biography, tutorial.
+- **blender-mcp** — Control Blender from Hermes via socket — create objects, materials, animations, run bpy Python.
+- **concept-diagrams** — Flat, minimal light/dark SVG diagrams as HTML — physics, chemistry, anatomy, floor plans, lifecycles.
+- **creative-ideation** — Generate ideas via named methods from creative practice.
+- **hyperframes** — HTML-as-source video — animated titles, social overlays, captioned talking-heads, shader transitions → MP4/WebM.
+- **kanban-video-orchestrator** — Multi-agent video pipeline on Hermes Kanban — scope brief, build a team, route scenes, monitor to render.
+- **meme-generation** — Generate real meme .png images — pick a template, overlay text with Pillow.
+- **pixel-art** — Pixel art w/ era palettes (NES, Game Boy, PICO-8).
+</details>
+
+<details>
+<summary><h3 style="display:inline">🔧 DevOps (5)</h3></summary>
+
+- **docker-management** — Manage Docker containers, images, volumes, networks & Compose — lifecycle, debug, cleanup, Dockerfile tuning.
+- **hermes-s6-container-supervision** — Modify/debug the s6-overlay supervision tree in the Hermes Docker image — add services, debug gateways.
+- **inference-sh-cli** — Run 150+ AI apps via inference.sh CLI (infsh) — image, video, LLMs, search, 3D.
+- **pinggy-tunnel** — Zero-install localhost tunnels over SSH via Pinggy.
+- **watchers** — Poll RSS, JSON APIs, and GitHub with watermark dedup.
+</details>
+
+<details>
+<summary><h3 style="display:inline">🐶 Dogfood (1)</h3></summary>
+
+- **adversarial-ux-test** — Roleplay a tech-resistant user, browse the app, surface real UX pain points, and file actionable tickets.
+</details>
+
+<details>
+<summary><h3 style="display:inline">✉️ Email (1)</h3></summary>
+
+- **agentmail** — Give the agent its own email inbox via AgentMail — send, receive & manage mail autonomously.
+</details>
+
+<details>
+<summary><h3 style="display:inline">💰 Finance (8)</h3></summary>
+
+- **3-statement-model** — Fully-integrated 3-statement models (IS/BS/CF) in Excel — working capital, D&A, debt schedules.
+- **comps-analysis** — Comparable-company analysis in Excel — operating metrics, valuation multiples, peer benchmarking.
+- **dcf-model** — Institutional DCF models in Excel — FCF build, WACC, terminal value, scenarios, sensitivity tables.
+- **excel-author** — Build auditable Excel workbooks headless (openpyxl) — cell conventions, formulas, named ranges, balance checks.
+- **lbo-model** — LBO models in Excel — sources & uses, debt schedule, cash sweep, exit multiple, IRR/MOIC sensitivity.
+- **merger-model** — Accretion/dilution merger models in Excel — pro-forma P&L, synergies, financing mix, EPS impact.
+- **pptx-author** — Build PowerPoint decks headless (python-pptx) — model-backed, every number traces to a workbook cell.
+- **stocks** — Stock quotes, history, search, compare, crypto via Yahoo.
+</details>
+
+<details>
+<summary><h3 style="display:inline">🎮 Gaming (2)</h3></summary>
+
+- **minecraft-modpack-server** — Host modded Minecraft servers (CurseForge, Modrinth).
+- **pokemon-player** — Play Pokemon via headless emulator + RAM reads.
+</details>
+
+<details>
+<summary><h3 style="display:inline">🏥 Health (2)</h3></summary>
+
+- **fitness-nutrition** — Workout planner + nutrition tracker — 690+ exercises (wger), 380k+ foods (USDA), BMI/TDEE/1RM math.
+- **neuroskill-bci** — Fold real-time BCI state (focus, mood, HRV, sleep) into responses — needs a Muse/OpenBCI + NeuroSkill app.
+</details>
+
+<details>
+<summary><h3 style="display:inline">🔌 MCP (2)</h3></summary>
+
+- **fastmcp** — Build, test, inspect & deploy MCP servers with FastMCP in Python.
+- **mcporter** — List, configure, auth & call MCP servers/tools (HTTP or stdio) via the mcporter CLI.
+</details>
+
+<details>
+<summary><h3 style="display:inline">🔀 Migration (1)</h3></summary>
+
+- **openclaw-migration** — Migrate an OpenClaw setup into Hermes — memories, SOUL.md, allowlists, user skills; reports what didn't port.
+</details>
+
+<details>
+<summary><h3 style="display:inline">🤖 MLOps (30)</h3></summary>
+
+- **axolotl** — Axolotl: YAML LLM fine-tuning (LoRA, DPO, GRPO).
+- **chroma** — Open-source embedding database — vector + full-text search, metadata filters. Great for local RAG.
+- **clip** — OpenAI CLIP — zero-shot image classification, image-text matching, cross-modal retrieval.
+- **distributed-llm-pretraining-torchtitan** — PyTorch-native LLM pretraining with torchtitan — 4D parallelism, Float8, 8→512+ GPUs.
+- **dspy** — DSPy: declarative LM programs, auto-optimize prompts, RAG.
+- **faiss** — Meta FAISS — fast similarity search over billions of vectors, GPU-accelerated, many index types.
+- **fine-tuning-with-trl** — TRL: SFT, DPO, PPO, GRPO, reward modeling for LLM RLHF.
+- **guidance** — Constrain LLM output with regex/grammars — guaranteed valid JSON/XML/code (Microsoft Guidance).
+- **huggingface-accelerate** — Add distributed training to any PyTorch script in ~4 lines — DeepSpeed/FSDP/DDP, mixed precision.
+- **huggingface-tokenizers** — Fast Rust-based tokenizers — BPE/WordPiece/Unigram, custom vocab training, alignment tracking.
+- **instructor** — Structured LLM outputs with Pydantic validation, auto-retries, and streaming (Instructor).
+- **lambda-labs-gpu-cloud** — Reserved & on-demand Lambda GPU cloud — SSH, persistent FS, multi-node clusters for training.
+- **llava** — LLaVA — visual instruction tuning and multi-turn image chat (CLIP + Vicuna/LLaMA).
+- **modal-serverless-gpu** — Modal — serverless GPU cloud for ML workloads, model APIs, and autoscaling batch jobs.
+- **nemo-curator** — GPU-accelerated LLM data curation — fuzzy/semantic dedup, quality filtering, PII/NSFW (NeMo Curator).
+- **obliteratus** — OBLITERATUS: abliterate LLM refusals (diff-in-means).
+- **optimizing-attention-flash** — Flash Attention — 2-4× faster, 10-20× less memory for long-sequence transformers.
+- **outlines** — Outlines: structured JSON/regex/Pydantic LLM generation.
+- **peft-fine-tuning** — Parameter-efficient fine-tuning (LoRA/QLoRA + 25 methods) for 7B-70B models on limited VRAM.
+- **pinecone** — Pinecone — managed, auto-scaling vector DB for production RAG and semantic search.
+- **pytorch-fsdp** — Fully Sharded Data Parallel training with PyTorch FSDP/FSDP2 — sharding, mixed precision, CPU offload.
+- **pytorch-lightning** — PyTorch Lightning — clean training loops, automatic DDP/FSDP/DeepSpeed, callbacks, minimal boilerplate.
+- **qdrant-vector-search** — Qdrant — high-performance vector search for RAG, hybrid search with filtering (Rust).
+- **simpo-training** — SimPO — reference-free preference optimization, simpler & faster than DPO.
+- **slime-rl-training** — LLM RL post-training with slime (Megatron + SGLang) — custom data-gen, GLM models at scale.
+- **sparse-autoencoder-training** — Train & analyze Sparse Autoencoders (SAELens) — find interpretable features in model activations.
+- **stable-diffusion-image-generation** — Text-to-image with Stable Diffusion via Diffusers — img2img, inpainting, custom pipelines.
+- **tensorrt-llm** — Optimize LLM inference with NVIDIA TensorRT-LLM — FP8/INT4, in-flight batching, multi-GPU.
+- **unsloth** — Unsloth: 2-5x faster LoRA/QLoRA fine-tuning, less VRAM.
+- **whisper** — OpenAI Whisper — robust multilingual speech-to-text and translation (99 languages).
+</details>
+
+<details>
+<summary><h3 style="display:inline">💳 Payments (3)</h3></summary>
+
+- **mpp-agent** — Pay HTTP 402 APIs via Machine Payments Protocol (MPP).
+- **stripe-link-cli** — Agent payments via Stripe Link — cards, SPT, approvals.
+- **stripe-projects** — Provision SaaS services + sync creds via Stripe Projects.
+</details>
+
+<details>
+<summary><h3 style="display:inline">📊 Productivity (7)</h3></summary>
+
+- **canvas** — Canvas LMS — fetch enrolled courses and assignments via API token.
+- **here.now** — Publish static sites to {slug}.here.now and store private files for agent-to-agent handoff.
+- **memento-flashcards** — Spaced-repetition flashcards — build decks, chat-graded answers, quizzes from YouTube, CSV export.
+- **shop** — Shop catalog search, checkout, order tracking, returns.
+- **shopify** — Shopify Admin & Storefront GraphQL via curl — products, orders, customers, inventory, metafields.
+- **siyuan** — SiYuan Note API — search, read, create & manage blocks/docs in a self-hosted KB via curl.
+- **telephony** — Give Hermes a phone — provision a Twilio number, SMS/MMS, direct + AI-driven calls (Bland/Vapi).
+</details>
+
+<details>
+<summary><h3 style="display:inline">🔬 Research (11)</h3></summary>
+
+- **bioinformatics** — Gateway to 400+ bioinformatics skills — genomics, single-cell, variant calling, structural biology.
+- **darwinian-evolver** — Evolve prompts/regex/SQL/code with Imbue's evolution loop.
+- **domain-intel** — Passive domain recon (Python stdlib) — subdomains, SSL, WHOIS, DNS, availability. No API keys.
+- **drug-discovery** — Drug-discovery assistant — ChEMBL search, drug-likeness, DDIs (OpenFDA), ADMET, lead optimization.
+- **duckduckgo-search** — Free DuckDuckGo web search — text, news, images, video. No API key (ddgs CLI).
+- **gitnexus-explorer** — Index a codebase with GitNexus and serve an interactive knowledge graph over a web UI.
+- **osint-investigation** — Public-records OSINT — EDGAR, USAspending, OFAC, ICIJ, ACRIS, court records; entity resolution.
+- **parallel-cli** — Parallel CLI — agent-native web search, extraction, deep research, enrichment, monitoring.
+- **qmd** — Local knowledge-base search (qmd) — BM25 + vector + LLM rerank over notes, docs, transcripts.
+- **scrapling** — Web scraping with Scrapling — HTTP fetch, stealth browser, Cloudflare bypass, spider crawling.
+- **searxng-search** — Free meta-search via SearXNG — aggregates 70+ engines, self-host or public. No API key.
+</details>
+
+<details>
+<summary><h3 style="display:inline">🔐 Security (5)</h3></summary>
+
+- **1password** — Set up & use the 1Password CLI (op) — sign in, read and inject secrets into commands.
+- **godmode** — Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.
+- **oss-forensics** — GitHub supply-chain forensics — deleted-commit recovery, force-push detection, IOC extraction, reporting.
+- **sherlock** — Hunt usernames across 400+ social networks (Sherlock OSINT).
+- **web-pentest** — Authorized web pentesting — recon, proof-based exploitation, reporting, with scope/authorization guardrails.
+</details>
+
+<details>
+<summary><h3 style="display:inline">💻 Software Development (3)</h3></summary>
+
+- **code-wiki** — Generate wiki docs + Mermaid diagrams for any codebase.
+- **rest-graphql-debug** — Debug REST/GraphQL APIs: status codes, auth, schemas, repro.
+- **subagent-driven-development** — Execute plans via delegate_task subagents (2-stage review).
+</details>
+
+<details>
+<summary><h3 style="display:inline">🌐 Web Development (2)</h3></summary>
+
+- **cloudflare-temporary-deploy** — Deploy a Worker live, no account, via wrangler --temporary.
+- **page-agent** — Embed alibaba/page-agent — a JS in-page GUI agent that lets your site's users drive the UI in natural language.
 </details>
 
 ---
