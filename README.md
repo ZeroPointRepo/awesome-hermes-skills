@@ -7,7 +7,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Skills Count](https://img.shields.io/badge/skills-170-blue?style=flat-square)](#table-of-contents)
 [![Last Update](https://img.shields.io/github/last-commit/ZeroPointRepo/awesome-hermes-skills?label=Last%20update&style=flat-square)](https://github.com/ZeroPointRepo/awesome-hermes-skills/pulls?q=is%3Apr+is%3Amerged+sort%3Aupdated-desc)
-[![Hermes](https://img.shields.io/badge/Hermes-v0.10.0-purple?style=flat-square)](https://github.com/NousResearch/hermes-agent/releases)
+[![Hermes](https://img.shields.io/badge/Hermes-v0.17.0-purple?style=flat-square)](https://github.com/NousResearch/hermes-agent/releases)
 
 > A curated, install-ready directory of skills for [Hermes Agent](https://github.com/NousResearch/hermes-agent) — the self-improving AI agent from [Nous Research](https://nousresearch.com). Covers **85 built-in skills** that ship with Hermes plus **85 community skills, plugins, and tools** vetted for quality.
 
