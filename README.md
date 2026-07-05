@@ -590,6 +590,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 ### 🎨 Creative & Media Generation
 
 - [black-forest-labs/skills](https://github.com/black-forest-labs/skills) by [Black Forest Labs](https://github.com/black-forest-labs) — Official FLUX model skills for image generation. First-party skills from the FLUX creators. **[production]**
+- [kwanmxiii-bit/Loras-training-tap-skill](https://github.com/kwanmxiii-bit/Loras-training-tap-skill) by [kwanmxiii-bit](https://github.com/kwanmxiii-bit) — LoRA Concept Removal Tagging: tag training images and remove target concepts so LoRA weights absorb them. Backed by caption-dropout research (Pascual 2026). Install: `hermes skills install kwanmxiii-bit/Loras-training-tap-skill/skills/lora-concept-removal-tagging`. **[production]**
 - [hermes-weather-plugin](https://github.com/FahrenheitResearch/hermes-weather-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) — Professional-grade weather plugin with NWS model imagery, NEXRAD radar, meteorological calculations. **[beta]**
 - [hermes-wxtrain-plugin](https://github.com/FahrenheitResearch/hermes-wxtrain-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) — ML pipeline for building training datasets from HRRR/GFS/ERA5 weather models. **[experimental]**
 - [typeui-hermes](https://www.typeui.sh/docs/guides/hermes) by [Bergside](https://github.com/bergside/typeui) — Use design skills to generate better UI with Hermes. **[production]**
