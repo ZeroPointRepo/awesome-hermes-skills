@@ -661,6 +661,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - [hermeshub](https://github.com/amanning3390/hermeshub) by [amanning3390](https://github.com/amanning3390) — Browse, share, and install community Hermes skills. **[beta]**
 - [skilldock.io](https://github.com/chigwell/skilldock.io) by [chigwell](https://github.com/chigwell) — Cross-platform skills marketplace for OpenClaw, Claude Code, Hermes. **[production]**
 - **[Skills Hub](https://agentskills.io)** — The open standard for agent skills. Compatible across Hermes, Claude Code, Cursor, Codex.
+- **[CreatorSkills](https://creatorskills.co)** — Marketplace of 30+ downloadable AI skills for content creators. Covers YouTube scripting, sponsorship analysis, content repurposing, and audience growth.
 
 ---
 
