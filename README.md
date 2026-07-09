@@ -9,7 +9,7 @@
 [![Last Update](https://img.shields.io/github/last-commit/ZeroPointRepo/awesome-hermes-skills?label=Last%20update&style=flat-square)](https://github.com/ZeroPointRepo/awesome-hermes-skills/pulls?q=is%3Apr+is%3Amerged+sort%3Aupdated-desc)
 [![Hermes](https://img.shields.io/badge/Hermes-v0.17.0-purple?style=flat-square)](https://github.com/NousResearch/hermes-agent/releases)
 
-> A curated, install-ready directory of skills for [Hermes Agent](https://github.com/NousResearch/hermes-agent) — the self-improving AI agent from [Nous Research](https://nousresearch.com). Covers the **72 built-in skills** and **101-skill optional catalog** that ship with Hermes, plus **85 community skills, plugins, and tools** vetted for quality.
+> A curated, install-ready directory of skills for [Hermes Agent](https://github.com/NousResearch/hermes-agent) — the self-improving AI agent from [Nous Research](https://nousresearch.com). Covers the **72 built-in skills** and **101-skill optional catalog** that ship with Hermes, plus **86 community skills, plugins, and tools** vetted for quality.
 
 Hermes is the only agent with a real learning loop. It writes its own skills from your workflows, searches its own past conversations, and runs anywhere — a $5 VPS, a GPU cluster, serverless, or your laptop. But the agent is only as powerful as the skills you give it. **This list is the shortcut.** Pick three, install in a minute, and your agent is twice as useful by tonight.
 
@@ -574,6 +574,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 ### ✉️ Communication & Social
 
 - [clawsocial-hermes-plugin](https://github.com/mrpeter2025/clawsocial-hermes-plugin) by [mrpeter2025](https://github.com/mrpeter2025) — Social discovery network. Semantic interest matching, real-time WebSocket messaging, shareable profile cards. Bilingual EN+CN. **[beta]**
+- [hermes-tag](https://github.com/DanielLi202/hermes-tag) by [DanielLi202](https://github.com/DanielLi202) — Claude-Tag-style context-selection layer for Feishu/Lark and Slack group chats (DingTalk mention-only). @-only replies from bounded per-chat evidence instead of full-history RAG; per-chat memory isolation, redacted admin audit. `hermes plugins install DanielLi202/hermes-tag`. **[beta]**
 - [hermes-tweet](https://github.com/Xquik-dev/hermes-tweet) by [Xquik](https://github.com/Xquik-dev) — Native Hermes Agent X/Twitter plugin for tweet search, reply reading, user lookup, monitoring, posting, replies, DMs, and approval-gated X actions through Xquik. **[beta]**
 - [microsoft-workspace-skill](https://github.com/Andrew-Girgis/microsoft-workspace-skill) by [Andrew-Girgis](https://github.com/Andrew-Girgis) — Full Outlook/Hotmail/Microsoft 365 integration via Graph API. Email, calendar, contacts, free/busy. OAuth2 auto-refresh. Preview-before-send pattern. **[beta]**
 - [tweetclaw](https://github.com/Xquik-dev/tweetclaw) by [Xquik](https://github.com/Xquik-dev) — OpenClaw plugin and agent skill to scrape tweets, search tweet replies, export followers, look up users, run media, monitors, webhooks, giveaway draws, and approval-gated posts through Xquik. **[beta]**
