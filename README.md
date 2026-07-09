@@ -631,6 +631,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 - [resemble-ai/detect-skill](https://github.com/resemble-ai/detect-skill) by [Resemble AI](https://github.com/resemble-ai) — Deepfake detection: AI-generated audio/image/video/text, source tracing, watermarking, speaker ID. **[beta]**
 - [hermes-agent-camel](https://github.com/nativ3ai/hermes-agent-camel) by [nativ3ai](https://github.com/nativ3ai) — Hermes with integrated CaMeL trust boundaries. Formal trust verification for safety-critical deployments. **[beta]**
+- [Strategic-Automation/violin](https://github.com/Strategic-Automation/violin) by [Strategic-Automation](https://github.com/Strategic-Automation) — Supervised, agentic Hermes **pentest profile**: 31 skill-based playbooks (OWASP/API/LLM Top 10) with interactive scoping and approval gates for authorised recon, exploit validation, and reporting. Install with `hermes profile install`; no extra API keys. **[production]**
 
 ### 🎯 Domain & Novelty
 
@@ -652,6 +653,14 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - [hermes-ui](https://github.com/pyrate-llama/hermes-ui) by [pyrate-llama](https://github.com/pyrate-llama) — Single-file glassmorphic web UI with SSE streaming, tool call visualization, PDF export, session/skill/memory viewers. **[beta]**
 - [hermes-webui](https://github.com/sanchomuzax/hermes-webui) by [sanchomuzax](https://github.com/sanchomuzax) — Lightweight process monitoring and config dashboard. Simpler ops alternative. **[beta]**
 - [orahermes-agent](https://github.com/jasperan/orahermes-agent) by [jasperan](https://github.com/jasperan) — Oracle AI Agent Harness — OCI GenAI and Oracle 26ai integration. **[experimental]**
+
+---
+
+## 🧠 Agent Profiles
+
+> Installable Hermes **profiles** — curated `USER.md`/`MEMORY.md` + skills/plugins bundles that reconfigure Hermes for a specific role or workflow. Install with `hermes profile install <repo-url>`.
+
+- [Strategic-Automation/violin](https://github.com/Strategic-Automation/violin) by [Strategic-Automation](https://github.com/Strategic-Automation) — Supervised, agentic **pentest profile**. 31 skill-based playbooks (OWASP Top 10, API Top 10, LLM Top 10) with interactive scoping, scope validation, and approval gates so every target-touching command is confirmed before execution. Hermes-native (built-in toolsets only, optional guard plugin), no extra API keys. **[production]**
 
 ---
 
