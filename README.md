@@ -606,6 +606,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 - [hermes-payguard](https://github.com/nativ3ai/hermes-payguard) by [nativ3ai](https://github.com/nativ3ai) — Safe USDC and x402 payment plugin with spending limits and approval flows. **[experimental]**
 - [AgentCash](https://github.com/Merit-Systems/agentcash-skills) by [Merit-Systems](https://github.com/Merit-Systems) — 300+ premium APIs + wallet for paying via x402 or MPP. Free USDC for trying out. **[beta]**
+- [internet-court-skill](https://github.com/internet-court/internet-court-skill) by [Internet Court Consortium](https://github.com/internet-court) — Trust layer for agent-to-agent commerce: mandates, payments, escrow, dispute resolution. **[beta]**
 - [ripley-xmr-gateway](https://github.com/KYC-rip/ripley-xmr-gateway) by [KYC-rip](https://github.com/KYC-rip) — Monero (XMR) blockchain gateway. Private cryptocurrency transactions from agent workflows. **[experimental]**
 - [hermes-blockchain-oracle](https://github.com/gizdusum/hermes-blockchain-oracle) by [gizdusum](https://github.com/gizdusum) — Solana blockchain intelligence MCP server. On-chain analytics and wallet data. **[experimental]**
 - [chainlink-agent-skills](https://github.com/smartcontractkit/chainlink-agent-skills) by [Chainlink](https://github.com/smartcontractkit) — Official Chainlink skills. Oracle data, CCIP, smart contract interaction. **[production]**
