@@ -598,6 +598,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 - [hermes-agent-docker](https://github.com/xmbshwll/hermes-agent-docker) by [xmbshwll](https://github.com/xmbshwll) — Minimal Docker sandbox image for Hermes. Pull, run, done. **[beta]**
 - [portainer-stack-hermes](https://github.com/ellickjohnson/portainer-stack-hermes) by [ellickjohnson](https://github.com/ellickjohnson) — Docker Compose + Portainer + ttyd web terminal. Browser-accessible Hermes. **[experimental]**
+- [nika](https://github.com/supernovae-st/nika) by [supernovae-st](https://github.com/supernovae-st) — Deterministic workflow runner Hermes can delegate to. Repeatable AI jobs become reviewable .nika.yaml files, checked before a token is spent (plan, cost floor, secret flows, permits) and tamper-evident after via a hash-chained trace. Install: brew install supernovae-st/tap/nika. **[beta]**
 - [nix-hermes-agent](https://github.com/0xrsydn/nix-hermes-agent) by [0xrsydn](https://github.com/0xrsydn) — Nix package and NixOS module. Fully reproducible deployments via Nix flakes. **[beta]**
 - [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) by [0xNyk](https://github.com/0xNyk) — Community migration tool from OpenClaw to Hermes. **[beta]**
 - [evey-setup](https://github.com/42-evey/evey-setup) by [42-evey](https://github.com/42-evey) — One-command setup for full hermes-agent stack with free models and 29 plugins. **[beta]**
