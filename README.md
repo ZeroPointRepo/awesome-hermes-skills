@@ -550,6 +550,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 - [hermes-skill-factory](https://github.com/Romanescu11/hermes-skill-factory) by [Romanescu11](https://github.com/Romanescu11) — Meta-skill that auto-generates reusable skills from your workflows. Point it at a repeated task and it creates a skill for it. **[beta]**
 - [bmad-module-skill-forge](https://github.com/armelhbobdad/bmad-module-skill-forge) by [armelhbobdad](https://github.com/armelhbobdad) — Transforms repos and docs into agentskills.io-compliant skills. **[beta]**
+- [agent-skills/claude-plugin-converter](https://github.com/moonlight-lupin/agent-skills/tree/main/agent-ops/claude-plugin-converter) by [moonlight-lupin](https://github.com/moonlight-lupin) — Two-phase converter: analyze Claude Code plugins and generate installable Hermes plugins. **[beta]**
 - [litprog-skill](https://github.com/tlehman/litprog-skill) by [tlehman](https://github.com/tlehman) — Literate programming skill across Claude Code, OpenCode, Hermes. Weaves code and prose into documented, executable notebooks. **[beta]**
 - [execplan-skill](https://github.com/tiann/execplan-skill) by [tiann](https://github.com/tiann) — Long-running task execution with progress tracking, checkpoints, failure recovery. **[beta]**
 - [maestro](https://github.com/ReinaMacCredy/maestro) by [ReinaMacCredy](https://github.com/ReinaMacCredy) — Skill orchestration with Conductor planning + Beads tracking. Multi-step skills as observable pipelines. **[beta]**
