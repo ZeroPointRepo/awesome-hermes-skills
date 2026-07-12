@@ -526,6 +526,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - [hermes-web-search-plus](https://github.com/robbyczgw-cla/hermes-web-search-plus) by [robbyczgw-cla](https://github.com/robbyczgw-cla) — Multi-provider web search with intelligent routing across Serper, Tavily, Exa, and more. Replaces built-in search with better quality + source diversity. **[beta]**
 - [Not Human Search](https://github.com/unitedideas/nothumansearch-mcp) by [unitedideas](https://github.com/unitedideas) — MCP server for discovering other MCP servers. Indexes 8,600+ agent-friendly sites with agentic scoring. Lets Hermes find new tools on its own. **[production]**
 - [consensus-mcp-hermes](https://github.com/ahmdngi/consensus-mcp-hermes) by [ahmdngi](https://github.com/ahmdngi) — Connect 200M+ peer-reviewed research papers to Hermes via the Consensus MCP server. OAuth setup guide for headless environments with mcp-remote bridge. **[beta]**
+- [agent-skills/model-compare](https://github.com/moonlight-lupin/agent-skills/tree/main/mlops/model-compare) by [moonlight-lupin](https://github.com/moonlight-lupin) — Blind multi-model A/B comparison with tool calling, coding, and review modes. Token efficiency metrics. **[production]**
 
 ### 💻 Dev & Skill Authoring
 
