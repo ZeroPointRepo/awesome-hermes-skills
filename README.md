@@ -604,7 +604,9 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 ### 💰 Finance, Payments & Crypto
 
-- [hermes-payguard](https://github.com/nativ3ai/hermes-payguard) by [nativ3ai](https://github.com/nativ3ai) — Safe USDC and x402 payment plugin with spending limits and approval flows. **[experimental]**
+- [hermes-payguard](https://github.com/nativ3ai/hermes-payguard)
+- [gentech-agent-kit](https://github.com/ProtoJay4789/genTech-agent-kit) by [ProtoJay4789](https://github.com/ProtoJay4789) — 16 paid x402 endpoints across 9 service categories (games, movies, DeFi, NFTs, wallet analytics, shipping, agent discovery, airdrop checker, token security). Multichain: Base, Solana, Avalanche, Polygon, OKX, Algorand. Full x402 v2 compliance verified. **[beta]**
+ by [nativ3ai](https://github.com/nativ3ai) — Safe USDC and x402 payment plugin with spending limits and approval flows. **[experimental]**
 - [AgentCash](https://github.com/Merit-Systems/agentcash-skills) by [Merit-Systems](https://github.com/Merit-Systems) — 300+ premium APIs + wallet for paying via x402 or MPP. Free USDC for trying out. **[beta]**
 - [ripley-xmr-gateway](https://github.com/KYC-rip/ripley-xmr-gateway) by [KYC-rip](https://github.com/KYC-rip) — Monero (XMR) blockchain gateway. Private cryptocurrency transactions from agent workflows. **[experimental]**
 - [hermes-blockchain-oracle](https://github.com/gizdusum/hermes-blockchain-oracle) by [gizdusum](https://github.com/gizdusum) — Solana blockchain intelligence MCP server. On-chain analytics and wallet data. **[experimental]**
