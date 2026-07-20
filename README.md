@@ -592,6 +592,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - [black-forest-labs/skills](https://github.com/black-forest-labs/skills) by [Black Forest Labs](https://github.com/black-forest-labs) — Official FLUX model skills for image generation. First-party skills from the FLUX creators. **[production]**
 - [hermes-weather-plugin](https://github.com/FahrenheitResearch/hermes-weather-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) — Professional-grade weather plugin with NWS model imagery, NEXRAD radar, meteorological calculations. **[beta]**
 - [hermes-wxtrain-plugin](https://github.com/FahrenheitResearch/hermes-wxtrain-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) — ML pipeline for building training datasets from HRRR/GFS/ERA5 weather models. **[experimental]**
+- [runapi-ai/cli-skill](https://github.com/runapi-ai/cli-skill) by [RunAPI](https://github.com/runapi-ai) — Cross-agent skill for running AI image, video, music/audio, and model API jobs from CLI-capable agents. **[beta]**
 - [typeui-hermes](https://www.typeui.sh/docs/guides/hermes) by [Bergside](https://github.com/bergside/typeui) — Use design skills to generate better UI with Hermes. **[production]**
 
 ### 🔧 DevOps & Deployment
