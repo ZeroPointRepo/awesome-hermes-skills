@@ -564,12 +564,15 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - [hermes-dojo](https://github.com/Yonkoo11/hermes-dojo) by [Yonkoo11](https://github.com/Yonkoo11) — Self-improvement system that monitors agent performance, identifies weak skills, iterates automatically. **[beta]**
 - [hermes-skill-distillation](https://github.com/beardthelion/hermes-skill-distillation) by [beardthelion](https://github.com/beardthelion) — Generates agentic training trajectories from real-world tasks for fine-tuning data. **[beta]**
 - [rtk-hermes](https://github.com/ogallotti/rtk-hermes) by [ogallotti](https://github.com/ogallotti) — Compresses terminal output via RTK before it reaches LLM context. 60-90% token reduction. Zero config. **[beta]**
+- [hermes-provider-routing](https://github.com/hanyijack-cloud/hermes-provider-routing) by [hanyijack](https://github.com/hanyijack) — Configure Hermes multi-provider smart failover: Groq base URL must include `/openai/v1`, Cerebras only `gpt-oss-120b` exists, 404 ≠ invalid key. End-to-end verified config + API validation ritual. **[production]**
 
 ### 🌐 Browser & Web
 
 - [hermes-plugin-chrome-profiles](https://github.com/anpicasso/hermes-plugin-chrome-profiles) by [anpicasso](https://github.com/anpicasso) — Switch browser tools between Chrome profiles via CDP. Multi-account testing. **[experimental]**
 - [hermes-cloudflare](https://github.com/raulvidis/hermes-cloudflare) by [raulvidis](https://github.com/raulvidis) — Cloudflare browser rendering plugin. Headless browsing through Cloudflare's infrastructure. **[experimental]**
 - [vessel-browser](https://github.com/unmodeled-tyler/vessel-browser) by [unmodeled-tyler](https://github.com/unmodeled-tyler) — AI-native Linux browser with MCP control and autonomous browsing. Built for agent use, not a headless wrapper. **[experimental]**
+- [browser-read-funnel](https://github.com/hanyijack-cloud/browser-read-funnel) by [hanyijack](https://github.com/hanyijack) — 4-layer web content funnel: Firecrawl → Scrapling → Crawl4AI (Shadow DOM force-open) → screenshot OCR. Solves all content-reading blind spots: Shadow DOM, Canvas/WebGL, lazy-load, anti-scraping. **[beta]**
+- [hermes-backup-restore](https://github.com/hanyijack-cloud/hermes-backup-restore) by [hanyijack](https://github.com/hanyijack) — Safe Hermes backup/restore with 9 data-destroying pitfalls documented: empty .env placeholder, 0-byte state.db, naive folder-copy wiping live data. Complete safe-restore workflow. **[production]**
 
 ### ✉️ Communication & Social
 
