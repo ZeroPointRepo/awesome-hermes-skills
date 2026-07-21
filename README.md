@@ -593,6 +593,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - [hermes-weather-plugin](https://github.com/FahrenheitResearch/hermes-weather-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) — Professional-grade weather plugin with NWS model imagery, NEXRAD radar, meteorological calculations. **[beta]**
 - [hermes-wxtrain-plugin](https://github.com/FahrenheitResearch/hermes-wxtrain-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) — ML pipeline for building training datasets from HRRR/GFS/ERA5 weather models. **[experimental]**
 - [typeui-hermes](https://www.typeui.sh/docs/guides/hermes) by [Bergside](https://github.com/bergside/typeui) — Use design skills to generate better UI with Hermes. **[production]**
+- [uizze](https://uizze.com) by [Aislon](https://github.com/aislon) — Stop UI slop with a free finish-gate skill and 800,000+ real web and iOS product screens for Codex, Claude Code, Cursor, and Hermes. **[production]**
 
 ### 🔧 DevOps & Deployment
 
