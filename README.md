@@ -611,6 +611,7 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - [chainlink-agent-skills](https://github.com/smartcontractkit/chainlink-agent-skills) by [Chainlink](https://github.com/smartcontractkit) — Official Chainlink skills. Oracle data, CCIP, smart contract interaction. **[production]**
 - [mercury](https://github.com/hxsteric/mercury) by [hxsteric](https://github.com/hxsteric) — Multi-chain blockchain cash flow analyzer with WebGL dashboard. On-chain forensics. **[beta]**
 - [erpclaw](https://github.com/avansaber/erpclaw) by [AvanSaber](https://github.com/avansaber) — AI-native open-source ERP and double-entry accounting you self-host and run in plain English. Invoicing, inventory, general ledger, payroll, multi-company books. **[beta]**
+- [barker-stablecoin-skills](https://github.com/YBSbarker/barker-stablecoin-skills) by [Barker](https://barker.money) — Real-time stablecoin yield suite: live APY index, risk signals, AI yield advisor. Remote MCP endpoint + x402 pay-per-call, discovery free. **[production]**
 
 ### 🤖 Multi-Agent & Swarms
 
