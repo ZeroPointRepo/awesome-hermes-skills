@@ -1,0 +1,66 @@
+name: 🔗 Report a broken or stale entry
+description: A link is dead, a repo went private/empty, or an entry is no longer accurate
+title: "[broken] "
+labels: ["broken-entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A weekly job sweeps for dead links, but it can't spot a repo that went empty,
+        got abandoned, or now does something different. Those we need you for.
+
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry?
+      description: The name as it appears in the README.
+      placeholder: some-skill
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: The URL in the README
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What's wrong?
+      options:
+        - Link is dead (404 / repo deleted)
+        - Repo is private or now requires auth
+        - Repo is empty or has no real SKILL.md / implementation
+        - Abandoned — no commits for a long time
+        - Description no longer matches what it does
+        - Wrong maturity tag
+        - Moved to a new URL
+        - Something else
+    validations:
+      required: true
+
+  - type: input
+    id: newurl
+    attributes:
+      label: New URL, if it moved
+      placeholder: https://github.com/neworg/repo
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Anything that helps us verify it quickly.
+
+  - type: checkboxes
+    id: security
+    attributes:
+      label: Is this a security concern?
+      description: |
+        This list is curated, not audited. If you've found a skill doing something
+        genuinely malicious, tick this and we'll pull it while we look.
+      options:
+        - label: Yes — I think this entry is unsafe, not just broken
+          required: false

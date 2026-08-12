@@ -1,0 +1,136 @@
+name: Validate entry format
+
+# Checks the format of lines added to README.md and leaves one friendly comment
+# saying what to fix. It NEVER closes, labels-as-rejected, or blocks a PR —
+# a maintainer edit is cheaper than a bounced contributor.
+#
+# Uses pull_request_target so it can comment on fork PRs, and deliberately does
+# NOT check out the PR head: it only reads the diff through the API, so no
+# untrusted code ever runs here.
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "README.md"
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch the diff
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh api "repos/$REPO/pulls/$PR" \
+            -H "Accept: application/vnd.github.v3.diff" > pr.diff
+          wc -l pr.diff
+
+      - name: Check added entries
+        id: check
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import re, os, json
+
+          ENTRY = re.compile(
+              r"^- \[[^\]]+\]\(\S+\) by \[[^\]]+\]\(\S+\) — .+ \*\*\[(production|beta|experimental|built-in)\]\*\*$"
+          )
+
+          added = []
+          in_readme = False
+          for line in open("pr.diff", encoding="utf-8", errors="replace"):
+              line = line.rstrip("\n")
+              if line.startswith("diff --git"):
+                  in_readme = "README.md" in line
+                  continue
+              if not in_readme or not line.startswith("+") or line.startswith("+++"):
+                  continue
+              body = line[1:]
+              if body.lstrip().startswith("- ["):
+                  added.append(body)
+
+          notes = []
+          for e in added:
+              if ENTRY.match(e):
+                  continue
+              problems = []
+              if not re.match(r"^- \[[^\]]+\]\(\S+\)", e):
+                  problems.append("the name should be a markdown link: `- [name](repo-url)`")
+              if " by [" not in e:
+                  problems.append("missing the ` by [author](author-url)` part")
+              if " — " not in e:
+                  problems.append("use an em dash `—` with a space each side before the description")
+              if not re.search(r"\*\*\[(production|beta|experimental|built-in)\]\*\*$", e):
+                  problems.append("end with a tag: `**[production]**`, `**[beta]**` or `**[experimental]**`")
+              if not problems:
+                  problems.append("doesn't match the entry format")
+              short = e if len(e) <= 120 else e[:117] + "..."
+              notes.append("- `" + short + "`\n  - " + "\n  - ".join(problems))
+
+          long_desc = []
+          for e in added:
+              m = re.search(r"— (.+?) \*\*\[", e)
+              if m and len(m.group(1)) > 320:
+                  long_desc.append(e.split("]")[0].lstrip("- ["))
+
+          out = []
+          if notes:
+              out.append("A couple of formatting nits on the lines this PR adds:\n")
+              out.extend(notes)
+          if long_desc:
+              out.append(
+                  "\nThese descriptions are long enough that they'll get trimmed to one factual line on merge — "
+                  "no action needed, just so it isn't a surprise: "
+                  + ", ".join("`%s`" % n for n in long_desc)
+              )
+
+          body = ""
+          if out:
+              body = (
+                  "👋 Thanks for the PR — this is an automated format check, not a gate. "
+                  "**Nothing here blocks the merge**; if you'd rather not touch it, a maintainer will fix it "
+                  "when the PR is reviewed.\n\n"
+                  + "\n".join(out)
+                  + "\n\nFor reference, the format is:\n\n```\n- [name](repo-url) by [author](author-url) — "
+                    "one-line description. **[tag]**\n```\n\nFull rules: [CONTRIBUTING.md]"
+                    "(https://github.com/%s/blob/main/CONTRIBUTING.md)" % os.environ.get("REPO", "")
+              )
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as fh:
+              fh.write("entries=%d\n" % len(added))
+              fh.write("has_notes=%s\n" % ("true" if body else "false"))
+          with open("comment.md", "w", encoding="utf-8") as fh:
+              fh.write(body)
+          print("added entries: %d, notes: %s" % (len(added), bool(body)))
+          PY
+
+      # Reuse one comment instead of piling up a new one on every push.
+      - name: Find our previous comment
+        if: steps.check.outputs.has_notes == 'true'
+        id: previous
+        uses: peter-evans/find-comment@v3
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: "automated format check"
+
+      - name: Comment
+        if: steps.check.outputs.has_notes == 'true'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          comment-id: ${{ steps.previous.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body-path: comment.md
+          edit-mode: replace
+
+      - name: All good
+        if: steps.check.outputs.has_notes != 'true'
+        run: echo "Entry format looks fine (${{ steps.check.outputs.entries }} entries checked)."

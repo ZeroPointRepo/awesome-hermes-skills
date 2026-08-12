@@ -1,0 +1,106 @@
+name: 📥 Suggest an entry
+description: Suggest a skill, plugin, profile, memory provider, surface or tool for the list
+title: "[add] "
+labels: ["entry-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Opening a PR is faster — see [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) for the one-line format.
+        Use this issue if you'd rather we added it, or you're suggesting someone else's work.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: What the skill/plugin/tool is called.
+      placeholder: lintlang
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Repository or project URL
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author profile URL
+      placeholder: https://github.com/owner
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description
+      description: What it does and why someone would install it. One line, no marketing.
+      placeholder: Zero-LLM static analysis for agent configs, tool descriptions and system prompts.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: section
+    attributes:
+      label: Which section?
+      description: Not sure? Pick the closest — we'll move it if needed.
+      options:
+        - Community Skills — Media & Transcripts
+        - Community Skills — Search & Research
+        - Community Skills — Marketing & Growth
+        - Community Skills — Dev & Skill Authoring
+        - Community Skills — Browser & Web
+        - Community Skills — Communication & Social
+        - Community Skills — Productivity & Tasks
+        - Community Skills — Creative & Media Generation
+        - Community Skills — DevOps & Deployment
+        - Community Skills — Finance, Payments & Crypto
+        - Community Skills — Multi-Agent & Swarms
+        - Community Skills — Smart Home, IoT & Embodied
+        - Community Skills — Security & Detection
+        - Community Skills — Domain & Novelty
+        - Plugins
+        - Agent Profiles
+        - Memory Providers
+        - Surfaces & Integrations
+        - Tools, Workspaces & GUIs
+        - Skill Registries & Discovery
+        - Guides & Documentation
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tag
+    attributes:
+      label: Maturity tag
+      options:
+        - production — stable, documented, actively maintained
+        - beta — works, still moving
+        - experimental — proof of concept
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Quick checks
+      options:
+        - label: The link resolves and the repo is public
+          required: true
+        - label: There's a real SKILL.md / plugin.json / implementation behind it, plus a README
+          required: true
+        - label: It has a commit in the last six months (or I've explained below why not)
+          required: false
+        - label: I searched the README and it isn't already listed
+          required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Are you the author? That's fine — just say so.
