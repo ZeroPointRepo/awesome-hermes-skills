@@ -5,11 +5,12 @@
 # Awesome Hermes Skills
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Skills Count](https://img.shields.io/badge/skills-258-blue?style=flat-square)](#table-of-contents)
+[![Skills Count](https://img.shields.io/badge/skills-346-blue?style=flat-square)](#-table-of-contents)
 [![Last Update](https://img.shields.io/github/last-commit/ZeroPointRepo/awesome-hermes-skills?label=Last%20update&style=flat-square)](https://github.com/ZeroPointRepo/awesome-hermes-skills/pulls?q=is%3Apr+is%3Amerged+sort%3Aupdated-desc)
-[![Hermes](https://img.shields.io/badge/Hermes-v0.17.0-purple?style=flat-square)](https://github.com/NousResearch/hermes-agent/releases)
+[![Hermes](https://img.shields.io/badge/Hermes-v0.20.0-purple?style=flat-square)](https://github.com/NousResearch/hermes-agent/releases)
+[![Agent Plugins](https://img.shields.io/badge/Agent%20Plugins-v1.0.0-teal?style=flat-square)](https://agent-plugins.org)
 
-> A curated, install-ready directory of skills for [Hermes Agent](https://github.com/NousResearch/hermes-agent) — the self-improving AI agent from [Nous Research](https://nousresearch.com). Covers the **72 built-in skills** and **101-skill optional catalog** that ship with Hermes, plus **86 community skills, plugins, and tools** vetted for quality.
+> A curated, install-ready directory for the [Hermes Agent](https://github.com/NousResearch/hermes-agent) ecosystem — the self-improving AI agent from [Nous Research](https://nousresearch.com). Covers the **79 built-in skills** and **114-skill optional catalog** that ship with Hermes v0.20.0, plus **153 community skills, plugins, agent profiles, memory providers, surfaces, and tools** vetted for quality.
 
 Hermes is the only agent with a real learning loop. It writes its own skills from your workflows, searches its own past conversations, and runs anywhere — a $5 VPS, a GPU cluster, serverless, or your laptop. But the agent is only as powerful as the skills you give it. **This list is the shortcut.** Pick three, install in a minute, and your agent is twice as useful by tonight.
 
@@ -17,15 +18,15 @@ Hermes is the only agent with a real learning loop. It writes its own skills fro
 
 ## ⭐ Skill of the Week
 
-> **youtube-full** — Get YouTube transcripts, search videos, browse channels, and extract playlists from any AI agent.
+> **lintlang** — Static analysis for the natural-language instructions that drive your agent. Catches vague tool descriptions, missing stop conditions, and unbounded retries *before* they cost you a runaway run.
 >
 > ```bash
-> hermes skills install skills-sh/ZeroPointRepo/youtube-skills/skills/youtube-full
+> uvx lintlang scan SKILL.md
 > ```
 >
-> The fastest way to feel what Hermes can do. Install, then ask: *"Summarize the last 5 videos from Lex Fridman."* Your agent fetches transcripts, summarizes, and remembers what you watched — all in one prompt. No Google API key, no headless browser, no yt-dlp dance with cloud-IP blocks. Powered by [TranscriptAPI](https://transcriptapi.com) (15M+ transcripts/month, 99.9% uptime). 100 free credits on signup, no card.
+> No install, no API key, no LLM call — the default checks are deterministic and entirely local. Point it at any `SKILL.md`, `AGENTS.md`, or tool-definition file and you get a findings list in about ten seconds. The `H1.6` check is the interesting one: it flags pairs of tools whose descriptions contain nothing that tells the agent which to pick — the single most common cause of "why did it call the wrong tool?". Already running in CI on [Character.AI's public Larch repo](https://github.com/character-ai/larch).
 >
-> [Repo →](https://github.com/ZeroPointRepo/youtube-skills) · [Try it →](https://transcriptapi.com)
+> [Repo →](https://github.com/hermes-labs-ai/lintlang) · Contributed by [@roli-lpci](https://github.com/roli-lpci) in [#37](https://github.com/ZeroPointRepo/awesome-hermes-skills/pull/37)
 
 ---
 
@@ -33,7 +34,7 @@ Hermes is the only agent with a real learning loop. It writes its own skills fro
 
 New to Hermes? Don't try to install everything at once. Here's the three-step path from zero to "wait, my agent can do that?":
 
-1. **Get Hermes running** — Follow the [official quickstart](https://hermes-agent.nousresearch.com/docs/). 10 minutes from clone to first conversation. Hermes ships with [72 built-in skills](#-built-in-skills-ships-with-hermes) — plus a [101-skill optional catalog](#-optional-skills-bundled-with-hermes) — the day you install it, so even before you add anything from this list, you can already do a lot.
+1. **Get Hermes running** — Follow the [official quickstart](https://hermes-agent.nousresearch.com/docs/). 10 minutes from clone to first conversation. Hermes ships with [79 built-in skills](#-built-in-skills-ships-with-hermes) — plus a [114-skill optional catalog](#-optional-skills-bundled-with-hermes) — the day you install it, so even before you add anything from this list, you can already do a lot.
 
 2. **Install your first skill — `youtube-full`**
    ```bash
@@ -63,7 +64,6 @@ Browse the categories below. Every entry is tagged so you know what you're getti
 - [🧩 Optional Skills (Bundled with Hermes)](#-optional-skills-bundled-with-hermes)
 - [🌟 Community Skills](#-community-skills)
   - [📺 Media & Transcripts](#-media--transcripts)
-  - [🧠 Memory & Knowledge](#-memory--knowledge)
   - [🔍 Search & Research](#-search--research)
   - [📈 Marketing & Growth](#-marketing--growth)
   - [💻 Dev & Skill Authoring](#-dev--skill-authoring)
@@ -77,7 +77,12 @@ Browse the categories below. Every entry is tagged so you know what you're getti
   - [🏠 Smart Home, IoT & Embodied](#-smart-home-iot--embodied)
   - [🔐 Security & Detection](#-security--detection)
   - [🎯 Domain & Novelty](#-domain--novelty)
+- [🔌 Plugins](#-plugins)
+- [🧠 Agent Profiles](#-agent-profiles)
+- [💾 Memory Providers](#-memory-providers)
+- [🔗 Surfaces & Integrations](#-surfaces--integrations)
 - [🛠️ Tools, Workspaces & GUIs](#%EF%B8%8F-tools-workspaces--guis)
+- [🔄 Skills → Plugins](#-skills--plugins)
 - [📚 Skill Registries & Discovery](#-skill-registries--discovery)
 - [📖 Guides & Documentation](#-guides--documentation)
 - [🛡️ Security Notice](#%EF%B8%8F-security-notice)
@@ -128,9 +133,9 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 ## 📦 Built-in Skills (Ships with Hermes)
 
-> Hermes ships with **72 built-in skills** out of the box, across 17 categories — loaded and ready the moment you run `hermes`. You don't install these.
+> Hermes ships with **79 built-in skills** out of the box, across 14 categories — loaded and ready the moment you run `hermes`. You don't install these.
 >
-> This is what you already have before you add anything. Most "I need a skill for X" questions are answered here first — and the [optional catalog](#-optional-skills-bundled-with-hermes) below covers 101 more you can switch on.
+> This is what you already have before you add anything. Most "I need a skill for X" questions are answered here first — and the [optional catalog](#-optional-skills-bundled-with-hermes) below covers 114 more you can switch on.
 
 <details open>
 <summary><h3 style="display:inline">🍎 Apple (4)</h3></summary>
@@ -142,18 +147,14 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 </details>
 
 <details open>
-<summary><h3 style="display:inline">🤖 Autonomous AI Agents (4)</h3></summary>
+<summary><h3 style="display:inline">🤖 Autonomous Ai Agents (6)</h3></summary>
 
 - **claude-code** — Delegate coding to Claude Code CLI (features, PRs).
 - **codex** — Delegate coding to OpenAI Codex CLI (features, PRs).
-- **hermes-agent** — Configure, extend, or contribute to Hermes Agent.
+- **computer-use** — Drive the desktop in the background without stealing focus.
+- **hermes-agent** — Use, configure, theme, extend, and orchestrate Hermes Agent.
+- **merge-reconciler** — Neutral third-party resolution of agent merge conflicts.
 - **opencode** — Delegate coding to OpenCode CLI (features, PR review).
-</details>
-
-<details>
-<summary><h3 style="display:inline">🖱️ Computer Use (1)</h3></summary>
-
-- **computer-use** — Drive the desktop in the background — click, type, scroll, drag — without stealing focus. macOS/Windows/Linux.
 </details>
 
 <details open>
@@ -164,154 +165,142 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 - **ascii-video** — ASCII video: convert video/audio to colored ASCII MP4/GIF.
 - **baoyu-infographic** — Infographics: 21 layouts x 21 styles (信息图, 可视化).
 - **claude-design** — Design one-off HTML artifacts (landing, deck, prototype).
-- **comfyui** — Generate images, video & audio with ComfyUI — install, manage nodes/models, run workflows via comfy-cli + REST/WS.
+- **comfyui** — Generate images, video, and audio via diffusion workflows.
 - **design-md** — Author/validate/export Google's DESIGN.md token spec files.
 - **excalidraw** — Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).
 - **humanizer** — Humanize text: strip AI-isms and add real voice.
 - **manim-video** — Manim CE animations: 3Blue1Brown math/algo videos.
 - **p5js** — p5.js sketches: gen art, shaders, interactive, 3D.
 - **popular-web-designs** — 54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.
-- **pretext** — DOM-free text layout (@chenglou/pretext): ASCII art, kinetic typography, text-as-geometry games as single-file HTML.
+- **pretext** — Build creative browser demos with DOM-free text layout.
 - **sketch** — Throwaway HTML mockups: 2-3 design variants to compare.
 - **songwriting-and-ai-music** — Songwriting craft and Suno AI music prompts.
-- **touchdesigner-mcp** — Control TouchDesigner via twozero MCP — operators, parameters, Python, real-time visuals (36 tools).
+- **touchdesigner-mcp** — Control TouchDesigner via twozero MCP.
 </details>
 
-<details>
-<summary><h3 style="display:inline">📊 Data Science (1)</h3></summary>
+<details open>
+<summary><h3 style="display:inline">🔧 DevOps (1)</h3></summary>
 
-- **jupyter-live-kernel** — Iterative Python via live Jupyter kernel (hamelnb).
+- **sdlc-review** — Review Kanban handoffs and route verified outcomes.
 </details>
 
-<details>
-<summary><h3 style="display:inline">🐶 Dogfood (1)</h3></summary>
+<details open>
+<summary><h3 style="display:inline">✉️ Email (2)</h3></summary>
 
-- **dogfood** — Exploratory QA of web apps: find bugs, evidence, reports.
-</details>
-
-<details>
-<summary><h3 style="display:inline">✉️ Email (1)</h3></summary>
-
+- **email-inbox-triage** — Triage an inbox: prioritize threads, draft replies safely.
 - **himalaya** — Himalaya CLI: IMAP/SMTP email from terminal.
 </details>
 
-<details>
-<summary><h3 style="display:inline">🐙 GitHub (6)</h3></summary>
+<details open>
+<summary><h3 style="display:inline">🐙 GitHub (7)</h3></summary>
 
 - **codebase-inspection** — Inspect codebases w/ pygount: LOC, languages, ratios.
 - **github-auth** — GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login.
 - **github-code-review** — Review PRs: diffs, inline comments via gh or REST.
+- **github-issue-to-pr** — Carry a GitHub issue to a verified PR with honest CI state.
 - **github-issues** — Create, triage, label, assign GitHub issues via gh or REST.
 - **github-pr-workflow** — GitHub PR lifecycle: branch, commit, open, CI, merge.
 - **github-repo-management** — Clone/create/fork repos; manage remotes, releases.
 </details>
 
-<details>
-<summary><h3 style="display:inline">📺 Media (4)</h3></summary>
+<details open>
+<summary><h3 style="display:inline">📺 Media (3)</h3></summary>
 
 - **gif-search** — Search/download GIFs from Tenor via curl + jq.
-- **heartmula** — HeartMuLa: Suno-like song generation from lyrics + tags.
 - **songsee** — Audio spectrograms/features (mel, chroma, MFCC) via CLI.
 - **youtube-content** — YouTube transcripts to summaries, threads, blogs.
-
-> ⚠️ **Heads up on built-in `youtube-content`:** it scrapes YouTube directly. That means **it won't work on a VPS or any cloud host** — YouTube blocks cloud IPs across all major providers. Even on a personal device it gets rate-limited and stops returning transcripts after a while; YouTube actively prevents automated transcript fetching.
->
-> 💡 **The fix is [`youtube-full`](#-skill-of-the-week)** — it uses [TranscriptAPI.com](https://transcriptapi.com), the same backend powering [YouTubeToTranscript.com](https://youtubetotranscript.com) (15M+ transcripts/month). Works from anywhere — VPS, laptop, serverless. Install it and your agent gains **YouTube as a first-class capability**: search videos, browse channels, and pull transcripts the same way it uses web search. No blocks, no rate limits, no Google API key.
->
-> ```bash
-> hermes skills install skills-sh/ZeroPointRepo/youtube-skills/skills/youtube-full
-> ```
 </details>
 
-<details>
-<summary><h3 style="display:inline">🤖 MLOps (7)</h3></summary>
+<details open>
+<summary><h3 style="display:inline">🤖 MLOps (5)</h3></summary>
 
-- **audiocraft-audio-generation** — AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.
 - **evaluating-llms-harness** — lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).
 - **huggingface-hub** — HuggingFace hf CLI: search/download/upload models, datasets.
 - **llama-cpp** — llama.cpp local GGUF inference + HF Hub model discovery.
-- **segment-anything-model** — SAM: zero-shot image segmentation via points, boxes, masks.
 - **serving-llms-vllm** — vLLM: high-throughput LLM serving, OpenAI API, quantization.
 - **weights-and-biases** — W&B: log ML experiments, sweeps, model registry, dashboards.
 </details>
 
-<details>
-<summary><h3 style="display:inline">📝 Note-Taking (1)</h3></summary>
+<details open>
+<summary><h3 style="display:inline">📝 Note Taking (1)</h3></summary>
 
 - **obsidian** — Read, search, create, and edit notes in the Obsidian vault.
 </details>
 
-<details>
-<summary><h3 style="display:inline">📊 Productivity (9)</h3></summary>
+<details open>
+<summary><h3 style="display:inline">📊 Productivity (15)</h3></summary>
 
 - **airtable** — Airtable REST API via curl. Records CRUD, filters, upserts.
+- **document-to-action-items** — Extract cited obligations, deadlines, tasks from documents.
+- **docx** — Create, read, edit, template, and review Word .docx files.
 - **google-workspace** — Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.
 - **maps** — Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.
-- **nano-pdf** — Edit PDF text/typos/titles via nano-pdf CLI (NL prompts).
+- **meeting-action-items** — Turn meeting notes into cited decisions, owners, tickets.
+- **nano-pdf** — Edit text in existing PDFs via natural-language prompts.
 - **notion** — Notion API + ntn CLI: pages, databases, markdown, Workers.
 - **ocr-and-documents** — Extract text from PDFs/scans (pymupdf, marker-pdf).
-- **petdex** — Install and select animated petdex mascots for Hermes.
-- **powerpoint** — Create, read, edit .pptx decks, slides, notes, templates.
-- **teams-meeting-pipeline** — Run the Teams meeting-summary pipeline — summarize meetings, inspect status, replay jobs, manage Graph subs.
+- **pdf** — Create, read, merge, fill, and secure PDF files.
+- **powerpoint** — Create, read, edit .pptx decks with python-pptx.
+- **product-price-monitor** — Watch product, flight, or listing prices; alert on target.
+- **teams-meeting-pipeline** — Teams meeting summaries, job replay, Graph subscriptions.
+- **weekly-review-planning** — Weekly reset: commitments, stalled work, next-week plan.
+- **xlsx** — Create, read, edit Excel .xlsx workbooks and CSVs.
 </details>
 
-<details>
-<summary><h3 style="display:inline">🔬 Research (5)</h3></summary>
+<details open>
+<summary><h3 style="display:inline">🔬 Research (6)</h3></summary>
 
 - **arxiv** — Search arXiv papers by keyword, author, category, or ID.
 - **blogwatcher** — Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.
+- **competitor-news-monitor** — Watch named companies for material news; cited digests.
+- **grounded-citations** — Ground answers and documents in cited, verifiable sources.
 - **llm-wiki** — Karpathy's LLM Wiki: build/query interlinked markdown KB.
-- **polymarket** — Query Polymarket: markets, prices, orderbooks, history.
 - **research-paper-writing** — Write ML papers for NeurIPS/ICML/ICLR: design→submit.
 </details>
 
-<details>
+<details open>
 <summary><h3 style="display:inline">🏠 Smart Home (1)</h3></summary>
 
 - **openhue** — Control Philips Hue lights, scenes, rooms via OpenHue CLI.
 </details>
 
-<details>
+<details open>
 <summary><h3 style="display:inline">🐦 Social Media (1)</h3></summary>
 
-- **xurl** — X/Twitter via xurl CLI: post, search, DM, media, v2 API.
+- **xurl** — X/Twitter via xurl CLI: raw post search, posting, DM, media.
 </details>
 
-<details>
-<summary><h3 style="display:inline">💻 Software Development (9)</h3></summary>
+<details open>
+<summary><h3 style="display:inline">💻 Software Development (11)</h3></summary>
 
-- **hermes-agent-skill-authoring** — Author in-repo SKILL.md: frontmatter, validator, structure, and writing-quality principles.
+- **dogfood** — Exploratory QA of web apps: find bugs, evidence, reports.
+- **hermes-agent-skill-authoring** — Author in-repo SKILL.md files: frontmatter and structure.
+- **inspecting-hermes-desktop-dom** — Read the live Hermes desktop DOM/CSS over CDP.
 - **node-inspect-debugger** — Debug Node.js via --inspect + Chrome DevTools Protocol CLI.
-- **plan** — Plan mode: write an actionable markdown plan to .hermes/plans/, no execution.
+- **plan** — Write a markdown plan to .hermes/plans/; no execution.
 - **python-debugpy** — Debug Python: pdb REPL + debugpy remote (DAP).
 - **requesting-code-review** — Pre-commit review: security scan, quality gates, auto-fix.
-- **simplify-code** — Parallel 3-agent cleanup of recent code changes.
+- **simplify-code** — Parallel 4-agent cleanup of recent code changes.
 - **spike** — Throwaway experiments to validate an idea before build.
 - **systematic-debugging** — 4-phase root cause debugging: understand bugs before fixing.
 - **test-driven-development** — TDD: enforce RED-GREEN-REFACTOR, tests before code.
-</details>
-
-<details>
-<summary><h3 style="display:inline">💬 Yuanbao (1)</h3></summary>
-
-- **yuanbao** — Yuanbao (元宝) groups: @mention users, query info/members.
 </details>
 
 ---
 
 ## 🧩 Optional Skills (Bundled with Hermes)
 
-> Beyond the always-on built-ins, Hermes bundles a **101-skill optional catalog** — shipped in the repo but off by default, so your context stays lean until you need them. Browse [`optional-skills/`](https://github.com/NousResearch/hermes-agent/tree/main/optional-skills) and enable the ones your workflow calls for.
+> Beyond the always-on built-ins, Hermes bundles a **114-skill optional catalog** — shipped in the repo but off by default, so your context stays lean until you need them. Browse [`optional-skills/`](https://github.com/NousResearch/hermes-agent/tree/main/optional-skills) and enable the ones your workflow calls for.
 >
-> This is where the deep, domain-specific power lives: **30 MLOps skills** (training, serving, vector DBs, interpretability), a full **finance-modeling suite** (DCF, LBO, merger, 3-statement), plus OSINT, blockchain, payments, and more.
+> This is where the deep, domain-specific power lives: **31 MLOps skills** (training, serving, vector DBs, interpretability), a full **finance-modeling suite** (DCF, LBO, merger, 3-statement), plus OSINT, blockchain, payments, and more.
 
 <details>
-<summary><h3 style="display:inline">🤖 Autonomous AI Agents (5)</h3></summary>
+<summary><h3 style="display:inline">🤖 Autonomous Ai Agents (5)</h3></summary>
 
 - **antigravity-cli** — Operate the Antigravity CLI (agy): plugins, auth, sandbox.
-- **blackbox** — Delegate coding to Blackbox AI CLI — multi-model agent with a built-in judge that picks the best result.
+- **blackbox** — Delegate coding tasks to the Blackbox AI multi-model CLI.
 - **grok** — Delegate coding to xAI Grok Build CLI (features, PRs).
-- **honcho** — Honcho memory for Hermes — cross-session user modeling, multi-profile isolation, dialectic recall.
+- **honcho** — Configure and troubleshoot Honcho memory for Hermes.
 - **openhands** — Delegate coding to OpenHands CLI (model-agnostic, LiteLLM).
 </details>
 
@@ -320,35 +309,46 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 - **evm** — Read-only EVM client: wallets, tokens, gas across 8 chains.
 - **hyperliquid** — Hyperliquid market data, account history, trade review.
-- **solana** — Query Solana with USD pricing — balances, token portfolios, txns, NFTs, whale detection. No API key.
+- **solana** — Query Solana wallets, tokens, txs, and NFTs in USD.
 </details>
 
 <details>
 <summary><h3 style="display:inline">💬 Communication (1)</h3></summary>
 
-- **one-three-one-rule** — Structured 1-3-1 decisions — one problem, three options with trade-offs, one recommendation.
+- **one-three-one-rule** — 1-3-1 decision briefs: problem, three options, one pick.
 </details>
 
 <details>
-<summary><h3 style="display:inline">🎨 Creative (9)</h3></summary>
+<summary><h3 style="display:inline">🎨 Creative (13)</h3></summary>
 
+- **audiocraft-audio-generation** — AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.
 - **baoyu-article-illustrator** — Article illustrations: type × style × palette consistency.
 - **baoyu-comic** — Knowledge comics (知识漫画): educational, biography, tutorial.
-- **blender-mcp** — Control Blender from Hermes via socket — create objects, materials, animations, run bpy Python.
-- **concept-diagrams** — Flat, minimal light/dark SVG diagrams as HTML — physics, chemistry, anatomy, floor plans, lifecycles.
+- **concept-diagrams** — Generate flat, minimal educational SVG visuals as HTML.
 - **creative-ideation** — Generate ideas via named methods from creative practice.
-- **hyperframes** — HTML-as-source video — animated titles, social overlays, captioned talking-heads, shader transitions → MP4/WebM.
-- **kanban-video-orchestrator** — Multi-agent video pipeline on Hermes Kanban — scope brief, build a team, route scenes, monitor to render.
-- **meme-generation** — Generate real meme .png images — pick a template, overlay text with Pillow.
+- **heartmula** — HeartMuLa: Suno-like song generation from lyrics + tags.
+- **hyperframes** — Render MP4/WebM videos from HTML compositions.
+- **kanban-video-orchestrator** — Plan and run multi-agent video production pipelines.
+- **meme-generation** — Create meme PNGs from templates with Pillow text overlay.
 - **pixel-art** — Pixel art w/ era palettes (NES, Game Boy, PICO-8).
+- **social-media-content-calendar** — Plan multi-platform social campaigns: briefs to posting.
+- **tldraw-offline** — Drive and script tldraw offline canvases with an agent.
+- **unreal-mcp** — Automate Unreal Engine editor scenes, actors, and renders.
 </details>
 
 <details>
-<summary><h3 style="display:inline">🔧 DevOps (5)</h3></summary>
+<summary><h3 style="display:inline">📊 Data Science (1)</h3></summary>
 
-- **docker-management** — Manage Docker containers, images, volumes, networks & Compose — lifecycle, debug, cleanup, Dockerfile tuning.
-- **hermes-s6-container-supervision** — Modify/debug the s6-overlay supervision tree in the Hermes Docker image — add services, debug gateways.
-- **inference-sh-cli** — Run 150+ AI apps via inference.sh CLI (infsh) — image, video, LLMs, search, 3D.
+- **jupyter-notebook** — Iterative Python via live Jupyter kernel (hamelnb).
+</details>
+
+<details>
+<summary><h3 style="display:inline">🔧 DevOps (6)</h3></summary>
+
+- **actual-setup** — Set up Actual Computer (actual.inc) inference in Hermes.
+- **docker-management** — Manage Docker containers, images, volumes, and Compose.
+- **hermes-s6-container-supervision** — Modify or debug s6 services in the Hermes Docker image.
+- **inference-sh-cli** — Run 150+ AI apps (image, video, LLM) via inference.sh CLI.
 - **pinggy-tunnel** — Zero-install localhost tunnels over SSH via Pinggy.
 - **watchers** — Poll RSS, JSON APIs, and GitHub with watermark dedup.
 </details>
@@ -356,25 +356,26 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 <details>
 <summary><h3 style="display:inline">🐶 Dogfood (1)</h3></summary>
 
-- **adversarial-ux-test** — Roleplay a tech-resistant user, browse the app, surface real UX pain points, and file actionable tickets.
+- **adversarial-ux-test** — Roleplay a hostile user to find and triage UX pain points.
 </details>
 
 <details>
 <summary><h3 style="display:inline">✉️ Email (1)</h3></summary>
 
-- **agentmail** — Give the agent its own email inbox via AgentMail — send, receive & manage mail autonomously.
+- **agentmail** — Give the agent its own inbox: send and receive email.
 </details>
 
 <details>
-<summary><h3 style="display:inline">💰 Finance (8)</h3></summary>
+<summary><h3 style="display:inline">💰 Finance (9)</h3></summary>
 
-- **3-statement-model** — Fully-integrated 3-statement models (IS/BS/CF) in Excel — working capital, D&A, debt schedules.
-- **comps-analysis** — Comparable-company analysis in Excel — operating metrics, valuation multiples, peer benchmarking.
-- **dcf-model** — Institutional DCF models in Excel — FCF build, WACC, terminal value, scenarios, sensitivity tables.
-- **excel-author** — Build auditable Excel workbooks headless (openpyxl) — cell conventions, formulas, named ranges, balance checks.
-- **lbo-model** — LBO models in Excel — sources & uses, debt schedule, cash sweep, exit multiple, IRR/MOIC sensitivity.
-- **merger-model** — Accretion/dilution merger models in Excel — pro-forma P&L, synergies, financing mix, EPS impact.
-- **pptx-author** — Build PowerPoint decks headless (python-pptx) — model-backed, every number traces to a workbook cell.
+- **3-statement-model** — Build integrated IS/BS/CF financial workbooks in Excel.
+- **comps-analysis** — Build comparable-company valuation workbooks in Excel.
+- **dcf-model** — Build discounted cash flow valuation workbooks in Excel.
+- **excel-author** — Build auditable financial workbooks headless via openpyxl.
+- **lbo-model** — Build leveraged buyout workbooks with IRR/MOIC in Excel.
+- **merger-model** — Build M&A accretion/dilution workbooks in Excel.
+- **polymarket** — Query Polymarket: markets, prices, orderbooks, history.
+- **pptx-author** — Build PowerPoint decks headless with python-pptx.
 - **stocks** — Stock quotes, history, search, compare, crypto via Yahoo.
 </details>
 
@@ -388,56 +389,58 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 <details>
 <summary><h3 style="display:inline">🏥 Health (2)</h3></summary>
 
-- **fitness-nutrition** — Workout planner + nutrition tracker — 690+ exercises (wger), 380k+ foods (USDA), BMI/TDEE/1RM math.
-- **neuroskill-bci** — Fold real-time BCI state (focus, mood, HRV, sleep) into responses — needs a Muse/OpenBCI + NeuroSkill app.
+- **fitness-nutrition** — Workout planning, macros, and body metrics via wger/USDA.
+- **neuroskill-bci** — Use live BCI cognitive and mood state from NeuroSkill.
 </details>
 
 <details>
-<summary><h3 style="display:inline">🔌 MCP (2)</h3></summary>
+<summary><h3 style="display:inline">🔌 MCP (3)</h3></summary>
 
-- **fastmcp** — Build, test, inspect & deploy MCP servers with FastMCP in Python.
-- **mcporter** — List, configure, auth & call MCP servers/tools (HTTP or stdio) via the mcporter CLI.
+- **fastmcp** — Build, test, and deploy Python MCP servers.
+- **mcp-oauth-remote-gateway** — Manual OAuth for remote MCP servers on headless gateways.
+- **mcporter** — List, auth, and call MCP servers/tools from the terminal.
 </details>
 
 <details>
 <summary><h3 style="display:inline">🔀 Migration (1)</h3></summary>
 
-- **openclaw-migration** — Migrate an OpenClaw setup into Hermes — memories, SOUL.md, allowlists, user skills; reports what didn't port.
+- **openclaw-migration** — Import an OpenClaw setup (memories, skills) into Hermes.
 </details>
 
 <details>
-<summary><h3 style="display:inline">🤖 MLOps (30)</h3></summary>
+<summary><h3 style="display:inline">🤖 MLOps (31)</h3></summary>
 
+- **accelerate** — Run PyTorch training across GPUs with minimal changes.
 - **axolotl** — Axolotl: YAML LLM fine-tuning (LoRA, DPO, GRPO).
-- **chroma** — Open-source embedding database — vector + full-text search, metadata filters. Great for local RAG.
-- **clip** — OpenAI CLIP — zero-shot image classification, image-text matching, cross-modal retrieval.
-- **distributed-llm-pretraining-torchtitan** — PyTorch-native LLM pretraining with torchtitan — 4D parallelism, Float8, 8→512+ GPUs.
+- **chroma** — Embedding database for RAG and semantic search.
+- **clip** — Zero-shot image classification and image-text search.
 - **dspy** — DSPy: declarative LM programs, auto-optimize prompts, RAG.
-- **faiss** — Meta FAISS — fast similarity search over billions of vectors, GPU-accelerated, many index types.
-- **fine-tuning-with-trl** — TRL: SFT, DPO, PPO, GRPO, reward modeling for LLM RLHF.
-- **guidance** — Constrain LLM output with regex/grammars — guaranteed valid JSON/XML/code (Microsoft Guidance).
-- **huggingface-accelerate** — Add distributed training to any PyTorch script in ~4 lines — DeepSpeed/FSDP/DDP, mixed precision.
-- **huggingface-tokenizers** — Fast Rust-based tokenizers — BPE/WordPiece/Unigram, custom vocab training, alignment tracking.
-- **instructor** — Structured LLM outputs with Pydantic validation, auto-retries, and streaming (Instructor).
-- **lambda-labs-gpu-cloud** — Reserved & on-demand Lambda GPU cloud — SSH, persistent FS, multi-node clusters for training.
-- **llava** — LLaVA — visual instruction tuning and multi-turn image chat (CLIP + Vicuna/LLaMA).
-- **modal-serverless-gpu** — Modal — serverless GPU cloud for ML workloads, model APIs, and autoscaling batch jobs.
-- **nemo-curator** — GPU-accelerated LLM data curation — fuzzy/semantic dedup, quality filtering, PII/NSFW (NeMo Curator).
+- **faiss** — Fast vector similarity search at billion scale.
+- **flash-attention** — Speed up long-sequence transformer training and inference.
+- **guidance** — Constrain LLM output with grammars; guarantee valid JSON.
+- **huggingface-tokenizers** — Fast BPE/WordPiece tokenization and custom vocab training.
+- **instructor** — Structured LLM outputs validated with Pydantic.
+- **lambda-labs** — On-demand GPU cloud instances for ML training.
+- **llava** — Vision-language chat: VQA, captioning, image dialogue.
+- **modal** — Serverless GPU cloud for ML jobs and model APIs.
+- **nemo-curator** — Curate LLM training data: dedupe, filter, PII redaction.
 - **obliteratus** — OBLITERATUS: abliterate LLM refusals (diff-in-means).
-- **optimizing-attention-flash** — Flash Attention — 2-4× faster, 10-20× less memory for long-sequence transformers.
 - **outlines** — Outlines: structured JSON/regex/Pydantic LLM generation.
-- **peft-fine-tuning** — Parameter-efficient fine-tuning (LoRA/QLoRA + 25 methods) for 7B-70B models on limited VRAM.
-- **pinecone** — Pinecone — managed, auto-scaling vector DB for production RAG and semantic search.
-- **pytorch-fsdp** — Fully Sharded Data Parallel training with PyTorch FSDP/FSDP2 — sharding, mixed precision, CPU offload.
-- **pytorch-lightning** — PyTorch Lightning — clean training loops, automatic DDP/FSDP/DeepSpeed, callbacks, minimal boilerplate.
-- **qdrant-vector-search** — Qdrant — high-performance vector search for RAG, hybrid search with filtering (Rust).
-- **simpo-training** — SimPO — reference-free preference optimization, simpler & faster than DPO.
-- **slime-rl-training** — LLM RL post-training with slime (Megatron + SGLang) — custom data-gen, GLM models at scale.
-- **sparse-autoencoder-training** — Train & analyze Sparse Autoencoders (SAELens) — find interpretable features in model activations.
-- **stable-diffusion-image-generation** — Text-to-image with Stable Diffusion via Diffusers — img2img, inpainting, custom pipelines.
-- **tensorrt-llm** — Optimize LLM inference with NVIDIA TensorRT-LLM — FP8/INT4, in-flight batching, multi-GPU.
+- **peft** — Fine-tune large LLMs with LoRA on limited GPU memory.
+- **pinecone** — Managed vector DB for production RAG and search.
+- **pytorch-fsdp** — Fully sharded data-parallel training for large models.
+- **pytorch-lightning** — Clean training loops with built-in distributed support.
+- **qdrant** — Vector search engine for production RAG systems.
+- **saelens** — Train sparse autoencoders to interpret model features.
+- **segment-anything-model** — SAM: zero-shot image segmentation via points, boxes, masks.
+- **simpo** — Reference-free preference alignment, simpler than DPO.
+- **slime** — RL post-training for LLMs with Megatron and SGLang.
+- **stable-diffusion** — Text-to-image generation, inpainting, and img2img.
+- **tensorrt-llm** — High-throughput LLM inference on NVIDIA GPUs.
+- **torchtitan** — Pretrain LLMs at scale with PyTorch 4D parallelism.
+- **trl-fine-tuning** — TRL: SFT, DPO, GRPO, RLOO reward modeling for LLM RLHF.
 - **unsloth** — Unsloth: 2-5x faster LoRA/QLoRA fine-tuning, less VRAM.
-- **whisper** — OpenAI Whisper — robust multilingual speech-to-text and translation (99 languages).
+- **whisper** — Transcribe and translate speech in 99 languages.
 </details>
 
 <details>
@@ -451,44 +454,47 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 <details>
 <summary><h3 style="display:inline">📊 Productivity (7)</h3></summary>
 
-- **canvas** — Canvas LMS — fetch enrolled courses and assignments via API token.
-- **here.now** — Publish static sites to {slug}.here.now and store private files for agent-to-agent handoff.
-- **memento-flashcards** — Spaced-repetition flashcards — build decks, chat-graded answers, quizzes from YouTube, CSV export.
+- **canvas** — Fetch Canvas LMS courses and assignments via API token.
+- **here-now** — Publish sites to {slug}.here.now and store files in Drives.
+- **memento-flashcards** — Spaced-repetition flashcards: create, review, quiz, export.
 - **shop** — Shop catalog search, checkout, order tracking, returns.
-- **shopify** — Shopify Admin & Storefront GraphQL via curl — products, orders, customers, inventory, metafields.
-- **siyuan** — SiYuan Note API — search, read, create & manage blocks/docs in a self-hosted KB via curl.
-- **telephony** — Give Hermes a phone — provision a Twilio number, SMS/MMS, direct + AI-driven calls (Bland/Vapi).
+- **shopify** — Query Shopify Admin/Storefront GraphQL APIs via curl.
+- **siyuan** — Query and edit a SiYuan knowledge base via its API.
+- **telephony** — Provision Twilio numbers, SMS/MMS, and AI outbound calls.
 </details>
 
 <details>
-<summary><h3 style="display:inline">🔬 Research (11)</h3></summary>
+<summary><h3 style="display:inline">🔬 Research (12)</h3></summary>
 
-- **bioinformatics** — Gateway to 400+ bioinformatics skills — genomics, single-cell, variant calling, structural biology.
+- **bioinformatics** — Gateway to 400+ genomics and computational biology skills.
 - **darwinian-evolver** — Evolve prompts/regex/SQL/code with Imbue's evolution loop.
-- **domain-intel** — Passive domain recon (Python stdlib) — subdomains, SSL, WHOIS, DNS, availability. No API keys.
-- **drug-discovery** — Drug-discovery assistant — ChEMBL search, drug-likeness, DDIs (OpenFDA), ADMET, lead optimization.
-- **duckduckgo-search** — Free DuckDuckGo web search — text, news, images, video. No API key (ddgs CLI).
-- **gitnexus-explorer** — Index a codebase with GitNexus and serve an interactive knowledge graph over a web UI.
-- **osint-investigation** — Public-records OSINT — EDGAR, USAspending, OFAC, ICIJ, ACRIS, court records; entity resolution.
-- **parallel-cli** — Parallel CLI — agent-native web search, extraction, deep research, enrichment, monitoring.
-- **qmd** — Local knowledge-base search (qmd) — BM25 + vector + LLM rerank over notes, docs, transcripts.
-- **scrapling** — Web scraping with Scrapling — HTTP fetch, stealth browser, Cloudflare bypass, spider crawling.
-- **searxng-search** — Free meta-search via SearXNG — aggregates 70+ engines, self-host or public. No API key.
+- **domain-intel** — Passive recon of subdomains, SSL certs, WHOIS, and DNS.
+- **drug-discovery** — Drug discovery: ChEMBL search, drug-likeness, interactions.
+- **duckduckgo-search** — Free keyless web, news, and image search via ddgs.
+- **gitnexus-explorer** — Serve an interactive codebase knowledge graph web UI.
+- **osint-investigation** — Follow the money via public records and sanctions data.
+- **parallel-cli** — Agent-native web search, deep research, and enrichment.
+- **pinecone-research** — Agent RAG and long-term memory with Pinecone.
+- **qmd** — Hybrid local search over notes, docs, and transcripts.
+- **scrapling** — Scrape sites with stealth browsing and Cloudflare bypass.
+- **searxng-search** — Free keyless meta-search aggregating 70+ engines.
 </details>
 
 <details>
-<summary><h3 style="display:inline">🔐 Security (5)</h3></summary>
+<summary><h3 style="display:inline">🔐 Security (6)</h3></summary>
 
-- **1password** — Set up & use the 1Password CLI (op) — sign in, read and inject secrets into commands.
+- **1password** — Set up op CLI, sign in, and read or inject secrets.
 - **godmode** — Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.
-- **oss-forensics** — GitHub supply-chain forensics — deleted-commit recovery, force-push detection, IOC extraction, reporting.
-- **sherlock** — Hunt usernames across 400+ social networks (Sherlock OSINT).
-- **web-pentest** — Authorized web pentesting — recon, proof-based exploitation, reporting, with scope/authorization guardrails.
+- **oss-forensics** — GitHub supply-chain forensics: recovery, IOCs, reporting.
+- **sherlock** — Find accounts for a username across 400+ platforms.
+- **unbroker** — Autonomously remove your info from data-broker sites.
+- **web-pentest** — Authorized web pentest: recon, proof-based exploits, report.
 </details>
 
 <details>
-<summary><h3 style="display:inline">💻 Software Development (3)</h3></summary>
+<summary><h3 style="display:inline">💻 Software Development (4)</h3></summary>
 
+- **ast-grep** — AST-aware structural code search and rewrite via ast-grep.
 - **code-wiki** — Generate wiki docs + Mermaid diagrams for any codebase.
 - **rest-graphql-debug** — Debug REST/GraphQL APIs: status codes, auth, schemas, repro.
 - **subagent-driven-development** — Execute plans via delegate_task subagents (2-stage review).
@@ -498,7 +504,13 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 <summary><h3 style="display:inline">🌐 Web Development (2)</h3></summary>
 
 - **cloudflare-temporary-deploy** — Deploy a Worker live, no account, via wrangler --temporary.
-- **page-agent** — Embed alibaba/page-agent — a JS in-page GUI agent that lets your site's users drive the UI in natural language.
+- **page-agent** — Embed an in-page natural-language GUI copilot in web apps.
+</details>
+
+<details>
+<summary><h3 style="display:inline">💬 Yuanbao (1)</h3></summary>
+
+- **yuanbao** — Yuanbao (元宝) groups: @mention users, query info/members.
 </details>
 
 ---
@@ -509,31 +521,20 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 ### 📺 Media & Transcripts
 
-- [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) by [therohitdas](https://github.com/therohitdas) — Transcripts, search, channels, playlists. Cross-agent: Hermes / Claude Code / OpenClaw / Cursor / Windsurf. Powered by [TranscriptAPI](https://transcriptapi.com). **[production]**
 - [hermes-spotify-skill](https://github.com/Alexeyisme/hermes-spotify-skill) by [Alexeyisme](https://github.com/Alexeyisme) — Spotify control for headless Linux and Raspberry Pi. The only Linux-native Spotify skill in the ecosystem. **[beta]**
-
-### 🧠 Memory & Knowledge
-
-- [hindsight](https://github.com/vectorize-io/hindsight) by [Vectorize](https://github.com/vectorize-io) — Long-term memory layer with retain/recall/reflect workflows. Semantic + graph + temporal retrieval. Plugin or MCP. **[production]**
-- [Open Index](https://github.com/DrDroidLab/open-index) by [DrDroidLab](https://github.com/DrDroidLab) — Structured context graphs with hybrid search, read/write MCP access, and a portable setup skill for Hermes. **[beta]**
-- [honcho-self-hosted](https://github.com/elkimek/honcho-self-hosted) by [elkimek](https://github.com/elkimek) — Self-hosted Honcho memory backend setup for Hermes. Stronger cross-session memory with local control. **[beta]**
-- [yantrikdb-hermes-plugin](https://github.com/yantrikos/yantrikdb-hermes-plugin) by [yantrikos](https://github.com/yantrikos) — Hermes-native memory provider for YantrikDB. `think()` canonicalizes duplicates, `conflicts()` surfaces contradictions, every `recall()` carries `why_retrieved` reasons. **[beta]**
-- [plur](https://github.com/plur-ai/plur) by [plur-ai](https://github.com/plur-ai) — Shared memory layer for AI agents with open engram format (YAML). Persistent learning patterns. **[beta]**
-- [flowstate-qmd](https://github.com/amanning3390/flowstate-qmd) by [amanning3390](https://github.com/amanning3390) — Anticipatory memory with RAG and vector search. Pre-fetches relevant context before queries hit the agent. **[beta]**
-- [personal-api](https://github.com/beiyuii/personal-api-skill) by [beiyuii](https://github.com/beiyuii) — Turn your Obsidian vault into an identity layer any AI agent can read in under 30 seconds. **[experimental]**
-- [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) by [mukul975](https://github.com/mukul975) — 753+ structured cybersecurity skills mapped to MITRE ATT&CK. 4k+ stars. **[production]**
+- [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) by [therohitdas](https://github.com/therohitdas) — Transcripts, search, channels, playlists. Cross-agent: Hermes / Claude Code / OpenClaw / Cursor / Windsurf. Powered by [TranscriptAPI](https://transcriptapi.com). **[production]**
 
 ### 🔍 Search & Research
 
+- [consensus-mcp-hermes](https://github.com/ahmdngi/consensus-mcp-hermes) by [ahmdngi](https://github.com/ahmdngi) — Connect 200M+ peer-reviewed research papers to Hermes via the Consensus MCP server. OAuth setup guide for headless environments with mcp-remote bridge. **[beta]**
+- [deep-research](https://github.com/moonlight-lupin/agent-skills/tree/main/research/deep-research) by [moonlight-lupin](https://github.com/moonlight-lupin) — Autonomous Think→Search→Extract→Synthesize→Stop loop that produces cited research reports. **[production]**
 - [hermes-web-search-plus](https://github.com/robbyczgw-cla/hermes-web-search-plus) by [robbyczgw-cla](https://github.com/robbyczgw-cla) — Multi-provider web search with intelligent routing across Serper, Tavily, Exa, and more. Replaces built-in search with better quality + source diversity. **[beta]**
 - [Not Human Search](https://github.com/unitedideas/nothumansearch-mcp) by [unitedideas](https://github.com/unitedideas) — MCP server for discovering other MCP servers. Indexes 8,600+ agent-friendly sites with agentic scoring. Lets Hermes find new tools on its own. **[production]**
-- [consensus-mcp-hermes](https://github.com/ahmdngi/consensus-mcp-hermes) by [ahmdngi](https://github.com/ahmdngi) — Connect 200M+ peer-reviewed research papers to Hermes via the Consensus MCP server. OAuth setup guide for headless environments with mcp-remote bridge. **[beta]**
-- [agent-skills/deep-research](https://github.com/moonlight-lupin/agent-skills/tree/main/research/deep-research) by [moonlight-lupin](https://github.com/moonlight-lupin) — Autonomous Think→Search→Extract→Synthesize→Stop research engine producing cited reports. Inspired by PewDiePie's Odysseus. **[production]**
-- [agent-skills/model-compare](https://github.com/moonlight-lupin/agent-skills/tree/main/mlops/model-compare) by [moonlight-lupin](https://github.com/moonlight-lupin) — Blind multi-model A/B comparison with tool calling, coding, and review modes. Token efficiency metrics. **[production]**
 
 ### 📈 Marketing & Growth
 
-- [NotFair](https://github.com/nowork-studio/NotFair) by [NoWork Studio](https://github.com/nowork-studio) — 42 host-agnostic skills for SEO, GEO, Google Ads, and Meta Ads, with a documented Hermes workspace install and approval-gated MCP actions for connected marketing accounts. **[beta]**
+- [hermes-startup](https://github.com/33hodl/hermes-startup) by [33hodl](https://github.com/33hodl) — Walks a personal profile into a ranked idea shortlist and a tool plan for a first paying customer. No income claims. **[beta]**
+- [notfair-plugin](https://github.com/nowork-studio/notfair-plugin) by [NoWork Studio](https://github.com/nowork-studio) — 40+ host-agnostic skills for SEO, GEO, Google Ads and Meta Ads, with approval-gated MCP actions on connected accounts. **[beta]**
 
 ### 💻 Dev & Skill Authoring
 
@@ -541,128 +542,200 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 > Install all at once: `npx skills@latest add mattpocock/skills` — pick which skills you want at install time.
 
 - [diagnose](https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnose/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Disciplined diagnosis loop for hard bugs and perf regressions: reproduce → minimise → hypothesise → instrument → fix → regression-test. **[production]**
-- [grill-with-docs](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Grilling session that challenges your plan against the existing domain model, sharpens terminology, updates `CONTEXT.md` and ADRs inline. The most popular skill in the pack. **[production]**
-- [tdd](https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Test-driven development with red-green-refactor loop. Builds features or fixes bugs one vertical slice at a time. **[production]**
-- [improve-codebase-architecture](https://github.com/mattpocock/skills/blob/main/skills/engineering/improve-codebase-architecture/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Find deepening opportunities in a codebase, informed by domain language in `CONTEXT.md` and decisions in `docs/adr/`. Run it every few days. **[production]**
-- [zoom-out](https://github.com/mattpocock/skills/blob/main/skills/engineering/zoom-out/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Tell the agent to zoom out and give broader context or higher-level perspective on unfamiliar code. **[production]**
-- [to-prd](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-prd/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Turn the current conversation into a PRD and submit it as a GitHub issue. No interview — synthesizes what you've discussed. **[production]**
-- [to-issues](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-issues/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Break any plan, spec, or PRD into independently-grabbable GitHub issues using vertical slices. **[production]**
-- [github-triage](https://github.com/mattpocock/skills/blob/main/skills/engineering/github-triage/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Triage GitHub issues through a label-based state machine. **[production]**
 - [git-guardrails-claude-code](https://github.com/mattpocock/skills/blob/main/skills/misc/git-guardrails-claude-code/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Block dangerous git commands (push, reset --hard, clean) before they execute. Hooks-based. **[production]**
-- [setup-pre-commit](https://github.com/mattpocock/skills/blob/main/skills/misc/setup-pre-commit/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Set up Husky pre-commit hooks with lint-staged, Prettier, type checking, and tests. **[production]**
+- [github-triage](https://github.com/mattpocock/skills/blob/main/skills/engineering/github-triage/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Triage GitHub issues through a label-based state machine. **[production]**
+- [grill-with-docs](https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Grilling session that challenges your plan against the existing domain model, sharpens terminology, updates `CONTEXT.md` and ADRs inline. The most popular skill in the pack. **[production]**
+- [improve-codebase-architecture](https://github.com/mattpocock/skills/blob/main/skills/engineering/improve-codebase-architecture/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Find deepening opportunities in a codebase, informed by domain language in `CONTEXT.md` and decisions in `docs/adr/`. Run it every few days. **[production]**
 - [migrate-to-shoehorn](https://github.com/mattpocock/skills/blob/main/skills/misc/migrate-to-shoehorn/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Migrate test files from `as` type assertions to @total-typescript/shoehorn. **[production]**
 - [scaffold-exercises](https://github.com/mattpocock/skills/blob/main/skills/misc/scaffold-exercises/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Create exercise directory structures with sections, problems, solutions, explainers. **[production]**
+- [setup-pre-commit](https://github.com/mattpocock/skills/blob/main/skills/misc/setup-pre-commit/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Set up Husky pre-commit hooks with lint-staged, Prettier, type checking, and tests. **[production]**
+- [tdd](https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Test-driven development with red-green-refactor loop. Builds features or fixes bugs one vertical slice at a time. **[production]**
+- [to-issues](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-issues/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Break any plan, spec, or PRD into independently-grabbable GitHub issues using vertical slices. **[production]**
+- [to-prd](https://github.com/mattpocock/skills/blob/main/skills/engineering/to-prd/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Turn the current conversation into a PRD and submit it as a GitHub issue. No interview — synthesizes what you've discussed. **[production]**
 - [write-a-skill](https://github.com/mattpocock/skills/blob/main/skills/productivity/write-a-skill/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Create new skills with proper structure, progressive disclosure, and bundled resources. **[production]**
+- [zoom-out](https://github.com/mattpocock/skills/blob/main/skills/engineering/zoom-out/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Tell the agent to zoom out and give broader context or higher-level perspective on unfamiliar code. **[production]**
 
 #### Hermes-native skill builders
 
-- [hermes-skill-factory](https://github.com/Romanescu11/hermes-skill-factory) by [Romanescu11](https://github.com/Romanescu11) — Meta-skill that auto-generates reusable skills from your workflows. Point it at a repeated task and it creates a skill for it. **[beta]**
-- [bmad-module-skill-forge](https://github.com/armelhbobdad/bmad-module-skill-forge) by [armelhbobdad](https://github.com/armelhbobdad) — Transforms repos and docs into agentskills.io-compliant skills. **[beta]**
-- [agent-skills/claude-plugin-converter](https://github.com/moonlight-lupin/agent-skills/tree/main/agent-ops/claude-plugin-converter) by [moonlight-lupin](https://github.com/moonlight-lupin) — Two-phase converter: analyze Claude Code plugins and generate installable Hermes plugins. **[beta]**
-- [litprog-skill](https://github.com/tlehman/litprog-skill) by [tlehman](https://github.com/tlehman) — Literate programming skill across Claude Code, OpenCode, Hermes. Weaves code and prose into documented, executable notebooks. **[beta]**
-- [execplan-skill](https://github.com/tiann/execplan-skill) by [tiann](https://github.com/tiann) — Long-running task execution with progress tracking, checkpoints, failure recovery. **[beta]**
-- [maestro](https://github.com/ReinaMacCredy/maestro) by [ReinaMacCredy](https://github.com/ReinaMacCredy) — Skill orchestration with Conductor planning + Beads tracking. Multi-step skills as observable pipelines. **[beta]**
-- [SkillClaw](https://github.com/AMAP-ML/SkillClaw) by [AMAP-ML](https://github.com/AMAP-ML) — Auto-evolves and dedupes your skill library from session data. Native Hermes integration. 705 stars. **[production]**
-- [wondelai/skills](https://github.com/wondelai/skills) by [wondelai](https://github.com/wondelai) — Cross-platform agent skills for Claude Code and agentskills.io platforms. 380+ stars. **[production]**
-- [skillsdotnet](https://github.com/PederHP/skillsdotnet) by [PederHP](https://github.com/PederHP) — C# implementation of agentskills.io with MCP integration. **[beta]**
 - [Agentic-MCP-Skill](https://github.com/cablate/Agentic-MCP-Skill) by [cablate](https://github.com/cablate) — MCP client with agentskills.io validation. **[beta]**
-- [pydantic-ai-skills](https://github.com/DougTrajano/pydantic-ai-skills) by [DougTrajano](https://github.com/DougTrajano) — Pydantic AI with agentskills.io. Type-safe schema validation for skill inputs/outputs. **[production]**
+- [bmad-module-skill-forge](https://github.com/armelhbobdad/bmad-module-skill-forge) by [armelhbobdad](https://github.com/armelhbobdad) — Transforms repos and docs into agentskills.io-compliant skills. **[beta]**
+- [claude-plugin-converter](https://github.com/moonlight-lupin/agent-skills/tree/main/agent-ops/claude-plugin-converter) by [moonlight-lupin](https://github.com/moonlight-lupin) — Two-phase converter: analyse a Claude Code plugin, then emit an installable Hermes plugin. **[beta]**
 - [evey-bridge-plugin](https://github.com/42-evey/evey-bridge-plugin) by [42-evey](https://github.com/42-evey) — Claude Code plugin that bridges with Hermes. Shared context, task handoffs. **[beta]**
-- [lintlang](https://github.com/hermes-labs-ai/lintlang) by [Hermes Labs](https://github.com/hermes-labs-ai) — Deterministic local static analysis for authored natural-language agent instructions. **[beta]**
-- [super-hermes](https://github.com/Cranot/super-hermes) by [Cranot](https://github.com/Cranot) — Teaches Hermes to write its own analytical prompts. Meta-reasoning before execution. **[experimental]**
+- [execplan-skill](https://github.com/tiann/execplan-skill) by [tiann](https://github.com/tiann) — Long-running task execution with progress tracking, checkpoints, failure recovery. **[beta]**
+- [hermes-cursor-dispatcher](https://github.com/matdev83/hermes-cursor-dispatcher/tree/main/skills/cursor-delegate) by [matdev83](https://github.com/matdev83) — Delegates coding tasks to Cursor CLI from Hermes, in isolated git worktrees. **[beta]**
 - [hermes-dojo](https://github.com/Yonkoo11/hermes-dojo) by [Yonkoo11](https://github.com/Yonkoo11) — Self-improvement system that monitors agent performance, identifies weak skills, iterates automatically. **[beta]**
 - [hermes-skill-distillation](https://github.com/beardthelion/hermes-skill-distillation) by [beardthelion](https://github.com/beardthelion) — Generates agentic training trajectories from real-world tasks for fine-tuning data. **[beta]**
+- [hermes-skill-factory](https://github.com/Romanescu11/hermes-skill-factory) by [Romanescu11](https://github.com/Romanescu11) — Meta-skill that auto-generates reusable skills from your workflows. Point it at a repeated task and it creates a skill for it. **[beta]**
+- [lintlang](https://github.com/hermes-labs-ai/lintlang) by [Hermes Labs](https://github.com/hermes-labs-ai) — Zero-LLM static analysis for agent configs, tool descriptions and system prompts. Catches vague tool descriptions and missing stop conditions in CI. **[beta]**
+- [litprog-skill](https://github.com/tlehman/litprog-skill) by [tlehman](https://github.com/tlehman) — Literate programming skill across Claude Code, OpenCode, Hermes. Weaves code and prose into documented, executable notebooks. **[beta]**
+- [maestro](https://github.com/ReinaMacCredy/maestro) by [ReinaMacCredy](https://github.com/ReinaMacCredy) — Skill orchestration with Conductor planning + Beads tracking. Multi-step skills as observable pipelines. **[beta]**
+- [model-compare](https://github.com/moonlight-lupin/agent-skills/tree/main/mlops/model-compare) by [moonlight-lupin](https://github.com/moonlight-lupin) — Blind multi-model A/B comparison across tool-calling, coding and review modes, with token-efficiency metrics. **[production]**
+- [pydantic-ai-skills](https://github.com/DougTrajano/pydantic-ai-skills) by [DougTrajano](https://github.com/DougTrajano) — Pydantic AI with agentskills.io. Type-safe schema validation for skill inputs/outputs. **[production]**
 - [rtk-hermes](https://github.com/ogallotti/rtk-hermes) by [ogallotti](https://github.com/ogallotti) — Compresses terminal output via RTK before it reaches LLM context. 60-90% token reduction. Zero config. **[beta]**
-- [agent-skills/skill-maintainer](https://github.com/moonlight-lupin/agent-skills/tree/main/agent-ops/skill-maintainer) by [moonlight-lupin](https://github.com/moonlight-lupin) — End-to-end skill library maintenance: author, curate, track upstream drift, publish. **[beta]**
-- [hermes-cursor-dispatcher](https://github.com/matdev83/hermes-cursor-dispatcher/tree/main/skills/cursor-delegate) by [matdev83](https://github.com/matdev83) — Hermes Agent skill to safely delegate coding tasks to Cursor CLI with support for Grok-4.5-xhigh and isolated Git worktrees. **[production]**
+- [skill-maintainer](https://github.com/moonlight-lupin/agent-skills/tree/main/agent-ops/skill-maintainer) by [moonlight-lupin](https://github.com/moonlight-lupin) — End-to-end skill library maintenance: author, curate, track upstream drift, publish. **[beta]**
+- [SkillClaw](https://github.com/AMAP-ML/SkillClaw) by [AMAP-ML](https://github.com/AMAP-ML) — Auto-evolves and dedupes your skill library from session data. Native Hermes integration. 705 stars. **[production]**
+- [skillsdotnet](https://github.com/PederHP/skillsdotnet) by [PederHP](https://github.com/PederHP) — C# implementation of agentskills.io with MCP integration. **[beta]**
+- [super-hermes](https://github.com/Cranot/super-hermes) by [Cranot](https://github.com/Cranot) — Teaches Hermes to write its own analytical prompts. Meta-reasoning before execution. **[experimental]**
+- [wondelai/skills](https://github.com/wondelai/skills) by [wondelai](https://github.com/wondelai) — Cross-platform agent skills for Claude Code and agentskills.io platforms. 380+ stars. **[production]**
 
 ### 🌐 Browser & Web
 
-- [hermes-plugin-chrome-profiles](https://github.com/anpicasso/hermes-plugin-chrome-profiles) by [anpicasso](https://github.com/anpicasso) — Switch browser tools between Chrome profiles via CDP. Multi-account testing. **[experimental]**
 - [hermes-cloudflare](https://github.com/raulvidis/hermes-cloudflare) by [raulvidis](https://github.com/raulvidis) — Cloudflare browser rendering plugin. Headless browsing through Cloudflare's infrastructure. **[experimental]**
+- [hermes-plugin-chrome-profiles](https://github.com/anpicasso/hermes-plugin-chrome-profiles) by [anpicasso](https://github.com/anpicasso) — Switch browser tools between Chrome profiles via CDP. Multi-account testing. **[experimental]**
 - [vessel-browser](https://github.com/unmodeled-tyler/vessel-browser) by [unmodeled-tyler](https://github.com/unmodeled-tyler) — AI-native Linux browser with MCP control and autonomous browsing. Built for agent use, not a headless wrapper. **[experimental]**
 
 ### ✉️ Communication & Social
 
 - [clawsocial-hermes-plugin](https://github.com/mrpeter2025/clawsocial-hermes-plugin) by [mrpeter2025](https://github.com/mrpeter2025) — Social discovery network. Semantic interest matching, real-time WebSocket messaging, shareable profile cards. Bilingual EN+CN. **[beta]**
-- [hermes-tag](https://github.com/DanielLi202/hermes-tag) by [DanielLi202](https://github.com/DanielLi202) — Claude-Tag-style context-selection layer for Feishu/Lark and Slack group chats (DingTalk mention-only). @-only replies from bounded per-chat evidence instead of full-history RAG; per-chat memory isolation, redacted admin audit. `hermes plugins install DanielLi202/hermes-tag`. **[beta]**
-- [hermes-telegram-checklist](https://github.com/johnsje183/hermes-telegram-checklist) by [johnsje183](https://github.com/johnsje183) — Native Telegram To-Do lists (real interactive checkboxes, progress counter) in chats and forum topics via a Telethon user session — create, read, append, toggle, with a write allowlist and offline plan validation. The Bot API cannot post checklists into groups; MTProto can. Works with Hermes, Claude Code, and other `SKILL.md` agents. **[production]**
+- [hermes-tag](https://github.com/DanielLi202/hermes-tag) by [DanielLi202](https://github.com/DanielLi202) — Context-selection layer for Feishu/Lark and Slack group chats. Answers @-mentions from bounded per-chat evidence instead of full-history RAG, with per-chat memory isolation. **[beta]**
+- [hermes-telegram-checklist](https://github.com/johnsje183/hermes-telegram-checklist) by [johnsje183](https://github.com/johnsje183) — Creates and toggles native Telegram checklists in chats and forum topics over MTProto, behind a write allowlist. **[beta]**
 - [hermes-tweet](https://github.com/Xquik-dev/hermes-tweet) by [Xquik](https://github.com/Xquik-dev) — Native Hermes Agent X/Twitter plugin for tweet search, reply reading, user lookup, monitoring, posting, replies, DMs, and approval-gated X actions through Xquik. **[beta]**
 - [microsoft-workspace-skill](https://github.com/Andrew-Girgis/microsoft-workspace-skill) by [Andrew-Girgis](https://github.com/Andrew-Girgis) — Full Outlook/Hotmail/Microsoft 365 integration via Graph API. Email, calendar, contacts, free/busy. OAuth2 auto-refresh. Preview-before-send pattern. **[beta]**
 - [tweetclaw](https://github.com/Xquik-dev/tweetclaw) by [Xquik](https://github.com/Xquik-dev) — OpenClaw plugin and agent skill to scrape tweets, search tweet replies, export followers, look up users, run media, monitors, webhooks, giveaway draws, and approval-gated posts through Xquik. **[beta]**
-- [twitr-skills](https://github.com/lnvestor/twitr-skills) by [lnvestor](https://github.com/lnvestor) — Five X/Twitter skills for agents: live reads and search, bulk dataset exports, real-time account/keyword monitors with signed webhooks, publishing through a connected account, and an unattended presence routine. Pay-per-call in USDC (x402 on Base/Solana, MPP on Tempo) — no API key, no signup. **[production]**
+- [twitr-skills](https://github.com/lnvestor/twitr-skills) by [lnvestor](https://github.com/lnvestor) — Six X/Twitter skills: reads and search, bulk exports, keyword monitors with signed webhooks, publishing, and a presence routine. Pay-per-call in USDC over x402, no API key. **[beta]**
 
 ### 📊 Productivity & Tasks
 
-- [grill-me](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Get relentlessly interviewed by your agent until every branch of the decision tree is resolved. Use *every* time before making a change. Most popular skill in the pack. **[production]**
+- [agent-analytics-hermes-plugin](https://github.com/Agent-Analytics/agent-analytics-hermes-plugin) by [Agent-Analytics](https://github.com/Agent-Analytics) — Native Signals dashboard tab for Hermes. Read-only multi-project analytics. **[beta]**
 - [before-you-build](https://github.com/bin1874/before-you-build-skill) by [bin1874](https://github.com/bin1874) — Product-risk review before implementation. Challenges demand, positioning, monetization, retention, trust, distribution, and feature-adoption risk before an agent starts building. Works with Hermes, OpenClaw, Claude Code, Codex, and other `SKILL.md`-compatible agents. **[production]**
 - [caveman](https://github.com/mattpocock/skills/blob/main/skills/productivity/caveman/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Ultra-compressed communication mode. Cuts token usage ~75% by dropping filler while keeping full technical accuracy. Critical for long sessions. **[production]**
+- [grill-me](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Get relentlessly interviewed by your agent until every branch of the decision tree is resolved. Use *every* time before making a change. Most popular skill in the pack. **[production]**
 - [hermes-plugins](https://github.com/42-evey/hermes-plugins) by [42-evey](https://github.com/42-evey) — Goal management, inter-agent bridge, model selection, cost control. Four plugins covering common operational needs. **[beta]**
 - [onequery-cli](https://github.com/wordbricks/skills/tree/main/skills/onequery-cli) by [Wordbricks](https://github.com/wordbricks) — CLI skill for safe, auditable queries for agents against approved data sources. **[beta]**
-- [agent-analytics-hermes-plugin](https://github.com/Agent-Analytics/agent-analytics-hermes-plugin) by [Agent-Analytics](https://github.com/Agent-Analytics) — Native Signals dashboard tab for Hermes. Read-only multi-project analytics. **[beta]**
 
 ### 🎨 Creative & Media Generation
 
+- [anti-ui-slop](https://github.com/uizze/uizze) by [UIZZE](https://github.com/uizze) — Design finish-gate that checks agent-generated UI against a reference set of real web and iOS screens. Free skill works without an account; live reference search needs the paid [UIZZE](https://uizze.com) MCP. **[beta]**
 - [black-forest-labs/skills](https://github.com/black-forest-labs/skills) by [Black Forest Labs](https://github.com/black-forest-labs) — Official FLUX model skills for image generation. First-party skills from the FLUX creators. **[production]**
-- [kwanmxiii-bit/Loras-training-tap-skill](https://github.com/kwanmxiii-bit/Loras-training-tap-skill) by [kwanmxiii-bit](https://github.com/kwanmxiii-bit) — LoRA Concept Removal Tagging: tag training images and remove target concepts so LoRA weights absorb them. Backed by caption-dropout research (Pascual 2026). Install: `hermes skills install kwanmxiii-bit/Loras-training-tap-skill/skills/lora-concept-removal-tagging`. **[production]**
 - [hermes-weather-plugin](https://github.com/FahrenheitResearch/hermes-weather-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) — Professional-grade weather plugin with NWS model imagery, NEXRAD radar, meteorological calculations. **[beta]**
 - [hermes-wxtrain-plugin](https://github.com/FahrenheitResearch/hermes-wxtrain-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) — ML pipeline for building training datasets from HRRR/GFS/ERA5 weather models. **[experimental]**
-- [levea-ai-video-editor](https://github.com/brajendrak00068/openclaw-ai-video-editor) by [brajendrak00068](https://github.com/brajendrak00068) — Agentic AI video editor for viral clips, captions, silence removal, vertical reframe, chroma key, and MP4 export. **[production]**
-- [runapi-ai/cli-skill](https://github.com/runapi-ai/cli-skill) by [RunAPI](https://github.com/runapi-ai) — Cross-agent skill for running AI image, video, music/audio, and model API jobs from CLI-capable agents. **[beta]**
+- [levea-ai-video-editor](https://github.com/brajendrak00068/agentic-ai-video-production/tree/main/skills/media/levea-ai-video-editor) by [brajendrak00068](https://github.com/brajendrak00068) — Agentic video editing: clip selection, captions, silence removal, vertical reframe, chroma key, MP4 export. **[beta]**
+- [lora-concept-removal-tagging](https://github.com/kwanmxiii-bit/Loras-training-tap-skill) by [kwanmxiii-bit](https://github.com/kwanmxiii-bit) — Tags LoRA training images and drops target concepts so the weights absorb them instead. Caption-dropout based. **[beta]**
+- [runapi-cli](https://github.com/runapi-ai/cli-skill) by [RunAPI](https://github.com/runapi-ai) — Runs image, video, music and model API jobs from any CLI-capable agent. **[beta]**
 - [typeui-hermes](https://www.typeui.sh/docs/guides/hermes) by [Bergside](https://github.com/bergside/typeui) — Use design skills to generate better UI with Hermes. **[production]**
-- [uizze](https://uizze.com) by [Aislon](https://github.com/aislon) — Stop UI slop with a free finish-gate skill and 800,000+ real web and iOS product screens for Codex, Claude Code, Cursor, and Hermes. **[production]**
 
 ### 🔧 DevOps & Deployment
 
+- [evey-setup](https://github.com/42-evey/evey-setup) by [42-evey](https://github.com/42-evey) — One-command setup for full hermes-agent stack with free models and 29 plugins. **[beta]**
 - [hermes-agent-docker](https://github.com/xmbshwll/hermes-agent-docker) by [xmbshwll](https://github.com/xmbshwll) — Minimal Docker sandbox image for Hermes. Pull, run, done. **[beta]**
-- [portainer-stack-hermes](https://github.com/ellickjohnson/portainer-stack-hermes) by [ellickjohnson](https://github.com/ellickjohnson) — Docker Compose + Portainer + ttyd web terminal. Browser-accessible Hermes. **[experimental]**
-- [nika](https://github.com/supernovae-st/nika) by [supernovae-st](https://github.com/supernovae-st) — Deterministic workflow runner Hermes can delegate to. Repeatable AI jobs become reviewable .nika.yaml files, checked before a token is spent (plan, cost floor, secret flows, permits) and tamper-evident after via a hash-chained trace. Install: brew install supernovae-st/tap/nika. **[beta]**
+- [nika](https://github.com/supernovae-st/nika) by [supernovae-st](https://github.com/supernovae-st) — Deterministic workflow runner Hermes can delegate to. Repeatable jobs become reviewable `.nika.yaml` files with plan, cost and permit checks up front and a hash-chained trace after. **[beta]**
 - [nix-hermes-agent](https://github.com/0xrsydn/nix-hermes-agent) by [0xrsydn](https://github.com/0xrsydn) — Nix package and NixOS module. Fully reproducible deployments via Nix flakes. **[beta]**
 - [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) by [0xNyk](https://github.com/0xNyk) — Community migration tool from OpenClaw to Hermes. **[beta]**
-- [evey-setup](https://github.com/42-evey/evey-setup) by [42-evey](https://github.com/42-evey) — One-command setup for full hermes-agent stack with free models and 29 plugins. **[beta]**
+- [portainer-stack-hermes](https://github.com/ellickjohnson/portainer-stack-hermes) by [ellickjohnson](https://github.com/ellickjohnson) — Docker Compose + Portainer + ttyd web terminal. Browser-accessible Hermes. **[experimental]**
 
 ### 💰 Finance, Payments & Crypto
 
-- [hermes-payguard](https://github.com/nativ3ai/hermes-payguard) by [nativ3ai](https://github.com/nativ3ai) — Safe USDC and x402 payment plugin with spending limits and approval flows. **[experimental]**
 - [AgentCash](https://github.com/Merit-Systems/agentcash-skills) by [Merit-Systems](https://github.com/Merit-Systems) — 300+ premium APIs + wallet for paying via x402 or MPP. Free USDC for trying out. **[beta]**
-- [internet-court-skill](https://github.com/internet-court/internet-court-skill) by [Internet Court Consortium](https://github.com/internet-court) — Trust layer for agent-to-agent commerce: mandates, payments, escrow, dispute resolution. **[beta]**
-- [ripley-xmr-gateway](https://github.com/KYC-rip/ripley-xmr-gateway) by [KYC-rip](https://github.com/KYC-rip) — Monero (XMR) blockchain gateway. Private cryptocurrency transactions from agent workflows. **[experimental]**
-- [hermes-blockchain-oracle](https://github.com/gizdusum/hermes-blockchain-oracle) by [gizdusum](https://github.com/gizdusum) — Solana blockchain intelligence MCP server. On-chain analytics and wallet data. **[experimental]**
+- [barker-mcp](https://github.com/barkermoney/barker-mcp) by [Barker](https://github.com/barkermoney) — Stablecoin yield skills: live APY index, risk signals, yield advisor. Remote MCP with x402 pay-per-call; discovery is free. **[beta]**
 - [chainlink-agent-skills](https://github.com/smartcontractkit/chainlink-agent-skills) by [Chainlink](https://github.com/smartcontractkit) — Official Chainlink skills. Oracle data, CCIP, smart contract interaction. **[production]**
-- [true402-token-safety](https://github.com/true402/hermes-skills) by [true402](https://github.com/true402) — Pre-trade rug/honeypot check for Base tokens. Runs a real on-chain buy/sell simulation to prove a token can be sold, plus liquidity and contract structure. Free daily checks, no API key; pays per call over x402 after. **[beta]**
-- [mercury](https://github.com/hxsteric/mercury) by [hxsteric](https://github.com/hxsteric) — Multi-chain blockchain cash flow analyzer with WebGL dashboard. On-chain forensics. **[beta]**
 - [erpclaw](https://github.com/avansaber/erpclaw) by [AvanSaber](https://github.com/avansaber) — AI-native open-source ERP and double-entry accounting you self-host and run in plain English. Invoicing, inventory, general ledger, payroll, multi-company books. **[beta]**
-- [barker-stablecoin-skills](https://github.com/YBSbarker/barker-stablecoin-skills) by [Barker](https://barker.money) — Real-time stablecoin yield suite: live APY index, risk signals, AI yield advisor. Remote MCP endpoint + x402 pay-per-call, discovery free. **[production]**
-- [hermes-startup](https://github.com/33hodl/hermes-startup) by [33hodl](https://github.com/33hodl) — First-dollar workflow skill: personal profile → ranked idea shortlist → tool selection with prepaid per-call billing; answers stay local; no income guarantee. **[beta]**
+- [hermes-blockchain-oracle](https://github.com/gizdusum/hermes-blockchain-oracle) by [gizdusum](https://github.com/gizdusum) — Solana blockchain intelligence MCP server. On-chain analytics and wallet data. **[experimental]**
+- [hermes-payguard](https://github.com/nativ3ai/hermes-payguard) by [nativ3ai](https://github.com/nativ3ai) — Safe USDC and x402 payment plugin with spending limits and approval flows. **[experimental]**
+- [internet-court-skill](https://github.com/internet-court/internet-court-skill) by [Internet Court Consortium](https://github.com/internet-court) — Trust layer for agent-to-agent commerce: mandates, payments, escrow, dispute resolution. **[beta]**
+- [mercury](https://github.com/hxsteric/mercury) by [hxsteric](https://github.com/hxsteric) — Multi-chain blockchain cash flow analyzer with WebGL dashboard. On-chain forensics. **[beta]**
+- [ripley-xmr-gateway](https://github.com/KYC-rip/ripley-xmr-gateway) by [KYC-rip](https://github.com/KYC-rip) — Monero (XMR) blockchain gateway. Private cryptocurrency transactions from agent workflows. **[experimental]**
+- [true402-token-safety](https://github.com/true402/hermes-skills) by [true402](https://github.com/true402) — Pre-trade rug/honeypot check for Base tokens. Runs a real on-chain buy/sell simulation to prove a token can be sold, plus liquidity and contract structure. Free daily checks, no API key; pays per call over x402 after. **[beta]**
 
 ### 🤖 Multi-Agent & Swarms
 
 - [hermes-agent-acp-skill](https://github.com/Rainhoole/hermes-agent-acp-skill) by [Rainhoole](https://github.com/Rainhoole) — Multi-agent delegation bridging Hermes, Codex, Claude Code. Routes subtasks to best-suited agent. **[beta]**
 - [hermes-council](https://github.com/Ridwannurudeen/hermes-council) by [Ridwannurudeen](https://github.com/Ridwannurudeen) — Adversarial multi-perspective council MCP. Multiple AI viewpoints debate before commit. **[experimental]**
-- [opencode-hermes-multiagent](https://github.com/1ilkhamov/opencode-hermes-multiagent) by [1ilkhamov](https://github.com/1ilkhamov) — 17 specialized agents for OpenCode AI with structured interfaces. **[beta]**
 - [NemoHermes](https://github.com/Hmbown/NemoHermes) by [Hmbown](https://github.com/Hmbown) — NVIDIA capability registry and Spark-aware routing. Routes compute-heavy tasks to GPU infrastructure. **[experimental]**
+- [opencode-hermes-multiagent](https://github.com/1ilkhamov/opencode-hermes-multiagent) by [1ilkhamov](https://github.com/1ilkhamov) — 17 specialized agents for OpenCode AI with structured interfaces. **[beta]**
 
 ### 🏠 Smart Home, IoT & Embodied
 
-- [hermes-android](https://github.com/raulvidis/hermes-android) by [raulvidis](https://github.com/raulvidis) — Android device bridge with full Python toolset. **[beta]**
 - [agent-android](https://github.com/aivanelabs/ai-rpa/tree/main/skills/agent-android) by [AIVane Labs](https://github.com/aivanelabs) — LAN-first Android control over WiFi. No USB/ADB/root needed. Health checks, taps, swipes, screenshots, inspect→act→smoke flows. **[beta]**
-- [hermescraft](https://github.com/bigph00t/hermescraft) by [bigph00t](https://github.com/bigph00t) — Embodied Minecraft companion with persistent memory. Learns building preferences across sessions. **[beta]**
+- [hermes-android](https://github.com/raulvidis/hermes-android) by [raulvidis](https://github.com/raulvidis) — Android device bridge with full Python toolset. **[beta]**
 - [Hermes-mars-rover](https://github.com/Snehal707/Hermes-mars-rover) by [Snehal707](https://github.com/Snehal707) — Mars rover sim with ROS2 and Gazebo. Hermes skill loop for navigation improvement. **[experimental]**
 - [hermes-miniverse](https://github.com/teknium1/hermes-miniverse) by [teknium1](https://github.com/teknium1) — Bridge to Miniverse pixel worlds. By a Nous Research co-founder. **[beta]**
+- [hermescraft](https://github.com/bigph00t/hermescraft) by [bigph00t](https://github.com/bigph00t) — Embodied Minecraft companion with persistent memory. Learns building preferences across sessions. **[beta]**
 
 ### 🔐 Security & Detection
 
-- [resemble-ai/detect-skill](https://github.com/resemble-ai/detect-skill) by [Resemble AI](https://github.com/resemble-ai) — Deepfake detection: AI-generated audio/image/video/text, source tracing, watermarking, speaker ID. **[beta]**
+- [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) by [mukul975](https://github.com/mukul975) — 753+ structured cybersecurity skills mapped to MITRE ATT&CK. **[production]**
 - [hermes-agent-camel](https://github.com/nativ3ai/hermes-agent-camel) by [nativ3ai](https://github.com/nativ3ai) — Hermes with integrated CaMeL trust boundaries. Formal trust verification for safety-critical deployments. **[beta]**
-- [Strategic-Automation/violin](https://github.com/Strategic-Automation/violin) by [Strategic-Automation](https://github.com/Strategic-Automation) — Supervised, agentic Hermes **pentest profile**: 31 skill-based playbooks (OWASP/API/LLM Top 10) with interactive scoping and approval gates for authorised recon, exploit validation, and reporting. Install with `hermes profile install`; no extra API keys. **[production]**
 - [incognito-mode](https://github.com/GenmetsuWenxuePress/hermes-skills) by [幻灭文学出版社](https://github.com/GenmetsuWenxuePress) — Defense-in-depth incognito mode: PID-locked sandbox, shell history suppression, 10-step reverse audit with Python secure wipe, subagent inheritance protocol. **[beta]**
+- [resemble-ai/detect-skill](https://github.com/resemble-ai/detect-skill) by [Resemble AI](https://github.com/resemble-ai) — Deepfake detection: AI-generated audio/image/video/text, source tracing, watermarking, speaker ID. **[beta]**
 
 ### 🎯 Domain & Novelty
 
 - [anihermes](https://github.com/rodmarkun/anihermes) by [rodmarkun](https://github.com/rodmarkun) — Local anime server and tracker with NL interface. Browse, track, get recommendations via conversation. **[beta]**
-- [Wizards-of-the-Ghosts](https://github.com/Hmbown/Wizards-of-the-Ghosts) by [Hmbown](https://github.com/Hmbown) — Fantasy spell-themed skill pack. `cast lint` instead of `npm run lint`. **[experimental]**
 - [colony-skill](https://github.com/TheColonyCC/colony-skill) by [TheColonyCC](https://github.com/TheColonyCC) — Collaborative intelligence platform. AI + humans post findings, complete tasks, build reputation. **[beta]**
+- [Wizards-of-the-Ghosts](https://github.com/Hmbown/Wizards-of-the-Ghosts) by [Hmbown](https://github.com/Hmbown) — Fantasy spell-themed skill pack. `cast lint` instead of `npm run lint`. **[experimental]**
 - [zillow-skills](https://github.com/ZeroPointRepo/zillow-skills) by [therohitdas](https://github.com/therohitdas) — Zillow property data skills for AI agents — Zestimate, listings, photos, schools, taxes, price history — via the Zillapi REST API. MIT-0, free tier. **[beta]**
+
+---
+
+## 🔌 Plugins
+
+> Hermes **plugins** — installable packages that add tools, commands, hooks or providers to the agent itself, rather than a single `SKILL.md`. Install with `hermes plugins install <repo>`.
+
+- [babysitter](https://github.com/a5c-ai/babysitter) by [a5c-ai](https://github.com/a5c-ai) — Deterministic supervision loop for agentic workforces: enforces plans, retries and completion criteria on long multi-step runs. **[production]**
+- [cronalytics](https://github.com/8bit64k/cronalytics) by [8bit64k](https://github.com/8bit64k) — Analytics and observability for Hermes cron jobs. A dashboard for automations you'd otherwise never see fail. **[beta]**
+- [hermes-code-bridge](https://github.com/xuyang-liu16/hermes-code-bridge) by [xuyang-liu16](https://github.com/xuyang-liu16) — Makes Hermes the control plane for local coding agents — Codex, Claude Code, OpenCode, Gemini CLI, Kimi Code. **[beta]**
+- [hermes-curator-evolver](https://github.com/pingchesu/hermes-curator-evolver) by [pingchesu](https://github.com/pingchesu) — Evidence-driven skill evolution: reports, dry-run proposals, candidate search and guarded apply. **[beta]**
+- [hermes-dynamic-workflows](https://github.com/lingjiuu/hermes-dynamic-workflows) by [lingjiuu](https://github.com/lingjiuu) — Composes multi-step workflows at runtime instead of hard-coding them into a skill. **[beta]**
+- [hermes-humalike-plugin](https://github.com/Humalike/hermes-humalike-plugin) by [Humalike](https://github.com/Humalike) — Makes a chat-connected Hermes read like a person rather than a bot — pacing, typing behaviour, reply timing. **[beta]**
+- [hermes-live-voice](https://github.com/bielcarpi/hermes-live-voice) by [bielcarpi](https://github.com/bielcarpi) — Real-time voice control. Keep talking while Hermes keeps working in the background. **[beta]**
+- [hermes-plugin-guard](https://github.com/mauricemohr88-debug/hermes-plugin-guard) by [mauricemohr88-debug](https://github.com/mauricemohr88-debug) — Static, no-execution security checks over Hermes plugins before you install them. **[beta]**
+- [hermes-telemetry](https://github.com/nujovich/hermes-telemetry) by [nujovich](https://github.com/nujovich) — Budget enforcement plus observability. Stops runaway spend before it happens rather than reporting it after. **[beta]**
+- [planning-with-files](https://github.com/OthmanAdi/planning-with-files) by [OthmanAdi](https://github.com/OthmanAdi) — Crash-proof file-based planning for long-running agent tasks, with session recovery after a context clear. **[production]**
+- [signetai](https://github.com/Signet-AI/signetai) by [Signet-AI](https://github.com/Signet-AI) — Syncs memories, shared identity files (`AGENTS.md`, `CLAUDE.md`), transcripts and secrets between agents and machines. **[beta]**
+
+---
+
+## 🧠 Agent Profiles
+
+> Installable Hermes **profiles** — a persona, memory and curated skill/plugin bundle that reconfigures the whole agent for one role. Install with `hermes profile install <repo-url>`.
+
+- [chainforge](https://github.com/codegraphtheory/chainforge) by [codegraphtheory](https://github.com/codegraphtheory) — Security-first blockchain architect profile: Solidity, Solana, DeFi review workflows. **[beta]**
+- [donna-starter](https://github.com/AtlasOmnia/donna-starter) by [AtlasOmnia](https://github.com/AtlasOmnia) — Opinionated starter profile with a persona, 73 curated skills and a guided first run. A good first profile. **[beta]**
+- [heavy-coder](https://github.com/codegraphtheory/heavy-coder) by [codegraphtheory](https://github.com/codegraphtheory) — Multi-agent coding team profile with GitHub issue-to-PR automation, blind critique and synthesis. **[beta]**
+- [hermes-profile-kit](https://github.com/NewTurn2017/hermes-profile-kit) by [NewTurn2017](https://github.com/NewTurn2017) — Drop-in kit that creates four isolated profiles — coder, assistant, research, community-bot — with separate config and memory. **[beta]**
+- [hermes-profile-template](https://github.com/codegraphtheory/hermes-profile-template) by [codegraphtheory](https://github.com/codegraphtheory) — Prompt-to-repo authoring system for building and distributing your own installable profile. **[beta]**
+- [hermes-profiles](https://github.com/magnus919/hermes-profiles) by [magnus919](https://github.com/magnus919) — Curated profiles for specialist swarms. The largest profile collection in the ecosystem. **[production]**
+- [theheavenlyd3mon/hermes-profiles](https://github.com/theheavenlyd3mon/hermes-profiles) by [theheavenlyd3mon](https://github.com/theheavenlyd3mon) — Persona-driven profiles for orchestration, coding and research. **[beta]**
+- [violin](https://github.com/Strategic-Automation/violin) by [Strategic-Automation](https://github.com/Strategic-Automation) — Supervised pentest profile: 31 playbooks across the OWASP, API and LLM Top 10, with interactive scoping and approval gates before any target-touching command runs. Hermes-native, no extra API keys. **[production]**
+
+---
+
+## 💾 Memory Providers
+
+> Swap-in backends for Hermes's memory layer. A provider changes what the agent remembers and how it recalls it — install one and the built-in memory tools route through it.
+
+- [agentcairn](https://github.com/ccf/agentcairn) by [ccf](https://github.com/ccf) — Long-term cross-project memory backed by your own Obsidian vault. Daemonless, plain files, no opaque store. **[beta]**
+- [flowstate-qmd](https://github.com/amanning3390/flowstate-qmd) by [amanning3390](https://github.com/amanning3390) — Anticipatory memory with RAG and vector search. Pre-fetches relevant context before queries hit the agent. **[beta]**
+- [hermes-membase](https://github.com/aristoapp/hermes-membase) by [aristoapp](https://github.com/aristoapp) — Persistent memory provider backed by Membase. **[beta]**
+- [hindsight](https://github.com/vectorize-io/hindsight) by [Vectorize](https://github.com/vectorize-io) — Long-term memory layer with retain/recall/reflect workflows. Semantic + graph + temporal retrieval. Plugin or MCP. **[production]**
+- [honcho-self-hosted](https://github.com/elkimek/honcho-self-hosted) by [elkimek](https://github.com/elkimek) — Self-hosted Honcho memory backend setup for Hermes. Stronger cross-session memory with local control. **[beta]**
+- [memory-os](https://github.com/ClaudioDrews/memory-os) by [ClaudioDrews](https://github.com/ClaudioDrews) — Seven-layer memory system with Qdrant, structured facts, fabric recall and auto-curation. The most opinionated provider here. **[production]**
+- [Open Index](https://github.com/DrDroidLab/open-index) by [DrDroidLab](https://github.com/DrDroidLab) — Structured context graphs with hybrid search, read/write MCP access, and a portable setup skill for Hermes. **[beta]**
+- [personal-api](https://github.com/beiyuii/personal-api-skill) by [beiyuii](https://github.com/beiyuii) — Turn your Obsidian vault into an identity layer any AI agent can read in under 30 seconds. **[experimental]**
+- [plur](https://github.com/plur-ai/plur) by [plur-ai](https://github.com/plur-ai) — Shared memory layer for AI agents with open engram format (YAML). Persistent learning patterns. **[beta]**
+- [remnic](https://github.com/joshuaswarren/remnic) by [joshuaswarren](https://github.com/joshuaswarren) — Scoped memory with provenance, retrieval-quality evals, correction and boundaries. Built for user-aware agents. **[beta]**
+- [scope-recall-hermes](https://github.com/410979729/scope-recall-hermes) by [410979729](https://github.com/410979729) — Scope-aware recall over SQLite truth plus LanceDB semantic search, with hybrid retrieval. **[beta]**
+- [yantrikdb-hermes-plugin](https://github.com/yantrikos/yantrikdb-hermes-plugin) by [yantrikos](https://github.com/yantrikos) — Hermes-native memory provider for YantrikDB. `think()` canonicalizes duplicates, `conflicts()` surfaces contradictions, every `recall()` carries `why_retrieved` reasons. **[beta]**
+- [zeromem](https://github.com/ptaranat/zeromem) by [ptaranat](https://github.com/ptaranat) — Rust implementation of Zero-Mem (arXiv:2607.29377). Zero-token memory — no context tax on every turn. **[experimental]**
+- [zettelkasten-second-memory](https://github.com/cx2002302-lang/zettelkasten-second-memory) by [cx2002302-lang](https://github.com/cx2002302-lang) — Turns conversations into a permanent Zettelkasten knowledge base. Also runs on OpenClaw. **[beta]**
+
+---
+
+## 🔗 Surfaces & Integrations
+
+> Where Hermes actually meets you — clients, dashboards, chat platforms and devices that talk to a running Hermes gateway.
+
+- [adebnar/hermes-android](https://github.com/adebnar/hermes-android) by [adebnar](https://github.com/adebnar) — Native Android client for the gateway: chat plus sessions, models, cron and usage over Tailscale. **[beta]**
+- [hermes-dashboard](https://github.com/chrisryugj/hermes-dashboard) by [chrisryugj](https://github.com/chrisryugj) — Web dashboard for gateway config, MCP, cron and model management without touching the CLI. **[beta]**
+- [hermes-desktop-avatar](https://github.com/erenciracioglu-dotcom/hermes-desktop-avatar) by [erenciracioglu-dotcom](https://github.com/erenciracioglu-dotcom) — Always-on-top desktop sprite that fronts a local gateway. PySide6, OpenAI-compatible HTTP. **[experimental]**
+- [hermes-live-discord-agent-plugin](https://github.com/Capslockb/hermes-live-discord-agent-plugin) by [Capslockb](https://github.com/Capslockb) — Full-duplex Discord voice with function calling and idle hangup. **[beta]**
+- [hermes-multitenancy](https://github.com/eggyrooch-blip/hermes-multitenancy) by [eggyrooch-blip](https://github.com/eggyrooch-blip) — One Feishu bot, N users, N profiles. Multi-tenant routing for a shared gateway. **[beta]**
+- [hermes-notebook](https://github.com/lEWFkRAD/hermes-agents-guide-to-the-galaxy) by [lEWFkRAD](https://github.com/lEWFkRAD) — Handwriting-first clients for Kindle Scribe, BOOX and Android stylus devices, with Live Pages. **[beta]**
+- [hermes-studio](https://github.com/EKKOLearnAI/hermes-studio) by [EKKOLearnAI](https://github.com/EKKOLearnAI) — Web dashboard for multi-platform chat, session management, scheduled jobs and usage analytics. **[production]**
+- [hermes-zalo-plugin](https://github.com/cuongdev/hermes-zalo-plugin) by [cuongdev](https://github.com/cuongdev) — Connects a personal Zalo account to the gateway via zca-js. macOS, Linux and Windows. **[beta]**
+- [meshtastic-plugin](https://github.com/merchantmy/meshtastic-plugin) by [merchantmy](https://github.com/merchantmy) — Meshtastic LoRa radio as a first-class messaging platform. Your agent, off-grid. **[experimental]**
+- [nesquena/hermes-webui](https://github.com/nesquena/hermes-webui) by [nesquena](https://github.com/nesquena) — The most-starred way to drive Hermes from a browser or a phone. **[production]**
+- [screenpipe](https://github.com/screenpipe/screenpipe) by [screenpipe](https://github.com/screenpipe) — Records your screen continuously and feeds it to Hermes and 100+ other agents. Local and private. **[production]**
 
 ---
 
@@ -670,21 +743,40 @@ Web-based workspace with chat, terminal, memory browser, skills manager, and ins
 
 > Apps and dashboards built on top of or alongside Hermes. Not skills — but they make skills easier to use.
 
-- [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) by [outsourc-e](https://github.com/outsourc-e) — Web-based workspace: chat, terminal, memory browser, skills manager, inspector. Most complete GUI for Hermes. 500★. **[production]**
 - [hermes-desktop](https://github.com/dodo-reach/hermes-desktop) by [dodo-reach](https://github.com/dodo-reach) — Native macOS workspace with direct host-first SSH. Real terminal, session browsing, file editing. **[beta]**
-- [mission-control](https://github.com/builderz-labs/mission-control) by [builderz-labs](https://github.com/builderz-labs) — Open-source dashboard for AI agent orchestration. Multi-agent fleets, task dispatch, cost tracking. 3.7k★. **[production]**
-- [portable-hermes-agent](https://github.com/rookiemann/portable-hermes-agent) by rookiemann — Windows desktop app bundling 100 tools, GUI, local models, ComfyUI in a portable package. **[beta]**
 - [hermes-ui](https://github.com/pyrate-llama/hermes-ui) by [pyrate-llama](https://github.com/pyrate-llama) — Single-file glassmorphic web UI with SSE streaming, tool call visualization, PDF export, session/skill/memory viewers. **[beta]**
 - [hermes-webui](https://github.com/sanchomuzax/hermes-webui) by [sanchomuzax](https://github.com/sanchomuzax) — Lightweight process monitoring and config dashboard. Simpler ops alternative. **[beta]**
+- [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) by [outsourc-e](https://github.com/outsourc-e) — Web-based workspace: chat, terminal, memory browser, skills manager, inspector. Most complete GUI for Hermes. 500★. **[production]**
+- [mission-control](https://github.com/builderz-labs/mission-control) by [builderz-labs](https://github.com/builderz-labs) — Open-source dashboard for AI agent orchestration. Multi-agent fleets, task dispatch, cost tracking. 3.7k★. **[production]**
 - [orahermes-agent](https://github.com/jasperan/orahermes-agent) by [jasperan](https://github.com/jasperan) — Oracle AI Agent Harness — OCI GenAI and Oracle 26ai integration. **[experimental]**
+- [portable-hermes-agent](https://github.com/rookiemann/portable-hermes-agent) by rookiemann — Windows desktop app bundling 100 tools, GUI, local models, ComfyUI in a portable package. **[beta]**
 
 ---
 
-## 🧠 Agent Profiles
+## 🔄 Skills → Plugins
 
-> Installable Hermes **profiles** — curated `USER.md`/`MEMORY.md` + skills/plugins bundles that reconfigure Hermes for a specific role or workflow. Install with `hermes profile install <repo-url>`.
+> The **[Agent Plugins](https://agent-plugins.org)** standard (spec v1.0.0, published 2026-08-06 by Amazon, Anysphere/Cursor, GitHub, Microsoft, OpenAI and Vercel, with Google as a core maintainer) bundles Agent Skills *and* MCP servers into one portable folder. If you already ship a `SKILL.md`, you are most of the way there.
 
-- [Strategic-Automation/violin](https://github.com/Strategic-Automation/violin) by [Strategic-Automation](https://github.com/Strategic-Automation) — Supervised, agentic **pentest profile**. 31 skill-based playbooks (OWASP Top 10, API Top 10, LLM Top 10) with interactive scoping, scope validation, and approval gates so every target-touching command is confirmed before execution. Hermes-native (built-in toolsets only, optional guard plugin), no extra API keys. **[production]**
+A plugin is a directory:
+
+```
+my-plugin/
+├── plugin.json          # $schema + name required; version, description, license, author, repository
+├── skills/<skill>/SKILL.md
+├── mcp.json             # mcpServers: stdio | streamable-http | sse
+└── com.vendor.client/   # namespaced client extensions
+```
+
+Runtime variables `${PLUGIN_ROOT}` and `${PLUGIN_DATA}` resolve at load time. Path containment is enforced, `command` does no shell interpolation, and credentials must not be embedded — read the spec before you publish.
+
+**Why it matters for this list:** the artifact churns, the ecosystem doesn't. A skill you wrote for Hermes runs unchanged inside a plugin, and that plugin also loads in ChatGPT, Codex, Cursor, GitHub Copilot, Kiro and VS Code. Several entries here already ship both shapes — look for a `.claude-plugin/` directory or a `plugin.json` next to the `skills/` folder.
+
+**Converting an existing skill:**
+
+- [claude-plugin-converter](https://github.com/moonlight-lupin/agent-skills/tree/main/agent-ops/claude-plugin-converter) by [moonlight-lupin](https://github.com/moonlight-lupin) — analyses a Claude Code plugin and emits an installable Hermes plugin. The closest thing to a one-command migration today. **[beta]**
+- [Agent Plugins spec](https://github.com/agentplugins/agent-plugins-spec) — the normative source. Schemas at [agent-plugins.org/schemas](https://agent-plugins.org/schemas).
+
+We list plugins alongside skills rather than splitting them into a second repo, because from a reader's point of view they answer the same question: *what can I give my agent today?*
 
 ---
 
@@ -726,18 +818,24 @@ Spot something risky? [Open an issue](https://github.com/ZeroPointRepo/awesome-h
 
 ## 🤝 Contributing
 
-PRs welcome. We accept skills that:
+PRs welcome, and they get read. We accept entries that:
 
-1. Have a working `SKILL.md` (Hermes / Agent Skills format)
-2. Are reasonably maintained (commits in the last 6 months)
-3. Have a clear README and a one-line install command
-4. Aren't already on the list (check first)
+1. **Resolve** — the link works and points at something public
+2. **Have substance** — a real `SKILL.md` / `plugin.json` / provider implementation, plus a README that explains it
+3. **Are maintained** — a commit in the last six months
+4. **Aren't already listed** — search the page first
 
-To submit:
-1. Fork this repo
-2. Add your skill to the right category in alphabetical order
-3. Use the entry format: `[name](repo) by [author](author-url) — one-line description. **[tag]**`
-4. Open a PR with a link to a working example
+If your formatting is slightly off we will fix it and merge, rather than bounce it. We only close for dead links, no substance, spam, or duplicates — and we will tell you which, and invite you back once it's fixed.
+
+Entry format:
+
+```
+- [name](repo-url) by [author](author-url) — one-line description. **[tag]**
+```
+
+Full rules and a copy-paste example: **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+
+*Disclosure: the maintainers build some of the tools listed here. Those entries sit in the same format, in the same alphabetical order, next to their competitors, and are held to a higher bar — not a lower one. See [CONTRIBUTING.md](CONTRIBUTING.md#a-note-on-our-own-entries).*
 
 ---
 
@@ -756,6 +854,8 @@ To submit:
 We ship [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills), powered by [TranscriptAPI](https://transcriptapi.com) — 15M+ transcripts/month, 99.9% uptime.
 
 [TranscriptAPI](https://transcriptapi.com) · [@therohitdas](https://twitter.com/therohitdas) · [Issues & Suggestions](https://github.com/ZeroPointRepo/awesome-hermes-skills/issues)
+
+Built with [crhq.ai](https://crhq.ai)
 
 </div>
 
