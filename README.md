@@ -133,7 +133,9 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 ---
 
-## 📦 Built-in Skills (Ships with Hermes)
+## 📦 Built-in Skills
+
+- [Clickyy](https://github.com/jayamitkatariya/clickyyy) - Shake your cursor to summon an AI agent that sees your screen and clicks, types, drags, and acts for you on macOS. Open-source, MIT. (Ships with Hermes)
 
 > Hermes ships with **79 built-in skills** out of the box, across 14 categories — loaded and ready the moment you run `hermes`. You don't install these.
 >
