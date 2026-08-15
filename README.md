@@ -760,6 +760,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [mission-control](https://github.com/builderz-labs/mission-control) by [builderz-labs](https://github.com/builderz-labs) — Open-source dashboard for AI agent orchestration. Multi-agent fleets, task dispatch, cost tracking. 6k★. **[production]**
 - [orahermes-agent](https://github.com/jasperan/orahermes-agent) by [jasperan](https://github.com/jasperan) — Oracle AI Agent Harness — OCI GenAI and Oracle 26ai integration. **[experimental]**
 - [portable-hermes-agent](https://github.com/rookiemann/portable-hermes-agent) by rookiemann — Windows desktop app bundling 100 tools, GUI, local models, ComfyUI in a portable package. **[beta]**
+- [SandBase CLI](https://github.com/sandbaseai/cli) by [SandBase](https://github.com/sandbaseai) — Configures Hermes with an owned MCP bridge and native Skill for 2,000+ AI models and APIs through one account. **[production]**
 
 ---
 
