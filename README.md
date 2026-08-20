@@ -535,6 +535,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [consensus-mcp-hermes](https://github.com/ahmdngi/consensus-mcp-hermes) by [ahmdngi](https://github.com/ahmdngi) — Connect 200M+ peer-reviewed research papers to Hermes via the Consensus MCP server. OAuth setup guide for headless environments with mcp-remote bridge. **[beta]**
 - [deep-research](https://github.com/moonlight-lupin/agent-skills/tree/main/research/deep-research) by [moonlight-lupin](https://github.com/moonlight-lupin) — Autonomous Think→Search→Extract→Synthesize→Stop loop that produces cited research reports. **[production]**
 - [hermes-web-search-plus](https://github.com/robbyczgw-cla/hermes-web-search-plus) by [robbyczgw-cla](https://github.com/robbyczgw-cla) — Multi-provider web search with intelligent routing across Serper, Tavily, Exa, and more. Replaces built-in search with better quality + source diversity. **[beta]**
+- [multi-source-search](https://github.com/sandbaseai/sandbase-skills/tree/main/research/multi-source-search) by [SandBase AI](https://github.com/sandbaseai) — Cross-validates claims across independent sources, records an evidence ledger, and validates it offline before synthesis. **[production]**
 - [Not Human Search](https://github.com/unitedideas/nothumansearch-mcp) by [unitedideas](https://github.com/unitedideas) — MCP server for discovering other MCP servers. Indexes 8,600+ agent-friendly sites with agentic scoring. Lets Hermes find new tools on its own. **[production]**
 
 ### 📈 Marketing & Growth
