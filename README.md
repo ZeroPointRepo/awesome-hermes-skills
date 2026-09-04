@@ -666,6 +666,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-council](https://github.com/Ridwannurudeen/hermes-council) by [Ridwannurudeen](https://github.com/Ridwannurudeen) — Adversarial multi-perspective council MCP. Multiple AI viewpoints debate before commit. **[experimental]**
 - [NemoHermes](https://github.com/Hmbown/NemoHermes) by [Hmbown](https://github.com/Hmbown) — NVIDIA capability registry and Spark-aware routing. Routes compute-heavy tasks to GPU infrastructure. **[experimental]**
 - [opencode-hermes-multiagent](https://github.com/1ilkhamov/opencode-hermes-multiagent) by [1ilkhamov](https://github.com/1ilkhamov) — 17 specialized agents for OpenCode AI with structured interfaces. **[beta]**
+- [Pilot Protocol](https://github.com/pilot-protocol/pilot-mcp) by [Pilot Protocol](https://github.com/pilot-protocol) — Connects Hermes to a specialist-agent directory and peer-to-peer agent messaging through MCP. **[beta]**
 
 ### 🏠 Smart Home, IoT & Embodied
 
