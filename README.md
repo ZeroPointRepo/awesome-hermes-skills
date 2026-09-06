@@ -697,6 +697,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 > Hermes **plugins** — installable packages that add tools, commands, hooks or providers to the agent itself, rather than a single `SKILL.md`. Install with `hermes plugins install <repo>`.
 
+- [artifact-relay](https://github.com/eloktev/hermes-artifact-relay) by [Egor Loktev](https://github.com/eloktev) — Publishes long Markdown and HTML agent outputs as private, mobile-friendly pages through a self-hosted or isolated managed service. **[beta]**
 - [babysitter](https://github.com/a5c-ai/babysitter) by [a5c-ai](https://github.com/a5c-ai) — Deterministic supervision loop for agentic workforces: enforces plans, retries and completion criteria on long multi-step runs. **[production]**
 - [cronalytics](https://github.com/8bit64k/cronalytics) by [8bit64k](https://github.com/8bit64k) — Analytics and observability for Hermes cron jobs. A dashboard for automations you'd otherwise never see fail. **[beta]**
 - [hermes-code-bridge](https://github.com/xuyang-liu16/hermes-code-bridge) by [xuyang-liu16](https://github.com/xuyang-liu16) — Makes Hermes the control plane for local coding agents — Codex, Claude Code, OpenCode, Gemini CLI, Kimi Code. **[beta]**
