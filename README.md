@@ -709,6 +709,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-telemetry](https://github.com/nujovich/hermes-telemetry) by [nujovich](https://github.com/nujovich) — Budget enforcement plus observability. Stops runaway spend before it happens rather than reporting it after. **[beta]**
 - [planning-with-files](https://github.com/OthmanAdi/planning-with-files) by [OthmanAdi](https://github.com/OthmanAdi) — Crash-proof file-based planning for long-running agent tasks, with session recovery after a context clear. **[production]**
 - [signetai](https://github.com/Signet-AI/signetai) by [Signet-AI](https://github.com/Signet-AI) — Syncs memories, shared identity files (`AGENTS.md`, `CLAUDE.md`), transcripts and secrets between agents and machines. **[beta]**
+- [skill-retrieval](https://github.com/moonlight-lupin/agent-skills/tree/main/plugins/skill-retrieval) by [moonlight-lupin](https://github.com/moonlight-lupin) — BM25 retrieval over the skill catalog. Replaces the full per-turn skill list with the top-K most relevant skills, cutting input tokens as the library grows. Stdlib-only, profile-aware, Windows-safe. **[production]**
 
 ---
 
