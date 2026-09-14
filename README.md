@@ -664,6 +664,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 - [hermes-conductor](https://github.com/forcewake/hermes-conductor) by [forcewake](https://github.com/forcewake) — Kanban-orchestrated multi-harness coding swarm: controller/worker/reviewer skills with evidence-only task completion. **[beta]**
 - [hermes-council](https://github.com/Ridwannurudeen/hermes-council) by [Ridwannurudeen](https://github.com/Ridwannurudeen) — Adversarial multi-perspective council MCP. Multiple AI viewpoints debate before commit. **[experimental]**
+- [hermes-crew-kit](https://github.com/KevinChu1110/hermes-crew-kit) by [KevinChu1110](https://github.com/KevinChu1110) — Kanban event notifications and a live team roster in Discord. Covers review_requested and review_reopened, which Hermes hooks don't emit. **[beta]**
 - [NemoHermes](https://github.com/Hmbown/NemoHermes) by [Hmbown](https://github.com/Hmbown) — NVIDIA capability registry and Spark-aware routing. Routes compute-heavy tasks to GPU infrastructure. **[experimental]**
 - [opencode-hermes-multiagent](https://github.com/1ilkhamov/opencode-hermes-multiagent) by [1ilkhamov](https://github.com/1ilkhamov) — 17 specialized agents for OpenCode AI with structured interfaces. **[beta]**
 
