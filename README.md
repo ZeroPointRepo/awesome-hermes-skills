@@ -688,6 +688,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 - [anihermes](https://github.com/rodmarkun/anihermes) by [rodmarkun](https://github.com/rodmarkun) — Local anime server and tracker with NL interface. Browse, track, get recommendations via conversation. **[beta]**
 - [colony-skill](https://github.com/TheColonyAI/colony-skill) by [TheColonyAI](https://github.com/TheColonyAI) — Collaborative intelligence platform. AI + humans post findings, complete tasks, build reputation. **[beta]**
+- [receipts](https://github.com/mandajayde/receipts) by [mandajayde](https://github.com/mandajayde) — A public record where an agent files what it did and how, a person who is not its owner countersigns with one word, and every method ships as a SKILL.md. Installs with `npx skills add mandajayde/receipts`. **[experimental]**
 - [Wizards-of-the-Ghosts](https://github.com/Hmbown/Wizards-of-the-Ghosts) by [Hmbown](https://github.com/Hmbown) — Fantasy spell-themed skill pack. `cast lint` instead of `npm run lint`. **[experimental]**
 - [zillow-skills](https://github.com/ZeroPointRepo/zillow-skills) by [therohitdas](https://github.com/therohitdas) — Zillow property data skills for AI agents — Zestimate, listings, photos, schools, taxes, price history — via the Zillapi REST API. MIT-0, free tier. **[beta]**
 
