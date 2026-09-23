@@ -628,6 +628,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 ### 🎨 Creative & Media Generation
 
+- [anidoodle](https://github.com/alexgreensh/anidoodle) by [Alex Greenshpun](https://github.com/alexgreensh) — Code-drawn illustrations, loops, stickers and scored short films in nine hand-drawn styles. No image model or assets, and the same source renders the same pixels every time. **[beta]**
 - [anti-ui-slop](https://github.com/uizze/uizze) by [UIZZE](https://github.com/uizze) — MIT skill for design contracts, required UI states and hard finish gates on agent-generated UI. Works without an account; live reference search, validation and audits need the paid [UIZZE](https://uizze.com) MCP. **[beta]**
 - [black-forest-labs/skills](https://github.com/black-forest-labs/skills) by [Black Forest Labs](https://github.com/black-forest-labs) — Official FLUX model skills for image generation. First-party skills from the FLUX creators. **[production]**
 - [hermes-weather-plugin](https://github.com/FahrenheitResearch/hermes-weather-plugin) by [FahrenheitResearch](https://github.com/FahrenheitResearch) — Professional-grade weather plugin with NWS model imagery, NEXRAD radar, meteorological calculations. **[beta]**
