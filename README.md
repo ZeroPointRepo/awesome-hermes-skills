@@ -545,6 +545,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 - [hermes-startup](https://github.com/33hodl/hermes-startup) by [33hodl](https://github.com/33hodl) — Walks a personal profile into a ranked idea shortlist and a tool plan for a first paying customer. No income claims. **[beta]**
 - [notfair-plugin](https://github.com/nowork-studio/notfair-plugin) by [NoWork Studio](https://github.com/nowork-studio) — 40+ host-agnostic skills for SEO, GEO, Google Ads and Meta Ads, with approval-gated MCP actions on connected accounts. **[beta]**
+- [lead-enrichment](https://github.com/superagnt/leverage/tree/main/skills/core/lead-enrichment) by [superagnt](https://github.com/superagnt) — Enrich a lead from an email or domain: person, company, socials, verified work email. Cross-agent (Hermes, Claude, OpenClaw), backed by the superagnt MCP with a free tier. **[beta]**
 
 ### 💻 Dev & Skill Authoring
 
