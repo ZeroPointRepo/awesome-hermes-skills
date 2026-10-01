@@ -626,6 +626,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [handoff](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Compacts the current conversation into a handoff document another agent can pick up cold. **[production]**
 - [hermes-plugins](https://github.com/42-evey/hermes-plugins) by [42-evey](https://github.com/42-evey) — Goal management, inter-agent bridge, model selection, cost control. Four plugins covering common operational needs. **[beta]**
 - [onequery-cli](https://github.com/wordbricks/skills/tree/main/skills/onequery-cli) by [Wordbricks](https://github.com/wordbricks) — CLI skill for safe, auditable queries for agents against approved data sources. **[beta]**
+- [yylo-skills](https://github.com/yylo-dev/yylo-skills) by [yylo-dev](https://github.com/yylo-dev) — Eight workflow skills that give coding agents a durable Kanban task board, dependency-aware task planning, project discovery and wiki knowledge capture. Works with Claude Code, Codex, Cursor and other SKILL.md-compatible agents. **[production]**
 
 ### 🎨 Creative & Media Generation
 
