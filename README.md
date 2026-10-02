@@ -579,6 +579,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 - [Agent QA skills](https://github.com/vostride/agent-qa/tree/main/skills) by [Vostride](https://github.com/vostride) — Three portable skills for authoring Agent QA tests, triaging failed runs from evidence, and applying scoped fixes through MCP or CLI. **[beta]**
 - [Agentic-MCP-Skill](https://github.com/cablate/Agentic-MCP-Skill) by [cablate](https://github.com/cablate) — MCP client with agentskills.io validation. **[beta]**
+- [Bestax skills](https://github.com/allxsmith/bestax/tree/main/skills) by [allxsmith](https://github.com/allxsmith) — Seven skills for building React UIs with Bestax and Bulma v1: layout scaffolding, forms, icons, theming, custom components, migration and CSS optimization. **[beta]**
 - [bmad-module-skill-forge](https://github.com/armelhbobdad/bmad-module-skill-forge) by [armelhbobdad](https://github.com/armelhbobdad) — Transforms repos and docs into agentskills.io-compliant skills. **[beta]**
 - [claude-plugin-converter](https://github.com/moonlight-lupin/agent-skills/tree/main/agent-ops/claude-plugin-converter) by [moonlight-lupin](https://github.com/moonlight-lupin) — Two-phase converter: analyse a Claude Code plugin, then emit an installable Hermes plugin. **[beta]**
 - [evey-bridge-plugin](https://github.com/42-evey/evey-bridge-plugin) by [42-evey](https://github.com/42-evey) — Claude Code plugin that bridges with Hermes. Shared context, task handoffs. **[beta]**
