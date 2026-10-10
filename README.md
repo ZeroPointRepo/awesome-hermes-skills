@@ -687,7 +687,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 ### 🎯 Domain & Novelty
 
-- [reverse-engineer-anything](https://github.com/morluto/rea/tree/main/skill-src/reverse-engineer-anything) by [morluto](https://github.com/morluto) — Investigate shipped apps when source is missing: trace features through observable evidence and compare builds with REA’s local CLI and MCP tools. **[production]**
+- [reverse-engineer-anything](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) by [morluto](https://github.com/morluto) — Investigate shipped apps when source is missing: trace features through observable evidence and compare builds with REA’s local CLI and MCP tools. **[production]**
 - [anihermes](https://github.com/rodmarkun/anihermes) by [rodmarkun](https://github.com/rodmarkun) — Local anime server and tracker with NL interface. Browse, track, get recommendations via conversation. **[beta]**
 - [colony-skill](https://github.com/TheColonyAI/colony-skill) by [TheColonyAI](https://github.com/TheColonyAI) — Collaborative intelligence platform. AI + humans post findings, complete tasks, build reputation. **[beta]**
 - [Wizards-of-the-Ghosts](https://github.com/Hmbown/Wizards-of-the-Ghosts) by [Hmbown](https://github.com/Hmbown) — Fantasy spell-themed skill pack. `cast lint` instead of `npm run lint`. **[experimental]**
