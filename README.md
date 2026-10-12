@@ -659,6 +659,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [internet-court-skill](https://github.com/internet-court/internet-court-skill) by [Internet Court Consortium](https://github.com/internet-court) — Trust layer for agent-to-agent commerce: mandates, payments, escrow, dispute resolution. **[beta]**
 - [mercury](https://github.com/hxsteric/mercury) by [hxsteric](https://github.com/hxsteric) — Multi-chain blockchain cash flow analyzer with WebGL dashboard. On-chain forensics. **[beta]**
 - [ripley-xmr-gateway](https://github.com/KYC-rip/ripley-xmr-gateway) by [KYC-rip](https://github.com/KYC-rip) — Monero (XMR) blockchain gateway. Private cryptocurrency transactions from agent workflows. **[experimental]**
+- [senpi-agent](https://github.com/Senpi-ai/senpi-plugin) by [Senpi](https://github.com/Senpi-ai) — Connects Hermes to your own Senpi agent, an AI quant for Hyperliquid: market reads, ranked signals, smart-money positioning, trader research, wallet scoring and strategy design. Hosted MCP with OAuth plus one skill; trades wait for per-action approval, nothing can withdraw funds. **[beta]**
 - [true402-token-safety](https://github.com/true402/hermes-skills) by [true402](https://github.com/true402) — Pre-trade rug/honeypot check for Base tokens. Runs a real on-chain buy/sell simulation to prove a token can be sold, plus liquidity and contract structure. Free daily checks, no API key; pays per call over x402 after. **[beta]**
 
 ### 🤖 Multi-Agent & Swarms
