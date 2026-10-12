@@ -609,6 +609,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 ### ✉️ Communication & Social
 
+- [bulkpublish-ai-toolkit](https://github.com/azeemkafridi/bulkpublish-ai-toolkit) by [azeemkafridi](https://github.com/azeemkafridi) — Eight skills for drafting, scheduling, cross-posting and measuring social posts on 15 platforms through BulkPublish's MCP server. **[beta]**
 - [clawsocial-hermes-plugin](https://github.com/mrpeter2025/clawsocial-hermes-plugin) by [mrpeter2025](https://github.com/mrpeter2025) — Social discovery network. Semantic interest matching, real-time WebSocket messaging, shareable profile cards. Bilingual EN+CN. **[beta]**
 - [famulor-skill](https://github.com/bekservice/Famulor-Skill) by [Famulor](https://github.com/bekservice) — Operates a Famulor voice-agent workspace over a hosted OAuth MCP server: assistants, call, messaging and email history, campaigns and telephony. **[beta]**
 - [hermes-tag](https://github.com/DanielLi202/hermes-tag) by [DanielLi202](https://github.com/DanielLi202) — Context-selection layer for Feishu/Lark and Slack group chats. Answers @-mentions from bounded per-chat evidence instead of full-history RAG, with per-chat memory isolation. **[beta]**
