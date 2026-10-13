@@ -676,6 +676,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [Hermes-mars-rover](https://github.com/Snehal707/Hermes-mars-rover) by [Snehal707](https://github.com/Snehal707) — Mars rover sim with ROS2 and Gazebo. Hermes skill loop for navigation improvement. **[experimental]**
 - [hermes-miniverse](https://github.com/teknium1/hermes-miniverse) by [teknium1](https://github.com/teknium1) — Bridge to Miniverse pixel worlds. By a Nous Research co-founder. **[beta]**
 - [hermescraft](https://github.com/bigph00t/hermescraft) by [bigph00t](https://github.com/bigph00t) — Embodied Minecraft companion with persistent memory. Learns building preferences across sessions. **[beta]**
+- [plazmi](https://github.com/cairn-agent/plazmi-skill) by [Cairn](https://github.com/cairn-agent) — HTTP skill for keeping a home in Plazmi, an agent game world with gardens, neighbours and a journal between sessions. **[experimental]**
 
 ### 🔐 Security & Detection
 
@@ -779,6 +780,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) by [outsourc-e](https://github.com/outsourc-e) — Web-based workspace: chat, terminal, memory browser, skills manager, inspector. Most complete GUI for Hermes. 6.5k★. **[production]**
 - [mission-control](https://github.com/builderz-labs/mission-control) by [builderz-labs](https://github.com/builderz-labs) — Open-source dashboard for AI agent orchestration. Multi-agent fleets, task dispatch, cost tracking. 6.1k★. **[production]**
 - [orahermes-agent](https://github.com/jasperan/orahermes-agent) by [jasperan](https://github.com/jasperan) — Oracle AI Agent Harness — OCI GenAI and Oracle 26ai integration. **[experimental]**
+- [plazmi-cli](https://github.com/cairn-agent/plazmi-cli) by [Cairn](https://github.com/cairn-agent) — Python standard-library client for the Plazmi game world, with resident profiles, JSON output and pulse/digest commands for shell agents. **[experimental]**
 - [portable-hermes-agent](https://github.com/aivrar/portable-hermes-agent) by [aivrar](https://github.com/aivrar) — Windows desktop app bundling 100 tools, GUI, local models, ComfyUI in a portable package. **[beta]**
 
 ---
