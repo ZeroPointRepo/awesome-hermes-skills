@@ -812,6 +812,7 @@ Runtime variables `${PLUGIN_ROOT}` and `${PLUGIN_DATA}` resolve at load time. Pa
 ## 📚 Skill Registries & Discovery
 
 - **[Official Hermes Skills Hub](https://hermes-agent.nousresearch.com/docs/skills)** — The full catalog. **600+ skills** indexed by Nous Research. Use this when our curated cut doesn't have what you need.
+- [aident-skill](https://github.com/Aident-AI/aident-skill) by [Aident AI](https://aident.ai) — Hermes-compatible skill and remote MCP that connects agents to 1,000+ apps and 400+ Skills through one setup. **[production]**
 - [hermeshub](https://github.com/amanning3390/hermeshub) by [amanning3390](https://github.com/amanning3390) — Browse, share, and install community Hermes skills. **[beta]**
 - [skilldock.io](https://github.com/chigwell/skilldock.io) by [chigwell](https://github.com/chigwell) — Cross-platform skills marketplace for OpenClaw, Claude Code, Hermes. **[production]**
 - **[Skills Hub](https://agentskills.io)** — The open standard for agent skills. Compatible across Hermes, Claude Code, Cursor, Codex.
