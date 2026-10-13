@@ -531,6 +531,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 ### 📺 Media & Transcripts
 
 - [hermes-spotify-skill](https://github.com/Alexeyisme/hermes-spotify-skill) by [Alexeyisme](https://github.com/Alexeyisme) — Spotify control for headless Linux and Raspberry Pi. The only Linux-native Spotify skill in the ecosystem. **[beta]**
+- [video-to-text](https://github.com/jiawood2006/video-to-text) by [jiawood2006](https://github.com/jiawood2006) — Douyin/Kuaishou share links to metadata (no cookie needed) and local video files to full speech transcripts via faster-whisper. Both paths run on your own machine. **[beta]**
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) by [therohitdas](https://github.com/therohitdas) — Transcripts, search, channels, playlists. Cross-agent: Hermes, Claude, OpenClaw and other agent runtimes. Powered by [TranscriptAPI](https://transcriptapi.com). **[production]**
 
 ### 🔍 Search & Research
@@ -617,11 +618,13 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [microsoft-workspace-skill](https://github.com/Andrew-Girgis/microsoft-workspace-skill) by [Andrew-Girgis](https://github.com/Andrew-Girgis) — Full Outlook/Hotmail/Microsoft 365 integration via Graph API. Email, calendar, contacts, free/busy. OAuth2 auto-refresh. Preview-before-send pattern. **[beta]**
 - [tweetclaw](https://github.com/Xquik-dev/tweetclaw) by [Xquik](https://github.com/Xquik-dev) — OpenClaw plugin and agent skill to scrape tweets, search tweet replies, export followers, look up users, run media, monitors, webhooks, giveaway draws, and approval-gated posts through Xquik. **[beta]**
 - [twitr-skills](https://github.com/lnvestor/twitr-skills) by [lnvestor](https://github.com/lnvestor) — Six X/Twitter skills: reads and search, bulk exports, keyword monitors with signed webhooks, publishing, and a presence routine. Pay-per-call in USDC over x402, no API key. **[beta]**
+- [wechat-voice-stt](https://github.com/jiawood2006/wechat-voice-stt) by [jiawood2006](https://github.com/jiawood2006) — WeChat/WeCom `.silk` voice messages to text through a self-hosted whisper.cpp server, with a homophone correction table and an auditable per-call log. Audio never goes to a third party. **[beta]**
 
 ### 📊 Productivity & Tasks
 
 - [agent-analytics-hermes-plugin](https://github.com/Agent-Analytics/agent-analytics-hermes-plugin) by [Agent-Analytics](https://github.com/Agent-Analytics) — Native Signals dashboard tab for Hermes. Read-only multi-project analytics. **[beta]**
 - [before-you-build](https://github.com/bin1874/before-you-build-skill) by [bin1874](https://github.com/bin1874) — Product-risk review before implementation. Challenges demand, positioning, monetization, retention, trust, distribution, and feature-adoption risk before an agent starts building. Works with Hermes, OpenClaw, Claude Code, Codex, and other `SKILL.md`-compatible agents. **[production]**
+- [doc-ocr](https://github.com/jiawood2006/doc-ocr) by [jiawood2006](https://github.com/jiawood2006) — PDFs, scans and photos to editable text using macOS Vision on-device: text-layer PDFs are extracted directly, scanned pages go through OCR (Chinese + English). No uploads. **[beta]**
 - [grill-me](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Get relentlessly interviewed by your agent until every branch of the decision tree is resolved. Use *every* time before making a change. Most popular skill in the pack. **[production]**
 - [handoff](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Compacts the current conversation into a handoff document another agent can pick up cold. **[production]**
 - [hermes-plugins](https://github.com/42-evey/hermes-plugins) by [42-evey](https://github.com/42-evey) — Goal management, inter-agent bridge, model selection, cost control. Four plugins covering common operational needs. **[beta]**
