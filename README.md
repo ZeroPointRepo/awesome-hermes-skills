@@ -708,6 +708,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-live-voice](https://github.com/bielcarpi/hermes-live-voice) by [bielcarpi](https://github.com/bielcarpi) — Real-time voice control. Keep talking while Hermes keeps working in the background. **[beta]**
 - [hermes-plugin-guard](https://github.com/mauricemohr88-debug/hermes-plugin-guard) by [mauricemohr88-debug](https://github.com/mauricemohr88-debug) — Static, no-execution security checks over Hermes plugins before you install them. **[beta]**
 - [hermes-telemetry](https://github.com/nujovich/hermes-telemetry) by [nujovich](https://github.com/nujovich) — Budget enforcement plus observability. Stops runaway spend before it happens rather than reporting it after. **[beta]**
+- [openviking-browser](https://github.com/galiehneh/hermes-openviking-browser) by [galiehneh](https://github.com/galiehneh) — Read-only OpenViking tab for the Hermes dashboard: server status, viking:// tree, abstract/overview/content reader and find/grep/glob search. API key stays server-side. **[beta]**
 - [planning-with-files](https://github.com/OthmanAdi/planning-with-files) by [OthmanAdi](https://github.com/OthmanAdi) — Crash-proof file-based planning for long-running agent tasks, with session recovery after a context clear. **[production]**
 - [signetai](https://github.com/Signet-AI/signetai) by [Signet-AI](https://github.com/Signet-AI) — Syncs memories, shared identity files (`AGENTS.md`, `CLAUDE.md`), transcripts and secrets between agents and machines. **[beta]**
 
