@@ -603,6 +603,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 ### 🌐 Browser & Web
 
+- [curlshot](https://github.com/SergiuPogor/curlshot-mcp/tree/main/skills/curlshot) by [SergiuPogor](https://github.com/SergiuPogor) — Screenshots of web pages through the CurlShot API: full page, phone and tablet views, PDF or scrolling video, plus rendering the agent's own HTML or Markdown. Needs a free API key. **[beta]**
 - [hermes-cloudflare](https://github.com/raulvidis/hermes-cloudflare) by [raulvidis](https://github.com/raulvidis) — Cloudflare browser rendering plugin. Headless browsing through Cloudflare's infrastructure. **[experimental]**
 - [hermes-plugin-chrome-profiles](https://github.com/anpicasso/hermes-plugin-chrome-profiles) by [anpicasso](https://github.com/anpicasso) — Switch browser tools between Chrome profiles via CDP. Multi-account testing. **[experimental]**
 - [vessel-browser](https://github.com/unmodeled-tyler/vessel-browser) by [unmodeled-tyler](https://github.com/unmodeled-tyler) — AI-native Linux browser with MCP control and autonomous browsing. Built for agent use, not a headless wrapper. **[experimental]**
