@@ -779,6 +779,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) by [outsourc-e](https://github.com/outsourc-e) — Web-based workspace: chat, terminal, memory browser, skills manager, inspector. Most complete GUI for Hermes. 6.5k★. **[production]**
 - [mission-control](https://github.com/builderz-labs/mission-control) by [builderz-labs](https://github.com/builderz-labs) — Open-source dashboard for AI agent orchestration. Multi-agent fleets, task dispatch, cost tracking. 6.1k★. **[production]**
 - [orahermes-agent](https://github.com/jasperan/orahermes-agent) by [jasperan](https://github.com/jasperan) — Oracle AI Agent Harness — OCI GenAI and Oracle 26ai integration. **[experimental]**
+- [permark](https://github.com/EdelmarSchneider/permark) by [EdelmarSchneider](https://github.com/EdelmarSchneider) — PerMark (formerly TrailMark): Native desktop Markdown IDE (Rust/Tauri 2) with a built-in MCP server and Hermes skill for live block diffs, unread tracking, tag search, and inline passage review comments. **[beta]**
 - [portable-hermes-agent](https://github.com/aivrar/portable-hermes-agent) by [aivrar](https://github.com/aivrar) — Windows desktop app bundling 100 tools, GUI, local models, ComfyUI in a portable package. **[beta]**
 
 ---
