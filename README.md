@@ -710,6 +710,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-telemetry](https://github.com/nujovich/hermes-telemetry) by [nujovich](https://github.com/nujovich) — Budget enforcement plus observability. Stops runaway spend before it happens rather than reporting it after. **[beta]**
 - [planning-with-files](https://github.com/OthmanAdi/planning-with-files) by [OthmanAdi](https://github.com/OthmanAdi) — Crash-proof file-based planning for long-running agent tasks, with session recovery after a context clear. **[production]**
 - [signetai](https://github.com/Signet-AI/signetai) by [Signet-AI](https://github.com/Signet-AI) — Syncs memories, shared identity files (`AGENTS.md`, `CLAUDE.md`), transcripts and secrets between agents and machines. **[beta]**
+- [Telesec](https://github.com/neoromantic/telesec) by [neoromantic](https://github.com/neoromantic) — Telegram Business secretary: voice notes, round videos and audio files become text in the same chat, using the STT already set up in Hermes. History (with search and stats) and contact dossiers are opt-in, turned on or off in your private chat with the bot. **[beta]**
 
 ---
 
