@@ -699,6 +699,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 > Hermes **plugins** — installable packages that add tools, commands, hooks or providers to the agent itself, rather than a single `SKILL.md`. Install with `hermes plugins install <repo>`.
 
 - [babysitter](https://github.com/a5c-ai/babysitter) by [a5c-ai](https://github.com/a5c-ai) — Deterministic supervision loop for agentic workforces: enforces plans, retries and completion criteria on long multi-step runs. **[production]**
+- [cc-safety-net](https://github.com/kenryu42/cc-safety-net) by [kenryu42](https://github.com/kenryu42) — `pre_tool_call` hook that blocks destructive Git and filesystem commands and access to secrets such as SSH keys and `.env` files before the `terminal`, `read_file`, `write_file` or `patch` tool runs. **[beta]**
 - [cronalytics](https://github.com/8bit64k/cronalytics) by [8bit64k](https://github.com/8bit64k) — Analytics and observability for Hermes cron jobs. A dashboard for automations you'd otherwise never see fail. **[beta]**
 - [hermes-code-bridge](https://github.com/xuyang-liu16/hermes-code-bridge) by [xuyang-liu16](https://github.com/xuyang-liu16) — Makes Hermes the control plane for local coding agents — Codex, Claude Code, OpenCode, Gemini CLI, Kimi Code. **[beta]**
 - [Hermes Connector](https://github.com/CorsenAI/hermes-connector) by [Corsen AI](https://github.com/CorsenAI) — Connects an exact Hermes profile and session to user-selected Chrome tabs through a local companion and authenticated loopback broker. **[production]**
