@@ -647,6 +647,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [nika](https://github.com/supernovae-st/nika) by [supernovae-st](https://github.com/supernovae-st) — Deterministic workflow runner Hermes can delegate to. Repeatable jobs become reviewable `.nika.yaml` files with plan, cost and permit checks up front and a hash-chained trace after. **[beta]**
 - [nix-hermes-agent](https://github.com/0xrsydn/nix-hermes-agent) by [0xrsydn](https://github.com/0xrsydn) — Nix package and NixOS module. Fully reproducible deployments via Nix flakes. **[beta]**
 - [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) by [0xNyk](https://github.com/0xNyk) — Community migration tool from OpenClaw to Hermes. **[beta]**
+- [publish-online](https://github.com/shipstatic/plugin/tree/main/skills/publish-online) by [ShipStatic](https://github.com/shipstatic) — Publishes a site, page, report or deck at a ShipStatic link anyone can open, with no account. Built-in password protection when it should be private. **[production]**
 
 ### 💰 Finance, Payments & Crypto
 
