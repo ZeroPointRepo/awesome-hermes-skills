@@ -540,6 +540,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-web-search-plus](https://github.com/robbyczgw-cla/hermes-web-search-plus) by [robbyczgw-cla](https://github.com/robbyczgw-cla) — Multi-provider web search with intelligent routing across Serper, Tavily, Exa, and more. Replaces built-in search with better quality + source diversity. **[beta]**
 - [Not Human Search](https://github.com/unitedideas/nothumansearch-mcp) by [unitedideas](https://github.com/unitedideas) — MCP server for discovering other MCP servers. Indexes 8,600+ agent-friendly sites with agentic scoring. Lets Hermes find new tools on its own. **[production]**
 - [Scavio](https://github.com/scavio-ai/hermes-agent) by [scavio-ai](https://github.com/scavio-ai) — Structured web data from 31 platforms through one hosted MCP server: search, retail, social, property and SEC filings, plus five research workflow skills. Credit-metered, with 50 free credits on signup. **[beta]**
+- [Sell to State](https://github.com/getbeton/selltostate-skills) by [getbeton](https://github.com/getbeton) — Five skills plus a hosted MCP server for government tenders and contract awards in 60+ countries: open tenders with deadlines, buyer profiles, competitor wins and tender alerts. Needs a Sell to State API key. **[beta]**
 
 ### 📈 Marketing & Growth
 
