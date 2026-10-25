@@ -710,6 +710,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-telemetry](https://github.com/nujovich/hermes-telemetry) by [nujovich](https://github.com/nujovich) — Budget enforcement plus observability. Stops runaway spend before it happens rather than reporting it after. **[beta]**
 - [planning-with-files](https://github.com/OthmanAdi/planning-with-files) by [OthmanAdi](https://github.com/OthmanAdi) — Crash-proof file-based planning for long-running agent tasks, with session recovery after a context clear. **[production]**
 - [signetai](https://github.com/Signet-AI/signetai) by [Signet-AI](https://github.com/Signet-AI) — Syncs memories, shared identity files (`AGENTS.md`, `CLAUDE.md`), transcripts and secrets between agents and machines. **[beta]**
+- [webly](https://github.com/Webly-AI/webly-plugin/tree/main/hermes) by [Webly-AI](https://github.com/Webly-AI) — Publishes a website, or shares files and folders, at a live URL with no account, then claims it, edits it over the hosted Webly MCP server and publishes drafts the person approves. Custom domains and version history. **[beta]**
 
 ---
 
