@@ -683,6 +683,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-agent-camel](https://github.com/nativ3ai/hermes-agent-camel) by [nativ3ai](https://github.com/nativ3ai) — Hermes with integrated CaMeL trust boundaries. Formal trust verification for safety-critical deployments. **[beta]**
 - [incognito-mode](https://github.com/Wanmit-Manhok-Press/hermes-skills) by [幻灭文学出版社](https://github.com/GenmetsuWenxuePress) — Defense-in-depth incognito mode: PID-locked sandbox, shell history suppression, 10-step reverse audit with Python secure wipe, subagent inheritance protocol. **[beta]**
 - [resemble-ai/detect-skill](https://github.com/resemble-ai/detect-skill) by [Resemble AI](https://github.com/resemble-ai) — Deepfake detection: AI-generated audio/image/video/text, source tracing, watermarking, speaker ID. **[beta]**
+- [Security Cards](https://github.com/Reware-Labs/securitycards) by [Reware Labs](https://github.com/Reware-Labs) — Fetches public version-pinned secure-coding rules for the library versions a project uses. Does not upload source and needs no API key. **[beta]**
 - [Verified Memory Vault](https://github.com/secondbrainstarter/verified-memory-vault) by [secondbrainstarter](https://github.com/secondbrainstarter) — Plain-Markdown Obsidian vault that gives AI coding agents persistent memory, with a health checker (protocol violations, dead links, bloat) and a git pre-commit hook that refuses commits mass-deleting memory files. **[beta]**
 
 ### 🎯 Domain & Novelty
