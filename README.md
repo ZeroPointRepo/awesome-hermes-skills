@@ -530,6 +530,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 ### 📺 Media & Transcripts
 
+- [MemTether](https://github.com/MemTether/MemTether) by [MemTether](https://github.com/MemTether) — Cross-client AI memory hub: agents share one SQLite memory.db via file-level pointers. Bi-temporal queries, supersession corrections, tamper-evident audit chain. 23 client adapters. **[production]**
 - [hermes-spotify-skill](https://github.com/Alexeyisme/hermes-spotify-skill) by [Alexeyisme](https://github.com/Alexeyisme) — Spotify control for headless Linux and Raspberry Pi. The only Linux-native Spotify skill in the ecosystem. **[beta]**
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) by [therohitdas](https://github.com/therohitdas) — Transcripts, search, channels, playlists. Cross-agent: Hermes, Claude, OpenClaw and other agent runtimes. Powered by [TranscriptAPI](https://transcriptapi.com). **[production]**
 
