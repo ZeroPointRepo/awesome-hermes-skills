@@ -765,6 +765,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-zalo-plugin](https://github.com/cuongdev/hermes-zalo-plugin) by [cuongdev](https://github.com/cuongdev) — Connects a personal Zalo account to the gateway via zca-js. macOS, Linux and Windows. **[beta]**
 - [meshtastic-plugin](https://github.com/merchantmy/meshtastic-plugin) by [merchantmy](https://github.com/merchantmy) — Meshtastic LoRa radio as a first-class messaging platform. Your agent, off-grid. **[experimental]**
 - [nesquena/hermes-webui](https://github.com/nesquena/hermes-webui) by [nesquena](https://github.com/nesquena) — The most-starred way to drive Hermes from a browser or a phone. **[production]**
+- [Pomelu](https://github.com/ateymoori/pomelu) by [ateymoori](https://github.com/ateymoori) — Open-source Flutter app for Android and iOS that connects to your self-hosted gateway and puts every Hermes bot in your pocket. No Pomelu server, no account, no tracking. **[beta]**
 - [screenpipe](https://github.com/screenpipe/screenpipe) by [screenpipe](https://github.com/screenpipe) — Records your screen continuously and feeds it to Hermes and 100+ other agents. Local and private. **[production]**
 
 ---
