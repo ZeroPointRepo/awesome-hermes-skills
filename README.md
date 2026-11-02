@@ -600,6 +600,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [super-hermes](https://github.com/Cranot/super-hermes) by [Cranot](https://github.com/Cranot) — Teaches Hermes to write its own analytical prompts. Meta-reasoning before execution. **[experimental]**
 - [windows-terminal-hygiene](https://github.com/vollegrewar/windows-terminal-hygiene) by [vollegrewar](https://github.com/vollegrewar) — Pre-flight checklist that keeps agent terminal commands from hanging on Windows: timeouts, non-interactive flags, pty, encoding, and a 3-minute recovery flow. **[beta]**
 - [wondelai/skills](https://github.com/wondelai/skills) by [wondelai](https://github.com/wondelai) — Cross-platform agent skills for Claude Code and agentskills.io platforms. 2.1k★. **[production]**
+- [hermes-skills](https://github.com/RobinBeraud/hermes-skills) by [RobinBeraud](https://github.com/RobinBeraud) — MIT collection of ready-to-use skills (research router, SEO, WordPress, email, finance, GitHub, media) with a CI check on every PR; a new skill is added regularly. **[beta]**
 
 ### 🌐 Browser & Web
 
