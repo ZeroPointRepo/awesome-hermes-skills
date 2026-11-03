@@ -530,6 +530,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 ### 📺 Media & Transcripts
 
+- [Arcmira: YouTube Transcript Search](https://github.com/arcmira/arcmira/tree/master/skills) by [Arcmira](https://github.com/arcmira) — Timestamped quotes, speaker appearances and sponsor research through MCP or CLI. Arcmira account required. **[experimental]**
 - [hermes-spotify-skill](https://github.com/Alexeyisme/hermes-spotify-skill) by [Alexeyisme](https://github.com/Alexeyisme) — Spotify control for headless Linux and Raspberry Pi. The only Linux-native Spotify skill in the ecosystem. **[beta]**
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) by [therohitdas](https://github.com/therohitdas) — Transcripts, search, channels, playlists. Cross-agent: Hermes, Claude, OpenClaw and other agent runtimes. Powered by [TranscriptAPI](https://transcriptapi.com). **[production]**
 
