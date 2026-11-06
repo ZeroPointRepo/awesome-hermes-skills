@@ -531,6 +531,8 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 ### 📺 Media & Transcripts
 
 - [hermes-spotify-skill](https://github.com/Alexeyisme/hermes-spotify-skill) by [Alexeyisme](https://github.com/Alexeyisme) — Spotify control for headless Linux and Raspberry Pi. The only Linux-native Spotify skill in the ecosystem. **[beta]**
+- [scribetoany](https://github.com/scribetoany/skills/tree/main/plugins/scribetoany/skills/scribetoany) by [ScribeToAny](https://github.com/scribetoany) — Transcribes local audio/video files or X, Twitch, Loom, Drive and Dropbox links to text, SRT or VTT through the `scribetoany` CLI, with timestamps and speaker labels in about 98 languages. Needs a ScribeToAny account (free tier). **[beta]**
+- [subtitle-qc](https://github.com/scribetoany/skills/tree/main/plugins/subtitle-qc/skills/subtitle-qc) by [ScribeToAny](https://github.com/scribetoany) — Checks SRT/VTT files for reading speed (CPS), line length, cue duration, gaps and overlaps, fixes timing without changing words, then proposes shorter text for what is left. Runs locally, no account. **[beta]**
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) by [therohitdas](https://github.com/therohitdas) — Transcripts, search, channels, playlists. Cross-agent: Hermes, Claude, OpenClaw and other agent runtimes. Powered by [TranscriptAPI](https://transcriptapi.com). **[production]**
 
 ### 🔍 Search & Research
