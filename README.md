@@ -606,6 +606,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-cloudflare](https://github.com/raulvidis/hermes-cloudflare) by [raulvidis](https://github.com/raulvidis) — Cloudflare browser rendering plugin. Headless browsing through Cloudflare's infrastructure. **[experimental]**
 - [hermes-plugin-chrome-profiles](https://github.com/anpicasso/hermes-plugin-chrome-profiles) by [anpicasso](https://github.com/anpicasso) — Switch browser tools between Chrome profiles via CDP. Multi-account testing. **[experimental]**
 - [vessel-browser](https://github.com/unmodeled-tyler/vessel-browser) by [unmodeled-tyler](https://github.com/unmodeled-tyler) — AI-native Linux browser with MCP control and autonomous browsing. Built for agent use, not a headless wrapper. **[experimental]**
+- [assay](https://github.com/awss1i/assay) by [awss1i](https://github.com/awss1i) — Deterministic QA skill for web pages. Opens a page you changed in Chromium through Playwright, drives every control, and reports where it contradicts itself, with no tests to write and no LLM. **[experimental]**
 
 ### ✉️ Communication & Social
 
