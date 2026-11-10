@@ -637,6 +637,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [lora-concept-removal-tagging](https://github.com/kwanmxiii-bit/Loras-training-tap-skill) by [kwanmxiii-bit](https://github.com/kwanmxiii-bit) — Tags LoRA training images and drops target concepts so the weights absorb them instead. Caption-dropout based. **[beta]**
 - [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) by [Orkas-AI](https://github.com/Orkas-AI) — Local-first TypeScript CLI and MCP toolkit with 14 skills for agent-authored video composition, editing, generation, and plan-based assembly. **[beta]**
 - [runapi-cli](https://github.com/runapi-ai/cli-skill) by [RunAPI](https://github.com/runapi-ai) — Runs image, video, music and model API jobs from any CLI-capable agent. **[beta]**
+- [uberllm](https://github.com/PSA-Team-source/uberllm/tree/main/skills/uberllm) by [PSA-Team-source](https://github.com/PSA-Team-source) — Image, video, music and speech generation plus 250+ chat models through one OpenAI-compatible key (`https://api.uberllm.dev/v1`); quotes a job's price before it runs. Paid, prepaid credit. **[beta]**
 - [typeui-hermes](https://github.com/bergside/typeui) by [Bergside](https://github.com/bergside) — Design skills that give Hermes a consistent component vocabulary when generating UI; setup in the [Hermes guide](https://www.typeui.sh/docs/guides/hermes). **[production]**
 
 ### 🔧 DevOps & Deployment
