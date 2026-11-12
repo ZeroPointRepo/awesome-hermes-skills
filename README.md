@@ -617,6 +617,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [microsoft-workspace-skill](https://github.com/Andrew-Girgis/microsoft-workspace-skill) by [Andrew-Girgis](https://github.com/Andrew-Girgis) — Full Outlook/Hotmail/Microsoft 365 integration via Graph API. Email, calendar, contacts, free/busy. OAuth2 auto-refresh. Preview-before-send pattern. **[beta]**
 - [tweetclaw](https://github.com/Xquik-dev/tweetclaw) by [Xquik](https://github.com/Xquik-dev) — OpenClaw plugin and agent skill to scrape tweets, search tweet replies, export followers, look up users, run media, monitors, webhooks, giveaway draws, and approval-gated posts through Xquik. **[beta]**
 - [twitr-skills](https://github.com/lnvestor/twitr-skills) by [lnvestor](https://github.com/lnvestor) — Six X/Twitter skills: reads and search, bulk exports, keyword monitors with signed webhooks, publishing, and a presence routine. Pay-per-call in USDC over x402, no API key. **[beta]**
+- [wavegrain](https://github.com/wavegrain/wavegrain-mcp) by [Wavegrain](https://github.com/wavegrain) - Hermes plugin and skill for the hosted Wavegrain MCP server: make, schedule and post TikTok slideshows and Instagram carousels for a brand. Needs a Wavegrain account. **[beta]**
 
 ### 📊 Productivity & Tasks
 
