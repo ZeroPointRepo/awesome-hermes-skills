@@ -543,6 +543,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 ### 📈 Marketing & Growth
 
+- [Coupler.io skills](https://github.com/coupler-io/skills) by [Coupler.io](https://github.com/coupler-io) — 108 skills for marketing, PPC, SEO, sales, finance and ecommerce analysis on live data from 400+ sources, read through the Coupler.io MCP server. Needs a Coupler.io account. **[production]**
 - [hermes-startup](https://github.com/33hodl/hermes-startup) by [33hodl](https://github.com/33hodl) — Walks a personal profile into a ranked idea shortlist and a tool plan for a first paying customer. No income claims. **[beta]**
 - [notfair-plugin](https://github.com/nowork-studio/notfair-plugin) by [NoWork Studio](https://github.com/nowork-studio) — 40+ host-agnostic skills for SEO, GEO, Google Ads and Meta Ads, with approval-gated MCP actions on connected accounts. **[beta]**
 
