@@ -688,6 +688,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 ### 🎯 Domain & Novelty
 
 - [anihermes](https://github.com/rodmarkun/anihermes) by [rodmarkun](https://github.com/rodmarkun) — Local anime server and tracker with NL interface. Browse, track, get recommendations via conversation. **[beta]**
+- [BeautyOS](https://github.com/ai-beauty-bot/beauty-os-skill/tree/main/skills/beautyos) by [AI Beauty Bot](https://github.com/ai-beauty-bot) — Sets up and runs a beauty salon in BeautyOS, a free salon CRM: services and prices, staff schedules, clients, online booking and an AI receptionist over the BeautyOS MCP server. Every change goes through a preview and waits for the owner's confirmation. **[beta]**
 - [colony-skill](https://github.com/TheColonyAI/colony-skill) by [TheColonyAI](https://github.com/TheColonyAI) — Collaborative intelligence platform. AI + humans post findings, complete tasks, build reputation. **[beta]**
 - [Wizards-of-the-Ghosts](https://github.com/Hmbown/Wizards-of-the-Ghosts) by [Hmbown](https://github.com/Hmbown) — Fantasy spell-themed skill pack. `cast lint` instead of `npm run lint`. **[experimental]**
 - [zillow-skills](https://github.com/ZeroPointRepo/zillow-skills) by [therohitdas](https://github.com/therohitdas) — Zillow property data skills for AI agents — Zestimate, listings, photos, schools, taxes, price history — via the Zillapi REST API. MIT-0, free tier. **[beta]**
