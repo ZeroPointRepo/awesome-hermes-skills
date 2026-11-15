@@ -531,6 +531,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 ### 📺 Media & Transcripts
 
 - [hermes-spotify-skill](https://github.com/Alexeyisme/hermes-spotify-skill) by [Alexeyisme](https://github.com/Alexeyisme) — Spotify control for headless Linux and Raspberry Pi. The only Linux-native Spotify skill in the ecosystem. **[beta]**
+- [Yaptake](https://github.com/hraness/product-skills/tree/main/skills/yaptake) by [Hraness](https://github.com/hraness) — Edits a Yaptake video project through its transcript: cuts words and retakes, shortens pauses, fixes captions and adds on-screen text. Needs the Yaptake Mac app. **[beta]**
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) by [therohitdas](https://github.com/therohitdas) — Transcripts, search, channels, playlists. Cross-agent: Hermes, Claude, OpenClaw and other agent runtimes. Powered by [TranscriptAPI](https://transcriptapi.com). **[production]**
 
 ### 🔍 Search & Research
@@ -540,6 +541,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-web-search-plus](https://github.com/robbyczgw-cla/hermes-web-search-plus) by [robbyczgw-cla](https://github.com/robbyczgw-cla) — Multi-provider web search with intelligent routing across Serper, Tavily, Exa, and more. Replaces built-in search with better quality + source diversity. **[beta]**
 - [Not Human Search](https://github.com/unitedideas/nothumansearch-mcp) by [unitedideas](https://github.com/unitedideas) — MCP server for discovering other MCP servers. Indexes 8,600+ agent-friendly sites with agentic scoring. Lets Hermes find new tools on its own. **[production]**
 - [Scavio](https://github.com/scavio-ai/scavio-hermes-skill) by [scavio-ai](https://github.com/scavio-ai) — Structured web data from 31 platforms through one hosted MCP server: search, retail, social, property and SEC filings, plus five research workflow skills. Credit-metered, with 50 free credits on signup. **[beta]**
+- [Sponge](https://github.com/hraness/product-skills/tree/main/skills/sponge) by [Hraness](https://github.com/hraness) — Finds sources and answers questions from a Sponge reading library on your computer, and saves or annotates reading when asked. Needs the Sponge CLI and a library. **[beta]**
 
 ### 📈 Marketing & Growth
 
@@ -637,6 +639,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [lora-concept-removal-tagging](https://github.com/kwanmxiii-bit/Loras-training-tap-skill) by [kwanmxiii-bit](https://github.com/kwanmxiii-bit) — Tags LoRA training images and drops target concepts so the weights absorb them instead. Caption-dropout based. **[beta]**
 - [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) by [Orkas-AI](https://github.com/Orkas-AI) — Local-first TypeScript CLI and MCP toolkit with 14 skills for agent-authored video composition, editing, generation, and plan-based assembly. **[beta]**
 - [runapi-cli](https://github.com/runapi-ai/cli-skill) by [RunAPI](https://github.com/runapi-ai) — Runs image, video, music and model API jobs from any CLI-capable agent. **[beta]**
+- [Textmock](https://github.com/hraness/product-skills/tree/main/skills/textmock) by [Hraness](https://github.com/hraness) — Writes fictional text conversations that open as editable Textmock links, or edits and renders an existing one through its browser API or Mac command. **[beta]**
 - [typeui-hermes](https://github.com/bergside/typeui) by [Bergside](https://github.com/bergside) — Design skills that give Hermes a consistent component vocabulary when generating UI; setup in the [Hermes guide](https://www.typeui.sh/docs/guides/hermes). **[production]**
 
 ### 🔧 DevOps & Deployment
