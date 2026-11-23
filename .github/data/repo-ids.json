@@ -253,6 +253,10 @@
       "id": 1188833209,
       "full_name": "FahrenheitResearch/hermes-wxtrain-plugin"
     },
+    "famulor-si/famulor-skill": {
+      "id": 1191583165,
+      "full_name": "Famulor-SI/Famulor-Skill"
+    },
     "forcewake/hermes-conductor": {
       "id": 1344110151,
       "full_name": "forcewake/hermes-conductor"
@@ -392,6 +396,10 @@
     "newturn2017/hermes-profile-kit": {
       "id": 1233663152,
       "full_name": "NewTurn2017/hermes-profile-kit"
+    },
+    "nika-open/nika": {
+      "id": 1126625946,
+      "full_name": "nika-open/nika"
     },
     "nousresearch/hermes-agent": {
       "id": 1024554267,

@@ -610,7 +610,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 ### ✉️ Communication & Social
 
 - [clawsocial-hermes-plugin](https://github.com/mrpeter2025/clawsocial-hermes-plugin) by [mrpeter2025](https://github.com/mrpeter2025) — Social discovery network. Semantic interest matching, real-time WebSocket messaging, shareable profile cards. Bilingual EN+CN. **[beta]**
-- [famulor-skill](https://github.com/bekservice/Famulor-Skill) by [Famulor](https://github.com/bekservice) — Operates a Famulor voice-agent workspace over a hosted OAuth MCP server: assistants, call, messaging and email history, campaigns and telephony. **[beta]**
+- [famulor-skill](https://github.com/Famulor-SI/Famulor-Skill) by [Famulor](https://github.com/bekservice) — Operates a Famulor voice-agent workspace over a hosted OAuth MCP server: assistants, call, messaging and email history, campaigns and telephony. **[beta]**
 - [hermes-tag](https://github.com/DanielLi202/hermes-tag) by [DanielLi202](https://github.com/DanielLi202) — Context-selection layer for Feishu/Lark and Slack group chats. Answers @-mentions from bounded per-chat evidence instead of full-history RAG, with per-chat memory isolation. **[beta]**
 - [hermes-agent-telegram-checklist](https://github.com/bablobanov/hermes-agent-telegram-checklist) by [johnsje183](https://github.com/johnsje183) — Creates and toggles native Telegram checklists in chats and forum topics over MTProto, behind a write allowlist. **[beta]**
 - [hermes-tweet](https://github.com/Xquik-dev/hermes-tweet) by [Xquik](https://github.com/Xquik-dev) — Native Hermes Agent X/Twitter plugin for tweet search, reply reading, user lookup, monitoring, posting, replies, DMs, and approval-gated X actions through Xquik. **[beta]**
@@ -644,7 +644,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [aivpn](https://github.com/ZoniBoy00/aivpn) by [ZoniBoy00](https://github.com/ZoniBoy00) — Per-location Docker WireGuard relay for Proton VPN with kill switch, SOCKS5 and prompt-injection-safe fetching. **[beta]**
 - [evey-setup](https://github.com/42-evey/evey-setup) by [42-evey](https://github.com/42-evey) — One-command setup for full hermes-agent stack with free models and 29 plugins. **[beta]**
 - [hermes-agent-docker](https://github.com/xmbshwll/hermes-agent-docker) by [xmbshwll](https://github.com/xmbshwll) — Minimal Docker sandbox image for Hermes. Pull, run, done. **[beta]**
-- [nika](https://github.com/supernovae-st/nika) by [supernovae-st](https://github.com/supernovae-st) — Deterministic workflow runner Hermes can delegate to. Repeatable jobs become reviewable `.nika.yaml` files with plan, cost and permit checks up front and a hash-chained trace after. **[beta]**
+- [nika](https://github.com/nika-open/nika) by [supernovae-st](https://github.com/supernovae-st) — Deterministic workflow runner Hermes can delegate to. Repeatable jobs become reviewable `.nika.yaml` files with plan, cost and permit checks up front and a hash-chained trace after. **[beta]**
 - [nix-hermes-agent](https://github.com/0xrsydn/nix-hermes-agent) by [0xrsydn](https://github.com/0xrsydn) — Nix package and NixOS module. Fully reproducible deployments via Nix flakes. **[beta]**
 - [openclaw-to-hermes](https://github.com/0xNyk/openclaw-to-hermes) by [0xNyk](https://github.com/0xNyk) — Community migration tool from OpenClaw to Hermes. **[beta]**
 
