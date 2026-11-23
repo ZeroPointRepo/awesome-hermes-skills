@@ -546,6 +546,8 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [hermes-startup](https://github.com/33hodl/hermes-startup) by [33hodl](https://github.com/33hodl) — Walks a personal profile into a ranked idea shortlist and a tool plan for a first paying customer. No income claims. **[beta]**
 - [notfair-plugin](https://github.com/nowork-studio/notfair-plugin) by [NoWork Studio](https://github.com/nowork-studio) — 40+ host-agnostic skills for SEO, GEO, Google Ads and Meta Ads, with approval-gated MCP actions on connected accounts. **[beta]**
 
+- [Product Metrics](https://github.com/product-metrics/skills/tree/main/plugins/product-metrics/skills/product-metrics) by [Product Metrics](https://github.com/product-metrics) — Ecommerce advertising skills for tracking, profit bidding, product segmentation and campaign planning, with a hosted OAuth MCP connection; connecting data is free and paid product features use a subscription. **[beta]**
+
 ### 💻 Dev & Skill Authoring
 
 #### 🔥 mattpocock/skills — Engineering bundle
