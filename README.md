@@ -544,6 +544,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 ### 📈 Marketing & Growth
 
 - [hermes-startup](https://github.com/33hodl/hermes-startup) by [33hodl](https://github.com/33hodl) — Walks a personal profile into a ranked idea shortlist and a tool plan for a first paying customer. No income claims. **[beta]**
+- [Leadsets GTM skills](https://github.com/leadsets/leadsets-skills) by [Leadsets](https://github.com/leadsets) — 50 open-source skills that help agents build prospect lists, enrich and verify contacts, and research accounts with Unlimited B2B Contact Data. **[beta]**
 - [notfair-plugin](https://github.com/nowork-studio/notfair-plugin) by [NoWork Studio](https://github.com/nowork-studio) — 40+ host-agnostic skills for SEO, GEO, Google Ads and Meta Ads, with approval-gated MCP actions on connected accounts. **[beta]**
 
 ### 💻 Dev & Skill Authoring
