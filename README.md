@@ -625,6 +625,7 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 - [grill-me](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Get relentlessly interviewed by your agent until every branch of the decision tree is resolved. Use *every* time before making a change. Most popular skill in the pack. **[production]**
 - [handoff](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md) by [mattpocock](https://github.com/mattpocock) — Compacts the current conversation into a handoff document another agent can pick up cold. **[production]**
 - [hermes-plugins](https://github.com/42-evey/hermes-plugins) by [42-evey](https://github.com/42-evey) — Goal management, inter-agent bridge, model selection, cost control. Four plugins covering common operational needs. **[beta]**
+- [neverapply](https://github.com/kasovy/neverapply-mcp/tree/main/skills) by [kasovy](https://github.com/kasovy) — Job search skills (find-jobs, apply-to-jobs, track-applications) for the hosted NeverApply MCP server: search jobs, explain matches, track applications and apply only to jobs you approve. **[beta]**
 - [onequery-cli](https://github.com/wordbricks/skills/tree/main/skills/onequery-cli) by [Wordbricks](https://github.com/wordbricks) — CLI skill for safe, auditable queries for agents against approved data sources. **[beta]**
 
 ### 🎨 Creative & Media Generation
