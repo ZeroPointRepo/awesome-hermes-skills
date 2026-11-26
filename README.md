@@ -528,6 +528,10 @@ Deepfake detection for agents that ingest user-submitted media. Detects AI-gener
 
 > Skills, plugins, and integrations built by the Hermes community. Tagged for maturity. Click through for install instructions per project.
 
+### 🧪 Testing & QA
+
+- [agentic-uat](https://github.com/linjz3376/agentic-uat) by [linjz3376](https://github.com/linjz3376) — Carrier-neutral agentic UAT skill pair: one skill generates self-contained acceptance task books (scenario matrices, AC-ID tables, coverage reconciliation), the other executes them as simulated users — UI-primary evidence, bounded interaction control (no infinite-retry loops), blocked-attribution auditing, three-state reporting. Cross-agent: Hermes, OpenCode, Claude Code, Codex, Gemini CLI, Cursor, Copilot, OpenClaw. npm: `@linjz/agentic-uat`. Case study: 130-point UAT of a production QQ bot signed off in 9 days. **[production]**
+
 ### 📺 Media & Transcripts
 
 - [hermes-spotify-skill](https://github.com/Alexeyisme/hermes-spotify-skill) by [Alexeyisme](https://github.com/Alexeyisme) — Spotify control for headless Linux and Raspberry Pi. The only Linux-native Spotify skill in the ecosystem. **[beta]**
